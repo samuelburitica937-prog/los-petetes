@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOS PETETES | MASTER PLAN GROOVINK</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Manrope:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: { 900: '#030712', 800: '#0B1120', 700: '#111827' },
+                        gold: { 400: '#FACC15', 500: '#EAB308', 600: '#CA8A04' },
+                        cyber: { 400: '#38BDF8', 500: '#0EA5E9' }
+                    },
+                    fontFamily: {
+                        sans: ['Manrope', 'sans-serif'],
+                        display: ['Cinzel', 'serif'],
+                        mono: ['Space Grotesk', 'monospace'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'scan': 'scan 3s linear infinite',
+                        'pulse-glow': 'pulseGlow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        scan: {
+                            '0%': { transform: 'translateY(-100%)' },
+                            '100%': { transform: 'translateY(100vh)' }
+                        },
+                        pulseGlow: {
+                            '0%, 100%': { opacity: 1 },
+                            '50%': { opacity: .5 },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #030712; color: #f8fafc; overflow-x: hidden; }
+        
+        /* SCROLLBAR */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #030712; }
+        ::-webkit-scrollbar-thumb { background: #EAB308; border-radius: 4px; }
+
+        /* GRADIENTS & GLASS */
+        .gradient-gold {
+            background: linear-gradient(135deg, #FACC15 0%, #D4AF37 50%, #854d0e 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-glass {
+            background: rgba(11, 17, 32, 0.6);
+            backdrop-filter: blur(24px);
+            border: 1px solid rgba(250, 204, 21, 0.15);
+            box-shadow: 0 30px 60px -15px rgba(0,0,0,0.8);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-glass:hover {
+            border-color: rgba(250, 204, 21, 0.4);
+            transform: translateY(-5px);
+            box-shadow: 0 40px 80px -15px rgba(250, 204, 21, 0.1);
+        }
+
+        /* IG MOCKUP VANGUARD STYLE */
+        .ig-mockup {
+            background: #000;
+            border: 12px solid #1f2937;
+            border-radius: 45px;
+            overflow: hidden;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255,255,255,0.1);
+            position: relative;
+        }
+        .ig-header {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 16px; border-bottom: 1px solid #1f2937;
+        }
+        .ig-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: #000; }
+        .ig-post { aspect-ratio: 1/1; background-size: cover; background-position: center; }
+
+        /* HUD OVERLAYS */
+        .hud-line { position: absolute; background: rgba(56, 189, 248, 0.5); }
+        .hud-h { height: 1px; width: 100%; top: 50%; }
+        .hud-v { width: 1px; height: 100%; left: 50%; }
+        
+        /* JARVIS BOOT SEQUENCE */
+        #boot-screen {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: #030712; z-index: 9999; display: flex;
+            flex-direction: column; justify-content: center; padding-left: 5%;
+            font-family: 'Space Grotesk', monospace; color: #38BDF8;
+            opacity: 1; transition: opacity 0.5s ease;
+        }
+        .boot-text { margin-bottom: 10px; font-size: 0.9rem; letter-spacing: 2px; }
+
+        /* PRODUCT CARDS: APPLE LEVEL */
+        .apple-card {
+            background: #fdfdfd; color: #030712;
+            border-radius: 30px; overflow: hidden;
+            padding: 40px 30px; display: flex; flex-direction: column;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+            transition: transform 0.5s ease;
+        }
+        .apple-card:hover { transform: scale(1.02); }
+    </style>
+</head>
+<body>
+
+    <!-- BOOT SCREEN J.A.R.V.I.S -->
+    <div id="boot-screen">
+        <div class="boot-text">> KABARU ORCHESTRATION PROTOCOL INITIATED...</div>
+        <div class="boot-text" style="animation-delay: 0.2s">> LOADING VANGUARD OS V4.0...</div>
+        <div class="boot-text" style="animation-delay: 0.4s">> SYNCING CLAUDE-3.5-SONNET COGNITION...</div>
+        <div class="boot-text" style="animation-delay: 0.6s">> BYPASSING BUREAUCRACY...</div>
+        <div class="boot-text text-gold-400 mt-4" style="animation-delay: 0.8s">> ECOSISTEMA LOS PETETES: <a href="https://estates-smaller-furnishings-investigations.trycloudflare.com" target="_blank" class="underline hover:text-white transition-colors cursor-pointer">ONLINE</a>.</div>
+        <div class="absolute w-full h-[2px] bg-cyber-500 top-0 left-0 animate-scan opacity-50"></div>
+    </div>
+
+    <!-- HEADER / HERO -->
+    <header class="relative min-h-screen flex items-center justify-center pt-20 pb-12 overflow-hidden border-b border-gold-500/20">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80')] bg-cover bg-center opacity-10 mix-blend-screen"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/90 to-transparent"></div>
+        </div>
+        
+        <div class="absolute inset-0 z-1 pointer-events-none">
+            <div class="hud-line hud-h opacity-20"></div>
+            <div class="hud-line hud-v opacity-20"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-6 w-full text-center space-y-8 animate-float">
+            <div class="inline-flex items-center gap-3 px-6 py-2 rounded-full border border-cyber-500/30 bg-black/50 backdrop-blur-md">
+                <span class="w-2 h-2 rounded-full bg-cyber-400 animate-pulse"></span>
+                <span class="text-xs font-mono font-bold tracking-[0.3em] uppercase text-cyber-400">GROOVINK ART LAB // VANGUARD DEPLOYMENT</span>
+            </div>
+            
+            <h1 class="text-7xl md:text-[8rem] font-display font-black tracking-tighter leading-none uppercase drop-shadow-2xl">
+                <span class="block text-white mb-2">LOS PETETES</span>
+                <span class="gradient-gold block">DOMINIO TOTAL</span>
+            </h1>
+            
+            <p class="text-xl md:text-2xl font-light text-gray-400 max-w-4xl mx-auto leading-relaxed font-mono">
+                La ejecución corporativa de élite. Implementamos la misma arquitectura algorítmica de marcas globales para dominar el mercado mayorista. Cero mediocridad.
+            </p>
+        </div>
+    </header>
+
+    <!-- THE INSTAGRAM MOCKUP (PETETE AVATAR) -->
+    <section class="py-32 px-6 relative bg-navy-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-20 text-center">
+                <h2 class="text-xs font-mono text-gold-400 tracking-widest uppercase mb-4">01. Identidad Cognitiva</h2>
+                <h3 class="text-5xl md:text-6xl font-display font-black text-white uppercase">El Embajador <span class="gradient-gold">3D</span></h3>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- IG Mockup -->
+                <div class="relative max-w-[380px] mx-auto animate-float">
+                    <div class="absolute -inset-4 bg-gold-500/20 blur-2xl rounded-[3rem]"></div>
+                    <div class="ig-mockup">
+                        <div class="ig-header">
+                            <span class="font-bold text-white tracking-tight">los_petetes_oficial</span>
+                            <i class="fas fa-ellipsis-v text-white"></i>
+                        </div>
+                        <div class="p-4 flex gap-6 items-center">
+                            <div class="w-20 h-20 rounded-full border-2 border-gold-500 p-1 flex-shrink-0">
+                                <img src="/images/petete-avatar.png" class="w-full h-full rounded-full object-cover" alt="Perfil">
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex justify-between text-center mb-2 px-2 text-white">
+                                    <div><span class="font-bold block">15</span><span class="text-[10px] text-gray-400">Post</span></div>
+                                    <div><span class="font-bold block">120K</span><span class="text-[10px] text-gray-400">Follow</span></div>
+                                    <div><span class="font-bold block">0</span><span class="text-[10px] text-gray-400">Following</span></div>
+                                </div>
+                                <a href="https://wa.me/576068840248" target="_blank" class="w-full bg-[#128C7E] text-white font-bold text-xs py-1.5 rounded-md uppercase tracking-wider text-center block">Contactar WhatsApp</a>
+                            </div>
+                        </div>
+                        <div class="px-4 pb-4 text-sm text-gray-200">
+                            <strong>Los Petetes 🌐</strong><br>
+                            E-Commerce Inteligente. Ventas Mayoristas.<br>
+                            <em>Distribuyendo el futuro.</em>
+                        </div>
+                        <div class="ig-grid h-[400px]">
+                            <div class="ig-post" style="background-image: url('/images/catalogos/belleza/cropped_Captura de pantalla 2026-03-24 143630.png'); background-color:#fff;"></div>
+                            <div class="ig-post" style="background-image: url('/images/catalogos/deportes/cropped_Captura de pantalla 2026-03-24 151548.png'); background-color:#fff;"></div>
+                            <div class="ig-post" style="background-image: url('/images/catalogos/papeleria/cropped_Captura de pantalla 2026-03-24 145942.png'); background-color:#fff;"></div>
+                            <div class="ig-post" style="background-image: url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80');"></div>
+                            <div class="ig-post" style="background-image: url('/images/petete-avatar.png');"></div>
+                            <div class="ig-post" style="background-image: url('https://images.unsplash.com/photo-1550989460-0adf9ea622e2?q=80');"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Explicación -->
+                <div class="space-y-8">
+                    <h4 class="text-4xl font-display font-bold text-white leading-tight">Multiversatilidad Comercial</h4>
+                    <p class="text-lg text-gray-400 font-light">
+                        El Petete no es solo un logo, es un activo digital paramétrico. Un avatar 3D creado por nuestra Directora Creativa (Sarita) capaz de mimetizarse en las 15 secciones (Ferretero, Papelería, Belleza).
+                    </p>
+                    <div class="card-glass p-8 rounded-2xl relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-1 bg-gradient-to-b from-gold-500 to-transparent h-full"></div>
+                        <h5 class="text-gold-400 font-bold mb-4 flex items-center gap-3">
+                            <span class="w-8 h-8 rounded-full bg-gold-500/20 flex items-center justify-center">🎯</span>
+                            Fidelización Tangible
+                        </h5>
+                        <p class="text-gray-300 font-light text-sm">
+                            El proyecto incluye la transición del avatar a un llavero físico ("La Gotita de Amor"). Un anclaje emocional diseñado por Groovink para enganchar comercial y socialmente al consumidor final.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EL CATÁLOGO (LOUIS VUITTON / TARGET HYBRID) -->
+    <section class="py-32 px-6 bg-[#01030a] relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-24 text-center">
+                <h2 class="text-xs font-mono text-cyber-400 tracking-widest uppercase mb-4">02. Infraestructura E-Commerce</h2>
+                <h3 class="text-5xl md:text-6xl font-display font-black text-white uppercase">Checkout <span class="text-cyber-500">Directo</span></h3>
+                <p class="mt-6 text-gray-400 max-w-2xl mx-auto font-light">
+                    Erradicamos los "carritos de compra" deficientes. Implementamos el estándar VANGUARD: Catálogos Blancos ultra-limpios anclados directamente al embudo de WhatsApp B2B de Andrés.
+                </p>
+            </div>
+
+            <!-- Showcase Belleza -->
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Tarjeta Apple Level 1 -->
+                <div class="apple-card">
+                    <div class="flex-1 flex items-center justify-center mb-8 h-48">
+                        <img src="/images/catalogos/belleza/cropped_Captura de pantalla 2026-03-24 143630.png" alt="Brocha" class="max-h-full object-contain">
+                    </div>
+                    <div>
+                        <div class="text-xs font-mono text-gray-500 font-bold tracking-widest mb-2">BELLEZA VIP</div>
+                        <h4 class="text-2xl font-black text-black mb-4">Brocha Rubor Estuche</h4>
+                        <div class="flex justify-between items-center mb-8 border-b border-gray-200 pb-6">
+                            <span class="text-sm font-semibold text-gray-600">Paca x480</span>
+                            <span class="text-xl font-black text-[#1b5e20]">$15,000 COP</span>
+                        </div>
+                        <a href="https://wa.me/576068840248?text=Hola%20Andr%C3%A9s,%20deseo%20comprar%20la%20Brocha%20Rubor" target="_blank" class="w-full bg-[#1e293b] hover:bg-black text-white text-center py-4 rounded-xl font-bold uppercase tracking-widest text-xs transition-colors shadow-lg">
+                            Generar Orden (WhatsApp)
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tarjeta Apple Level 2 -->
+                <div class="apple-card">
+                    <div class="flex-1 flex items-center justify-center mb-8 h-48">
+                        <img src="/images/catalogos/deportes/cropped_Captura de pantalla 2026-03-24 151554.png" alt="Voleibol" class="max-h-full object-contain">
+                    </div>
+                    <div>
+                        <div class="text-xs font-mono text-gray-500 font-bold tracking-widest mb-2">DEPORTES</div>
+                        <h4 class="text-2xl font-black text-black mb-4">Balón Voleibol Neón</h4>
+                        <div class="flex justify-between items-center mb-8 border-b border-gray-200 pb-6">
+                            <span class="text-sm font-semibold text-gray-600">Paca x60</span>
+                            <span class="text-xl font-black text-[#1b5e20]">$28,000 COP</span>
+                        </div>
+                        <a href="https://wa.me/576068840248?text=Hola%20Andr%C3%A9s,%20deseo%20comprar%20el%20Balon%20Ne%C3%B3n" target="_blank" class="w-full bg-[#1e293b] hover:bg-black text-white text-center py-4 rounded-xl font-bold uppercase tracking-widest text-xs transition-colors shadow-lg">
+                            Generar Orden (WhatsApp)
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tarjeta Apple Level 3 -->
+                <div class="apple-card">
+                    <div class="flex-1 flex items-center justify-center mb-8 h-48">
+                        <img src="/images/catalogos/papeleria/cropped_Captura de pantalla 2026-03-24 145942.png" alt="Abaco" class="max-h-full object-contain">
+                    </div>
+                    <div>
+                        <div class="text-xs font-mono text-gray-500 font-bold tracking-widest mb-2">PAPELERÍA</div>
+                        <h4 class="text-2xl font-black text-black mb-4">Ábaco de Madera</h4>
+                        <div class="flex justify-between items-center mb-8 border-b border-gray-200 pb-6">
+                            <span class="text-sm font-semibold text-gray-600">Paca x72</span>
+                            <span class="text-xl font-black text-[#1b5e20]">$14,000 COP</span>
+                        </div>
+                        <a href="https://wa.me/576068840248?text=Hola%20Andr%C3%A9s,%20deseo%20comprar%20el%20Abaco" target="_blank" class="w-full bg-[#1e293b] hover:bg-black text-white text-center py-4 rounded-xl font-bold uppercase tracking-widest text-xs transition-colors shadow-lg">
+                            Generar Orden (WhatsApp)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AGENTES ASIGNADOS -->
+    <section class="py-32 px-6 bg-gradient-to-b from-navy-900 to-black relative border-t border-gold-500/10">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-xs font-mono text-gold-400 tracking-widest uppercase mb-4">03. Orquestación en la Sombra</h2>
+            <h3 class="text-4xl md:text-5xl font-display font-black text-white uppercase mb-10">Agentes Dedicados</h3>
+            <p class="text-xl text-gray-400 font-light mb-16">
+                Groovink asigna un ecosistema aislado para Los Petetes. Sin fricciones, operando 24/7.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6 text-left">
+                <div class="p-8 border border-white/10 rounded-2xl bg-white/5 hover:bg-white/10 transition-colors">
+                    <h4 class="text-gold-400 font-mono text-lg font-bold mb-2">B2B CLOSER AGENT</h4>
+                    <p class="text-gray-300 text-sm">Responde instantáneamente en WhatsApp Business. Negocia, envía catálogos blancos en PDF y confirma stock al segundo.</p>
+                </div>
+                <div class="p-8 border border-white/10 rounded-2xl bg-white/5 hover:bg-white/10 transition-colors">
+                    <h4 class="text-cyber-400 font-mono text-lg font-bold mb-2">MARKETING INTEL</h4>
+                    <p class="text-gray-300 text-sm">Ejecuta "Trendjacking" en Instagram Mocks. Filtra a curiosos, e inyecta capital publicitario solo al Top 5% (compradores mayoristas reales).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-16 text-center border-t border-white/5 bg-black">
+        <h4 class="font-display font-black text-3xl text-white tracking-widest">"CAPA POR CAPA, HASTA LA PERFECCIÓN"</h4>
+        <p class="mt-4 font-mono text-xs text-gray-600 tracking-widest uppercase">KABHAL & KABARU | GROOVINK ART LAB © 2026</p>
+    </footer>
+
+    <!-- SCRIPT PARA EL FAKE BOOT SCREEN -->
+    <script>
+        setTimeout(() => {
+            const bootScreen = document.getElementById('boot-screen');
+            bootScreen.style.opacity = '0';
+            setTimeout(() => bootScreen.style.display = 'none', 500);
+        }, 1800);
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+2026-03-25T20:37:15Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-03-25T20:37:15Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-03-25T20:37:20Z INF +--------------------------------------------------------------------------------------------+
+2026-03-25T20:37:20Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-03-25T20:37:20Z INF |  https://estates-smaller-furnishings-investigations.trycloudflare.com                      |
+2026-03-25T20:37:20Z INF +--------------------------------------------------------------------------------------------+
+2026-03-25T20:37:20Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp]
+2026-03-25T20:37:20Z INF Version 2026.2.0 (Checksum b3279f2186a1c3c438ad5865e802bbbec26090c5d3fdb4ac1113f1143a94837a)
+2026-03-25T20:37:20Z INF GOOS: windows, GOVersion: go1.24.13, GoArch: amd64
+2026-03-25T20:37:20Z INF Settings: map[ha-connections:1 protocol:quic url:localhost:3000]
+2026-03-25T20:37:20Z INF cloudflared will not automatically update on Windows systems.
+2026-03-25T20:37:20Z INF Generated Connector ID: a3a85708-36da-4bab-ab3d-23ef4ea3ee08
+2026-03-25T20:37:20Z INF Initial protocol quic
+2026-03-25T20:37:20Z INF ICMP proxy will use 192.168.1.85 as source for IPv4
+2026-03-25T20:37:20Z INF ICMP proxy will use ::1 in zone Loopback Pseudo-Interface 1 as source for IPv6
+2026-03-25T20:37:20Z INF cloudflared does not support loading the system root certificate pool on Windows. Please use --origin-ca-pool <PATH> to specify the path to the certificate pool
+2026-03-25T20:37:20Z INF ICMP proxy will use 192.168.1.85 as source for IPv4
+2026-03-25T20:37:20Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.47
+2026-03-25T20:37:20Z INF ICMP proxy will use ::1 in zone Loopback Pseudo-Interface 1 as source for IPv6
+2026-03-25T20:37:20Z INF Starting metrics server on 127.0.0.1:20242/metrics
+2026-03-25T20:37:21Z INF Registered tunnel connection connIndex=0 connection=9151a54c-8f90-43ff-912c-2dad048b96e0 event=0 ip=198.41.192.47 location=mde01 protocol=quic
+202026-03-25T21:07:38Z INF Initiating graceful shutdown due to signal terminated ...
+2026-03-25T21:07:38Z ERR failed to run the datagram handler error="context canceled" connIndex=0 event=0 ip=198.41.192.107
+2026-03-25T21:07:38Z ERR failed to serve tunnel connection error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.192.107
+2026-03-25T21:07:38Z ERR Serve tunnel error error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.192.107
+2026-03-25T21:07:38Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.192.107
+2026-03-25T21:07:38Z ERR Connection terminated connIndex=0
+2026-03-25T21:07:38Z ERR no more connections active and exiting
+2026-03-25T21:07:38Z INF Tunnel server stopped
+2026-03-25T21:07:38Z INF Metrics server stopped
+responding to traffic from cloudflared: dial tcp [::1]:3000: connectex: No connection could be made because the target machine actively refused it." connIndex=0 dest=https://estates-smaller-furnishings-investigations.trycloudflare.com/_next/webpack-hmr?id=MLJD5G1Rv91SwbXBAvDxA event=0 ip=198.41.192.47 type=ws
+2026-03-25T21:07:38Z INF Initiating graceful shutdown due to signal terminated ...
+2026-03-25T21:07:38Z ERR failed to run the datagram handler error="context canceled" connIndex=0 event=0 ip=198.41.192.47
+2026-03-25T21:07:38Z ERR failed to serve tunnel connection error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.192.47
+2026-03-25T21:07:38Z ERR Serve tunnel error error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.192.47
+2026-03-25T21:07:38Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.192.47
+2026-03-25T21:07:38Z ERR Connection terminated connIndex=0
+2026-03-25T21:07:38Z ERR no more connections active and exiting
+2026-03-25T21:07:38Z INF Tunnel server stopped
+2026-03-25T21:07:38Z INF Metrics server stopped

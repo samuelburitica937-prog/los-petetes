@@ -1,0 +1,4 @@
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Warning: Permanently added 'serveo.net' (RSA) to the list of known hosts.
+[32mForwarding HTTP traffic from https://a5a1d3b109f78c60-186-82-102-83.serveousercontent.com
+[0mclient_loop: send disconnect: Connection reset
