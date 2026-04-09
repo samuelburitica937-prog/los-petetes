@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Product, formatPrice, CATEGORIES, Category, getProductQtyConfig } from '@/lib/data';
 import { useCartStore, useWishlistStore, useRecentStore } from '@/lib/store';
 import toast from 'react-hot-toast';
+import { Star } from 'lucide-react';
 
 interface ProductCardProps {
     product: Product;
@@ -130,9 +131,15 @@ export default function ProductCard({ product, featured }: ProductCardProps) {
 
                 {/* Stars - Hidden on mobile */}
                 <div className="hidden md:flex items-center gap-1 mb-2">
-                    <span className="stars">
-                        {'★'.repeat(Math.floor(product.rating))}{'☆'.repeat(5 - Math.floor(product.rating))}
-                    </span>
+                    {Array.from({ length: 5 }).map((_, i) => (
+                        <Star
+                            key={i}
+                            size={11}
+                            fill={i < Math.floor(product.rating) ? '#FFD700' : 'none'}
+                            stroke={i < Math.floor(product.rating) ? '#FFD700' : 'rgba(255,255,255,0.2)'}
+                            strokeWidth={1.5}
+                        />
+                    ))}
                     <span className="text-xs font-dupla-semibold" style={{ color: 'rgba(255,255,255,0.5)' }}>({product.vendidos})</span>
                 </div>
 

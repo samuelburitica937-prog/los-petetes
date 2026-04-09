@@ -1,7 +1,9 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
-import { HERO_SLIDES, getProductsByCategory, getCurrentCampaign } from '@/lib/data';
+import { HERO_SLIDES, getProductsByCategory, getCurrentCampaign, ALL_PRODUCTS } from '@/lib/data';
+import { generateCatalogPDF } from '@/lib/pdf-utils';
 import Link from 'next/link';
+import toast from 'react-hot-toast';
 
 export default function HeroSlider() {
     const [current, setCurrent] = useState(0);
@@ -21,10 +23,13 @@ export default function HeroSlider() {
     const next = () => goTo((current + 1) % HERO_SLIDES.length);
     const prev = () => goTo((current - 1 + HERO_SLIDES.length) % HERO_SLIDES.length);
 
+    // Fix: No dependency on `current` to avoid memory leak with recreated intervals
     useEffect(() => {
-        timeRef.current = setInterval(next, 7000);
-        return () => clearInterval(timeRef.current);
-    }, [current]);
+        const id = setInterval(() => {
+            setCurrent(c => (c + 1) % HERO_SLIDES.length);
+        }, 7000);
+        return () => clearInterval(id);
+    }, []);
 
     const slide = HERO_SLIDES[current];
 
@@ -34,8 +39,7 @@ export default function HeroSlider() {
                 
                 {/* Main Action Banner (8 columns) */}
                 <div 
-                    className="lg:col-span-8 relative rounded-3xl overflow-hidden shadow-2xl group border border-white/5"
-                    style={{ height: 'min(35vh, 580px)', minHeight: '220px' }}
+                    className="lg:col-span-8 relative rounded-3xl overflow-hidden shadow-2xl group border border-white/5 min-h-[480px] lg:min-h-[550px]"
                 >
                     {/* Background images container */}
                     <div className="absolute inset-0 z-0">
@@ -76,11 +80,17 @@ export default function HeroSlider() {
                             className="text-4xl md:text-6xl lg:text-7xl font-dupla-black text-white leading-[0.9] mb-6 animate-fade-in tracking-tighter"
                             style={{ textShadow: '0 4px 30px rgba(0,0,0,0.5)' }}
                         >
-                            {slide.title.split(' ').map((word, i) => (
-                                <span key={i} className={i === 0 ? 'text-gold font-dupla-black-italic block mb-2' : 'inline-block mr-3'}>
-                                    {word}
-                                </span>
-                            ))}
+                            {(() => {
+                                const words = slide.title.split(' ');
+                                const accent = words.slice(0, 2).join(' ');
+                                const rest = words.slice(2).join(' ');
+                                return (
+                                    <>
+                                        <span className='text-gold font-dupla-black-italic block mb-2'>{accent}</span>
+                                        {rest && <span className='inline'>{rest}</span>}
+                                    </>
+                                );
+                            })()}
                         </h1>
 
                         <p className="text-lg md:text-xl text-white/70 font-dupla-semibold mb-10 max-w-lg leading-relaxed animate-fade-in">
@@ -102,8 +112,25 @@ export default function HeroSlider() {
                             </Link>
                             <button
                                 onClick={() => {
-                                    alert('Preparando tu catálogo PDF...');
-                                    // Aquí luego lo conectamos con la función real
+                                    const catalogProducts = ALL_PRODUCTS.map(p => ({
+                                        nombre: p.nombre,
+                                        referencia: p.id,
+                                        descripcion: p.descripcion,
+                                        precioMayorista: p.precioMayorista,
+                                        precioSugerido: p.precio,
+                                        unidadMinima: p.minMayorista,
+                                        disponible: p.stock > 0,
+                                        imagenes: p.imagenes, // Added image data
+                                    }));
+                                    
+                                    toast.promise(
+                                        generateCatalogPDF('all', catalogProducts),
+                                        {
+                                            loading: 'Generando catálogo visual (puede tomar unos segundos)...',
+                                            success: '¡Catálogo descargado con éxito!',
+                                            error: 'Hubo un error al generar el catálogo.',
+                                        }
+                                    );
                                 }}
                                 className="px-10 py-4 bg-red-600/20 border border-red-500/50 text-white font-dupla-black rounded-xl transition-all hover:bg-red-600/40 backdrop-blur-md uppercase tracking-widest text-sm flex items-center gap-2"
                             >

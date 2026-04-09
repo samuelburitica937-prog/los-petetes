@@ -194,7 +194,7 @@ export default function Footer() {
                     {' '}— Manizales, Caldas, Colombia. Todos los derechos reservados.
                 </div>
                 <div className="mt-1 text-xs" style={{ color: 'rgba(255,255,255,0.3)' }}>
-                    NIT: XXX.XXX.XXX-X | Cámara de Comercio de Manizales
+                    Distribuidora Mayorista · Cámara de Comercio de Manizales · +57 606 884 0248
                 </div>
             </div>
         </footer>

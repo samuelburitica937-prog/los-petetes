@@ -181,9 +181,9 @@ export default function Header() {
                 <SearchBar />
             </div>
 
-            {/* Nav links */}
+            {/* Nav links: 15 sections visible & centered */}
             <nav
-                className="hidden md:flex items-center gap-1 px-8 py-2 overflow-x-auto"
+                className="hidden md:flex flex-wrap items-center justify-center gap-x-2 gap-y-1 px-4 py-2"
                 style={{ borderTop: '1px solid rgba(255,215,0,0.1)' }}
             >
                 {[
@@ -191,28 +191,29 @@ export default function Header() {
                     { href: '/#section-belleza', label: '💄 Belleza' },
                     { href: '/#section-salud', label: '💊 Salud' },
                     { href: '/#section-hogar', label: '🏠 Hogar' },
-                    { href: '/#section-petshop', label: '🐾 Pet Shop' },
-                    { href: '/#section-deportes', label: '⚡ Deportes' },
+                    { href: '/#section-petshop', label: '🐾 Pet' },
+                    { href: '/#section-deportes', label: '⚡ Deporte' },
                     { href: '/#section-bebes', label: '🍼 Bebés' },
-                    { href: '/#section-sexshop', label: '❤️ Íntimos' },
+                    { href: '/#section-sexshop', label: '❤️ Íntimo' },
                     { href: '/#section-electrodomesticos', label: '📺 Electro' },
-                    { href: '/#section-tecnologia', label: '📱 Tecnología' },
-                    { href: '/#section-papeleria', label: '📝 Papelería' },
+                    { href: '/#section-tecnologia', label: '📱 Tec' },
+                    { href: '/#section-papeleria', label: '📝 Papel' },
                     { href: '/#section-escolar', label: '🎒 Escolar' },
-                    { href: '/#section-oficina', label: '💼 Oficina' },
-                    { href: '/#section-horaloca', label: '🥳 Hora Loca' },
-                    { href: '/#section-jugueteria', label: '🧸 Juguetería' },
+                    { href: '/#section-oficina', label: '💼 Ofi' },
+                    { href: '/#section-horaloca', label: '🥳 H. Loca' },
+                    { href: '/#section-jugueteria', label: '🧸 Juguete' },
                 ].map(({ href, label }) => (
                     <Link
                         key={href}
                         href={href}
-                        className="px-3 py-1.5 rounded-lg text-sm font-semibold whitespace-nowrap transition-all hover:text-yellow-400 hover:bg-yellow-400/10"
-                        style={{ color: 'rgba(255,255,255,0.8)' }}
+                        className="px-1.5 py-1 rounded-md text-[9px] lg:text-[10px] font-dupla-black whitespace-nowrap transition-all hover:text-gold hover:bg-gold/10 uppercase tracking-tighter"
+                        style={{ color: 'rgba(255,255,255,0.7)' }}
                     >
                         {label}
                     </Link>
                 ))}
             </nav>
+
 
             {/* Mobile menu dropdown */}
             {menuOpen && (

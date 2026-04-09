@@ -2,7 +2,9 @@
 import Link from 'next/link';
 import { Category, CATEGORIES, getProductsByCategory } from '@/lib/data';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { FreeMode } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/free-mode';
 
 const CATEGORY_IMAGES: Record<string, string> = {
     ferreteria: 'https://images.unsplash.com/photo-1581147036324-c17ac41dfa6c?w=800&q=80',
@@ -49,12 +51,16 @@ export default function CategoryGrid() {
                 ))}
             </div>
 
-            {/* Mobile Only: Horizontal Swiper */}
-            <div className="md:hidden">
+            {/* Mobile Only: Horizontal Swiper with freeMode */}
+            <div className="md:hidden -mx-4 px-4">
                 <Swiper
-                    spaceBetween={15}
-                    slidesPerView={2.2}
-                    className="pb-8 !overflow-visible"
+                    modules={[FreeMode]}
+                    freeMode={true}
+                    spaceBetween={12}
+                    slidesPerView={2.4}
+                    slidesOffsetBefore={0}
+                    slidesOffsetAfter={16}
+                    className="pb-4"
                 >
                     {MAIN_CATS.map(cat => (
                         <SwiperSlide key={cat}>

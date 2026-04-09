@@ -8,6 +8,8 @@ import RecentlyViewed from '@/components/RecentlyViewed';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import CartSidebar from '@/components/CartSidebar';
 import { Suspense, useState, useMemo } from 'react';
+import { generateCatalogPDF } from '@/lib/pdf-utils';
+import toast from 'react-hot-toast';
 
 export default function CategoryPage() {
     const params = useParams();
@@ -83,6 +85,31 @@ export default function CategoryPage() {
                                         <p className="text-[10px] font-black text-white/30 uppercase tracking-widest mb-1">Desde</p>
                                         <p className="text-2xl font-black" style={{ color: catInfo.color }}>{formatPrice(Math.min(...products.map(p => p.precioMayorista), 0))}</p>
                                     </div>
+                                    
+                                    <button 
+                                        onClick={() => {
+                                            toast.promise(
+                                                generateCatalogPDF(slug as string, products.map(p => ({
+                                                    nombre: p.nombre,
+                                                    referencia: p.id,
+                                                    descripcion: p.descripcion,
+                                                    precioMayorista: p.precioMayorista,
+                                                    precioSugerido: p.precio,
+                                                    unidadMinima: p.minMayorista,
+                                                    disponible: p.stock > 0,
+                                                    imagenes: p.imagenes,
+                                                }))),
+                                                {
+                                                    loading: 'Generando catálogo PDF visual...',
+                                                    success: '¡Catálogo descargado!',
+                                                    error: 'Error al generar el catálogo.',
+                                                }
+                                            );
+                                        }}
+                                        className="px-6 py-3 rounded-2xl bg-gold text-navy font-black uppercase tracking-widest hover:scale-105 active:scale-95 transition-transform flex items-center gap-2 shadow-[0_0_20px_rgba(255,215,0,0.3)]"
+                                    >
+                                        📄 Descargar PDF
+                                    </button>
                                 </div>
                             </div>
                             
