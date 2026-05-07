@@ -60,16 +60,9 @@ export interface Product {
 }
 
 export const getProductQtyConfig = (product: Product) => {
-  const isExpensive = product.precioMayorista >= 15000;
-  if (isExpensive) {
-    return {
-      min: 6,
-      step: 1
-    };
-  }
   return {
-    min: product.minMayorista || 1,
-    step: product.minMayorista || 1
+    min: 6,
+    step: 6
   };
 };
 
@@ -563,7 +556,7 @@ export const ALL_PRODUCTS: Product[] = [
   ...SEXSHOP_CSV_PRODUCTS
 ].map((p, i) => ({
   ...p,
-  minMayorista: p.minMayorista < 6 ? 6 : p.minMayorista,
+  minMayorista: 6,
   stock: p.stock === 100 ? (12 + (i % 89)) : p.stock,
   destacado: (i % 30 === 0), // Aproximadamente 1 de cada 30 productos es destacado
   nuevo: false // Quitar etiqueta de nuevo por ahora

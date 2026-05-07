@@ -131,19 +131,21 @@ export default function ProductCard({ product, featured }: ProductCardProps) {
                     {product.nombre}
                 </h3>
 
-                {/* Stars - Hidden on mobile */}
-                <div className="hidden md:flex items-center gap-1 mb-2">
-                    {Array.from({ length: 5 }).map((_, i) => (
-                        <Star
-                            key={i}
-                            size={11}
-                            fill={i < Math.floor(product.rating) ? '#FFD700' : 'none'}
-                            stroke={i < Math.floor(product.rating) ? '#FFD700' : 'rgba(255,255,255,0.2)'}
-                            strokeWidth={1.5}
-                        />
-                    ))}
-                    <span className="text-xs font-dupla-semibold" style={{ color: 'rgba(255,255,255,0.5)' }}>({product.vendidos})</span>
-                </div>
+                {/* Stars - Hidden on mobile if 0, but generally shown if > 0 */}
+                {product.rating > 0 && (
+                    <div className="hidden md:flex items-center gap-1 mb-2">
+                        {Array.from({ length: 5 }).map((_, i) => (
+                            <Star
+                                key={i}
+                                size={11}
+                                fill={i < Math.floor(product.rating) ? '#FFD700' : 'none'}
+                                stroke={i < Math.floor(product.rating) ? '#FFD700' : 'rgba(255,255,255,0.2)'}
+                                strokeWidth={1.5}
+                            />
+                        ))}
+                        <span className="text-xs font-dupla-semibold" style={{ color: 'rgba(255,255,255,0.5)' }}>({product.vendidos})</span>
+                    </div>
+                )}
 
                 {/* Price */}
                 <div className="mb-2">

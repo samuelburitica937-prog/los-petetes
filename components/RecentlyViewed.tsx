@@ -4,7 +4,7 @@ import ProductCard from './ProductCard';
 import { ALL_PRODUCTS } from '@/lib/data';
 
 export default function RecentlyViewed() {
-    const products = useRecentStore(s => s.products);
+    const products = useRecentStore(s => s.products).filter(p => ALL_PRODUCTS.some(a => a.id === p.id));
     const wishlistIds = useWishlistStore(s => s.ids);
     const favoriteProducts = ALL_PRODUCTS.filter(p => wishlistIds.includes(p.id));
 
