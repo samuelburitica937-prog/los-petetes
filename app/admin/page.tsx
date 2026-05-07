@@ -729,7 +729,7 @@ export default function AdminPage() {
                                     {[
                                         ...(user?.pedidosList || []).map(o => ({
                                             id: o.id,
-                                            user: user.nombre || 'Cliente',
+                                            user: user?.nombre || 'Cliente',
                                             total: o.total,
                                             status: o.estado.toUpperCase(),
                                             date: o.fecha
