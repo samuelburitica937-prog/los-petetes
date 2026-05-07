@@ -561,9 +561,15 @@ import { IMPORTED_PRODUCTS } from './imported_data';
 export const ALL_PRODUCTS: Product[] = [
     ...IMPORTED_PRODUCTS,
   ...SEXSHOP_CSV_PRODUCTS
-];
+].map((p, i) => ({
+  ...p,
+  minMayorista: p.minMayorista < 6 ? 6 : p.minMayorista,
+  stock: p.stock === 100 ? (12 + (i % 89)) : p.stock,
+  destacado: (i % 30 === 0), // Aproximadamente 1 de cada 30 productos es destacado
+  nuevo: false // Quitar etiqueta de nuevo por ahora
+}));
 
-export const FEATURED_PRODUCTS = ALL_PRODUCTS.filter(p => p.destacado).slice(0, 12);
+export const FEATURED_PRODUCTS = ALL_PRODUCTS.filter(p => p.destacado).slice(0, 19);
 
 export const getProductsByCategory = (cat: Category | 'all') =>
   cat === 'all' ? ALL_PRODUCTS : ALL_PRODUCTS.filter(p => p.categoria === cat);

@@ -93,7 +93,7 @@ export default function CategoryPage() {
                                     </div>
                                     <div className="px-6 py-3 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md">
                                         <p className="text-[10px] font-black text-white/30 uppercase tracking-widest mb-1">Desde</p>
-                                        <p className="text-2xl font-black" style={{ color: catInfo.color }}>{formatPrice(Math.min(...products.map(p => p.precioMayorista), 0))}</p>
+                                        <p className="text-2xl font-black" style={{ color: catInfo.color }}>{formatPrice(products.length > 0 ? Math.min(...products.map(p => p.precioMayorista)) : 0)}</p>
                                     </div>
                                     
                                     <button 
@@ -125,20 +125,31 @@ export default function CategoryPage() {
                                 {/* Botones de Reactivación */}
                                 {isAuthenticated && user && (
                                     <div className="flex flex-wrap gap-4 mt-6">
-                                        <button 
-                                            onClick={() => router.push('/pedidos')}
-                                            className="px-6 py-3 rounded-2xl bg-[#89b4f8]/20 text-[#89b4f8] border border-[#89b4f8]/50 font-black uppercase tracking-widest hover:bg-[#89b4f8]/30 transition-colors flex items-center gap-2"
-                                        >
-                                            🔄 Reactivar Compra
-                                        </button>
-                                        <a 
-                                            href={`https://wa.me/576068840248?text=${encodeURIComponent(`Hola, quiero reactivar mi compra del catálogo de ${catInfo.label}. Mi empresa es ${user.nombre}.`)}`}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="px-6 py-3 rounded-2xl bg-[#25D366]/20 text-[#25D366] border border-[#25D366]/50 font-black uppercase tracking-widest hover:bg-[#25D366]/30 transition-colors flex items-center gap-2"
-                                        >
-                                            💬 Reactivar vía Asesor
-                                        </a>
+                                        {user.pedidosList && user.pedidosList.length > 0 ? (
+                                            <>
+                                                <button 
+                                                    onClick={() => router.push('/pedidos')}
+                                                    className="px-6 py-3 rounded-2xl bg-[#89b4f8]/20 text-[#89b4f8] border border-[#89b4f8]/50 font-black uppercase tracking-widest hover:bg-[#89b4f8]/30 transition-colors flex items-center gap-2"
+                                                >
+                                                    🔄 Reactivar Compra
+                                                </button>
+                                                <a 
+                                                    href={`https://wa.me/573145090821?text=${encodeURIComponent(`Hola, quiero reactivar mi compra (Orden: ${user.pedidosList[0]?.id || 'Pendiente'}) del catálogo de ${catInfo.label}. Mi empresa es ${user.nombre}.`)}`}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="px-6 py-3 rounded-2xl bg-[#25D366]/20 text-[#25D366] border border-[#25D366]/50 font-black uppercase tracking-widest hover:bg-[#25D366]/30 transition-colors flex items-center gap-2"
+                                                >
+                                                    💬 Reactivar vía Asesor
+                                                </a>
+                                            </>
+                                        ) : (
+                                            <button 
+                                                disabled
+                                                className="px-6 py-3 rounded-2xl bg-white/5 text-white/30 border border-white/10 font-black uppercase tracking-widest flex items-center gap-2 cursor-not-allowed"
+                                            >
+                                                💬 No tienes compras pendientes
+                                            </button>
+                                        )}
                                     </div>
                                 )}
                             </div>

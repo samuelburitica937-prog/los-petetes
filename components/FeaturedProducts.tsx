@@ -38,7 +38,7 @@ export default function FeaturedProducts() {
                 <h2 className="text-4xl md:text-6xl font-dupla-black text-gold uppercase tracking-tighter mb-4">Artículos Destacados</h2>
                 <div className="h-1.5 w-32 bg-red mx-auto mb-6 rounded-full" />
                 <p className="text-white/60 font-dupla-semibold text-lg max-w-2xl mx-auto">
-                    La mejor selección de nuestras <span className="text-gold">15 líneas mayoristas</span>. Precios imbatibles para tu negocio.
+                    La mejor selección de nuestras <span className="text-gold">19 líneas mayoristas</span>. Precios imbatibles para tu negocio.
                 </p>
             </div>
 
