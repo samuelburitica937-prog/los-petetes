@@ -7,6 +7,11 @@ import { ALL_PRODUCTS, Product, Category } from './data';
  */
 
 export async function getProductsByCategory(category: Category | 'all'): Promise<Product[]> {
+  // FORCE OVERRIDE: Usar datos estáticos del CSV para sexshop para evitar placeholders de Supabase
+  if (category === 'sexshop') {
+    return ALL_PRODUCTS.filter(p => p.categoria === 'sexshop');
+  }
+
   try {
     let query = supabase.from('products').select('*');
     if (category !== 'all') {
@@ -61,7 +66,8 @@ export async function getFeaturedProducts(): Promise<Product[]> {
     if (error) throw error;
     
     if (data && data.length > 0) {
-      return data.map(p => ({
+      // Filtrar los viejos placeholders de sexshop de la base de datos
+      const cleanProducts = data.map(p => ({
         id: p.id,
         nombre: p.nombre,
         precio: parseFloat(p.precio),
@@ -82,7 +88,12 @@ export async function getFeaturedProducts(): Promise<Product[]> {
         vendidos: p.vendidos,
         tags: [p.categoria],
         destacado: p.destacado
-      }));
+      })).filter(p => p.categoria !== 'sexshop'); // Excluir todos los sexshop de DB
+
+      // Inyectar los del CSV directamente
+      const sexshopFeatured = ALL_PRODUCTS.filter(p => p.categoria === 'sexshop' && p.destacado);
+      
+      return [...cleanProducts, ...sexshopFeatured].slice(0, 12);
     }
   } catch (err) {
      console.warn("Supabase Featured Fetch Failed, falling back to static data", err);
