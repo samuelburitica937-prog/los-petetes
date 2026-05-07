@@ -1,6 +1,5 @@
 import { SEXSHOP_CSV_PRODUCTS } from './sexshop_data';
-export type Category =
-  | 'ferreteria'
+export type Category = 'aseo' | 'cacharros' | 'vapers' | 'venenos' | 'ferreteria'
   | 'belleza'
   | 'salud'
   | 'hogar'
@@ -67,6 +66,10 @@ export const getProductQtyConfig = (product: Product) => {
 };
 
 export const CATEGORIES: Record<Category, { label: string; icon: string; color: string; desc: string }> = {
+  aseo: { label: 'Aseo', icon: '🧹', color: '#00BCD4', desc: 'Productos de aseo' },
+  cacharros: { label: 'Cacharros', icon: '📦', color: '#795548', desc: 'Cacharros' },
+  vapers: { label: 'Vapers', icon: '💨', color: '#9C27B0', desc: 'Vapers' },
+  venenos: { label: 'Venenos', icon: '☠️', color: '#F44336', desc: 'Venenos' },
   ferreteria: { label: 'Ferretería', icon: '🔧', color: '#FF6B35', desc: 'Herramientas, materiales y más' },
   belleza: { label: 'Belleza', icon: '💄', color: '#FF69B4', desc: 'Cosméticos, cuidado personal' },
   salud: { label: 'Salud', icon: '💊', color: '#00C864', desc: 'Vitaminas, medicamentos y bienestar' },
@@ -85,7 +88,7 @@ export const CATEGORIES: Record<Category, { label: string; icon: string; color: 
 };
 
 const placeholderImages: Record<Category, string[]> = {
-  ferreteria: [
+  aseo: [''], cacharros: [''], vapers: [''], venenos: [''], ferreteria: [
     'https://images.unsplash.com/photo-1572981779307-38b8cabb2407?w=400&q=80',
     'https://images.unsplash.com/photo-1540103359325-3444460718d0?w=400&q=80',
     'https://images.unsplash.com/photo-1581244277943-fe4a9c777189?w=400&q=80',
@@ -252,6 +255,10 @@ const placeholderImages: Record<Category, string[]> = {
 };
 
 const productTemplates: Record<Category, { nombres: string[]; basePrice: number }> = {
+  aseo: { nombres: ['Aseo'], basePrice: 1000 },
+  cacharros: { nombres: ['Cacharros'], basePrice: 1000 },
+  vapers: { nombres: ['Vapers'], basePrice: 1000 },
+  venenos: { nombres: ['Venenos'], basePrice: 1000 },
   ferreteria: {
     nombres: [
       'Taladro Percutor DeWalt 20V', 'Sierra Circular Bosch GKS', 'Martillo Carpintero Stanley', 
@@ -541,7 +548,10 @@ function generateProducts(): Product[] {
   return products;
 }
 
+import { IMPORTED_PRODUCTS } from './imported_data';
+
 export const ALL_PRODUCTS: Product[] = [
+    ...IMPORTED_PRODUCTS,
   ...generateProducts().filter(p => p.categoria !== 'sexshop'),
   ...SEXSHOP_CSV_PRODUCTS
 ];
