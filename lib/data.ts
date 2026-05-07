@@ -62,7 +62,7 @@ export interface Product {
 export const getProductQtyConfig = (product: Product) => {
   return {
     min: 6,
-    step: 6
+    step: 1
   };
 };
 
@@ -551,10 +551,15 @@ function generateProducts(): Product[] {
 
 import { IMPORTED_PRODUCTS } from './imported_data';
 
-export const ALL_PRODUCTS: Product[] = [
+const rawProducts: Product[] = [
     ...IMPORTED_PRODUCTS,
   ...SEXSHOP_CSV_PRODUCTS
-].map((p, i) => ({
+];
+
+// Filtrar duplicados por ID (manteniendo el primero que aparezca)
+const uniqueProducts = Array.from(new Map(rawProducts.map(p => [p.id, p])).values());
+
+export const ALL_PRODUCTS: Product[] = uniqueProducts.map((p, i) => ({
   ...p,
   minMayorista: 6,
   stock: p.stock === 100 ? (12 + (i % 89)) : p.stock,
