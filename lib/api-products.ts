@@ -17,7 +17,6 @@ export async function getProductsByCategory(category: Category | 'all'): Promise
     if (error) throw error;
     
     if (data && data.length > 0) {
-      // Map back to our frontend interface (camelCase vs snake_case)
       return data.map(p => ({
         id: p.id,
         nombre: p.nombre,
@@ -25,7 +24,14 @@ export async function getProductsByCategory(category: Category | 'all'): Promise
         precioMayorista: parseFloat(p.precio_mayorista),
         stock: p.stock,
         categoria: p.categoria as Category,
-        imagenes: p.imagenes || [],
+        imagenes: (p.imagenes || []).map((img: string) => {
+          if (img.includes('supabase.co/storage') && img.includes('/sexshop/')) {
+            const fileName = img.split('/').pop();
+            return `/images/catalogos/sexshop/${fileName}`;
+          }
+          if (img.startsWith('http') || img.startsWith('/')) return img;
+          return `/images/catalogos/sexshop/${img}`;
+        }),
         descripcion: p.descripcion,
         minMayorista: p.min_mayorista,
         rating: p.rating,
@@ -62,7 +68,14 @@ export async function getFeaturedProducts(): Promise<Product[]> {
         precioMayorista: parseFloat(p.precio_mayorista),
         stock: p.stock,
         categoria: p.categoria as Category,
-        imagenes: p.imagenes || [],
+        imagenes: (p.imagenes || []).map((img: string) => {
+          if (img.includes('supabase.co/storage') && img.includes('/sexshop/')) {
+            const fileName = img.split('/').pop();
+            return `/images/catalogos/sexshop/${fileName}`;
+          }
+          if (img.startsWith('http') || img.startsWith('/')) return img;
+          return `/images/catalogos/sexshop/${img}`;
+        }),
         descripcion: p.descripcion,
         minMayorista: p.min_mayorista,
         rating: p.rating,
