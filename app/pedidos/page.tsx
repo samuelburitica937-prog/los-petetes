@@ -180,8 +180,7 @@ export default function OrdersPage() {
                                             </p>
                                         </div>
                                         <div className="text-right">
-                                            <p className="text-[7px] md:text-[9px] font-bold text-[#89b4f8] uppercase tracking-widest">Descuento</p>
-                                            <p className="font-black text-[10px] md:text-sm" style={{ color: levelInfo.color }}>{levelInfo.descuento}</p>
+                                            <p className="font-black text-[10px] md:text-sm" style={{ color: levelInfo.color }}>{Math.round(levelInfo.descuento * 100)}%</p>
                                         </div>
                                     </div>
 

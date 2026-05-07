@@ -143,8 +143,8 @@ export default function Footer() {
                         <div>
                             <h3 className="font-black text-base mb-4" style={{ color: '#FFD700' }}>Pagos Seguros</h3>
                             <div className="flex flex-wrap gap-2 mb-4">
-                                {['Nequi', 'Bancolombia', 'PayPal', 'Payoneer'].map(p => (
-                                    <span key={p} className="text-[10px] font-bold px-2 py-1 rounded border border-white/10 bg-white/5 text-white/70">
+                                {['Wompi', 'Nequi', 'Bancolombia', 'Daviplata', 'PSE', 'Visa', 'Mastercard', 'Efecty', 'PayPal'].map(p => (
+                                    <span key={p} className="text-[10px] font-bold px-2 py-1 rounded border border-white/10 bg-white/5 text-white/70 uppercase">
                                         {p}
                                     </span>
                                 ))}

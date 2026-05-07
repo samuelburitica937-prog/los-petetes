@@ -49,7 +49,12 @@ export default function LoginPage() {
                             />
                         </div>
                         <div>
-                            <label className="block text-sm font-bold text-gold uppercase mb-2">Contraseña</label>
+                            <div className="flex justify-between items-center mb-2">
+                                <label className="block text-sm font-bold text-gold uppercase">Contraseña</label>
+                                <a href="mailto:contacto@lospetetes.com?subject=Recuperar%20Contraseña" className="text-[10px] text-white/50 hover:text-gold transition-colors font-bold uppercase tracking-wider">
+                                    ¿Olvidaste tu clave?
+                                </a>
+                            </div>
                             <input 
                                 type="password" 
                                 required 

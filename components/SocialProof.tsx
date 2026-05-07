@@ -1,22 +1,26 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { ALL_PRODUCTS } from '@/lib/data';
 
-const MESSAGES = [
-    { text: 'Una ferretería en Pereira acaba de comprar 50 unidades de', item: 'Martillo De Goma' },
-    { text: 'Distribuidora El Sol añadió a su carrito', item: 'Kit De Belleza Pro' },
-    { text: 'Alguien en Manizales aprovechó la oferta en', item: 'Reloj Inteligente Ultra' },
-    { text: 'Últimas 12 cajas disponibles de', item: 'Audífonos Inalámbricos' },
+const ACTIONS = [
+    'Una ferretería en Pereira acaba de comprar 50 unidades de',
+    'Distribuidora El Sol añadió a su carrito',
+    'Alguien en Manizales aprovechó la oferta en',
+    'Últimas 12 cajas disponibles de',
+    'Un cliente en Armenia está viendo'
 ];
 
 export default function SocialProof() {
-    const [currentIndex, setCurrentIndex] = useState(0);
+    const [currentMsg, setCurrentMsg] = useState({ text: '', item: '' });
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
-        // Random intervals between 5s and 15s
         const showPopup = () => {
-            setCurrentIndex(prev => (prev + 1) % MESSAGES.length);
+            const randomAction = ACTIONS[Math.floor(Math.random() * ACTIONS.length)];
+            const randomProduct = ALL_PRODUCTS[Math.floor(Math.random() * ALL_PRODUCTS.length)].nombre;
+            
+            setCurrentMsg({ text: randomAction, item: randomProduct });
             setIsVisible(true);
             
             setTimeout(() => {
@@ -30,9 +34,7 @@ export default function SocialProof() {
         return () => clearTimeout(timeout);
     }, []);
 
-    if (!isVisible) return null;
-
-    const msg = MESSAGES[currentIndex];
+    if (!isVisible || !currentMsg.text) return null;
 
     return (
         <div className="fixed bottom-6 left-6 z-50 animate-fade-in pointer-events-none">
@@ -42,10 +44,10 @@ export default function SocialProof() {
                 </div>
                 <div>
                     <p className="text-[10px] text-white/60 uppercase font-bold tracking-tight leading-tight mb-1">
-                        {msg.text}
+                        {currentMsg.text}
                     </p>
-                    <p className="text-xs text-gold font-black">
-                        {msg.item}
+                    <p className="text-xs text-gold font-black line-clamp-1">
+                        {currentMsg.item}
                     </p>
                 </div>
             </div>

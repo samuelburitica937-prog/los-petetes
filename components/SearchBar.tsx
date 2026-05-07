@@ -14,7 +14,7 @@ const fuse = new Fuse(ALL_PRODUCTS, {
     ignoreLocation: true, // Don't favor the start, find the word anywhere
     includeScore: true,
     useExtendedSearch: true,
-    minMatchCharLength: 3, // For short words like 'perro', require more consistency
+    minMatchCharLength: 1, // For short words like 'perro', require more consistency
 });
 
 export default function SearchBar() {
@@ -27,7 +27,7 @@ export default function SearchBar() {
 
     useEffect(() => {
         const trQuery = query.trim().toLowerCase();
-        if (trQuery.length < 2) { 
+        if (trQuery.length < 1) { 
             setResults([]); 
             setMatchedCats([]);
             setOpen(false); 
@@ -81,7 +81,7 @@ export default function SearchBar() {
                         fontSize: '0.95rem',
                         boxShadow: open ? '0 10px 40px rgba(0,0,0,0.5)' : 'none'
                     }}
-                    onFocus={() => setOpen(query.trim().length >= 2)}
+                    onFocus={() => setOpen(query.trim().length >= 1)}
                 />
                 <div className="absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none" style={{ color: '#FFD700' }}>
                     <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>

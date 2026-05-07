@@ -285,7 +285,7 @@ export default function CartSidebar() {
                                 return (
                                     <div key={tierInfo.nivel} className="text-xs font-bold text-white/50 bg-white/5 px-3 py-1.5 rounded border border-white/10 flex justify-between items-center">
                                         <span>Si fueras <span style={{ color: tierInfo.color }}>{tierInfo.nivel}</span></span>
-                                        <span>Pagarías <span className="text-white">{formatPrice(totalWithTierDiscount)}</span></span>
+                                        <span>Pagarías <span className="text-white">${Math.round(totalWithTierDiscount).toLocaleString('es-CO')}</span></span>
                                     </div>
                                 );
                             })}
@@ -297,9 +297,23 @@ export default function CartSidebar() {
                             <select className="w-full bg-white/5 border border-white/10 rounded-xl px-3 py-2.5 text-white focus:outline-none focus:border-gold appearance-none font-bold">
                                 <option className="bg-navy">📦 Envío Nacional (Transportadora)</option>
                                 <option className="bg-navy">🏪 Recoger en Sede Manizales (Principal)</option>
-                                <option className="bg-navy">🏪 Recoger en Sede Pereira (En 45 min)</option>
+                                <option className="bg-navy">🏪 Recoger en Sede Pereira</option>
                                 <option className="bg-navy">🏪 Recoger en Sede Armenia</option>
                             </select>
+                        </div>
+
+                        {/* Gift Card Input */}
+                        <div className="mb-4 text-xs">
+                            <div className="flex gap-2">
+                                <input 
+                                    type="text" 
+                                    placeholder="🎁 Código de Tarjeta de Regalo (Ej: LP-100K)" 
+                                    className="flex-1 bg-white/5 border border-white/10 rounded-xl px-3 py-2 text-white focus:outline-none focus:border-gold"
+                                />
+                                <button className="bg-white/10 hover:bg-gold hover:text-navy px-4 py-2 rounded-xl font-bold transition-colors">
+                                    Aplicar
+                                </button>
+                            </div>
                         </div>
 
                         {/* Petete Code Input */}
@@ -433,35 +447,7 @@ export default function CartSidebar() {
                             <span className="flex items-center gap-1"><svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" /></svg> 100% SEGURO</span>
                         </div>
 
-                        <button
-                            onClick={() => {
-                                toast.promise(
-                                    new Promise((resolve) => {
-                                        setTimeout(() => {
-                                            generateQuotePDF(items, finalTotal, user);
-                                            resolve(true);
-                                        }, 1000);
-                                    }),
-                                    {
-                                        loading: 'Generando cotización...',
-                                        success: '¡Cotización descargada!',
-                                        error: 'Error al generar PDF',
-                                    }
-                                );
-                            }}
-                            className="w-full flex items-center justify-center gap-2 py-3 mb-3 rounded-xl font-black text-sm transition-all hover:bg-white/10 border-2 border-dashed border-white/20 cursor-pointer"
-                            style={{ color: '#FFD700' }}
-                        >
-                            📄 DESCARGAR COTIZACIÓN PDF
-                        </button>
-
-                        <button
-                            onClick={clearCart}
-                            className="w-full py-2 text-xs font-black rounded-lg cursor-pointer transition-all hover:text-red-500 uppercase tracking-tighter"
-                            style={{ color: 'rgba(255,255,255,0.2)', background: 'transparent' }}
-                        >
-                            🗑 VACIAR TODO EL CARRITO
-                        </button>
+                        {/* Botones Redundantes Eliminados por solicitud (Cotización y Vaciar Carrito) */}
                     </div>
                 )}
             </aside>

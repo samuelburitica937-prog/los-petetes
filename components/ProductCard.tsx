@@ -158,7 +158,7 @@ export default function ProductCard({ product, featured }: ProductCardProps) {
                                     <div className="flex items-center gap-2">
                                         <div className="text-xs md:text-md price-tag font-dupla-black text-gold">{formatPrice(discountedPrice)}</div>
                                         <span className="text-[10px] px-1.5 py-0.5 rounded bg-gold/20 text-gold font-black">
-                                            -{loyalty.descuento * 100}% {loyalty.nivel}
+                                            -{Math.round(loyalty.descuento * 100)}% {loyalty.nivel}
                                         </span>
                                     </div>
                                     <div className="hidden md:block price-unit font-dupla-semibold">
@@ -221,10 +221,10 @@ export default function ProductCard({ product, featured }: ProductCardProps) {
                                     <div className="flex flex-col gap-0.5 mt-1 mb-1">
                                         {[2000000, 5000000, 10000000, 20000000].map(threshold => {
                                             const tierInfo = getLevelInfo(threshold);
-                                            const tierSavings = product.precioMayorista - (product.precioMayorista * (1 - tierInfo.descuento));
+                                            const tierPrice = product.precioMayorista * (1 - tierInfo.descuento);
                                             return (
                                                 <div key={tierInfo.nivel} className="text-[8px] md:text-[9px] font-bold text-white/50 bg-white/5 px-2 py-0.5 rounded border border-white/10 leading-tight">
-                                                    Si fueras <span style={{ color: tierInfo.color }}>{tierInfo.nivel}</span> te ahorrarías <span className="text-white">{formatPrice(tierSavings)}</span>
+                                                    Si fueras <span style={{ color: tierInfo.color }}>{tierInfo.nivel}</span> pagarías <span className="text-white">{formatPrice(tierPrice)}</span>
                                                 </div>
                                             );
                                         })}
@@ -276,7 +276,17 @@ export default function ProductCard({ product, featured }: ProductCardProps) {
                 {/* eBay style liquidation / Negociar Lote */}
                 {product.stock > 30 && (
                     <button 
-                        onClick={(e) => { e.stopPropagation(); toast.success('Oferta de liquidación enviada al administrador.'); }}
+                        onClick={(e) => { 
+                            e.stopPropagation(); 
+                            addOrder({
+                                id: `#N${Math.floor(Math.random() * 10000)}`,
+                                fecha: new Date().toISOString().split('T')[0],
+                                total: product.precioMayorista * product.stock,
+                                estado: 'NEGOCIANDO LOTE',
+                                items: [{ productoId: product.id, cantidad: product.stock }]
+                            });
+                            toast.success(`Oferta de liquidación enviada. El administrador te contactará para negociar ${product.stock} uds.`); 
+                        }}
                         className="w-full mt-2 py-1.5 rounded-lg text-[9px] md:text-[10px] font-black uppercase tracking-widest transition-all cursor-pointer border border-blue-500/50 bg-blue-500/10 text-blue-400 hover:bg-blue-500 hover:text-white"
                     >
                         🤝 Negociar Lote Completo ({product.stock} uds)

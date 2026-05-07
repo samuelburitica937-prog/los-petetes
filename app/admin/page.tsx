@@ -531,10 +531,7 @@ export default function AdminPage() {
                                     </thead>
                                     <tbody>
                                         {[
-                                            ...(user ? [{ nombre: user.nombre, email: user.email, rol: user.esMayorista ? 'MAYORISTA' : 'MINORISTA', fecha: 'Hoy (Reciente)' }] : []),
-                                            { nombre: 'Ferretería La 14', email: 'compras@la14.com', rol: 'MAYORISTA', fecha: 'Hace 2 días' },
-                                            { nombre: 'Cacharrería El Hueco', email: 'contacto@elhueco.co', rol: 'MAYORISTA', fecha: 'Hace 5 días' },
-                                            { nombre: 'Andrés López', email: 'andresl@gmail.com', rol: 'MINORISTA', fecha: 'Hace 1 semana' }
+                                            ...(user ? [{ nombre: user.nombre, email: user.email, rol: user.esMayorista ? 'MAYORISTA' : 'MINORISTA', fecha: 'Hoy (Reciente)' }] : [])
                                         ].map((client, idx) => (
                                             <tr key={idx} className="border-b border-white/5 hover:bg-white/5 transition-colors">
                                                 <td className="px-6 py-4 font-bold text-white">{client.nombre}</td>
@@ -769,9 +766,9 @@ export default function AdminPage() {
                             <h3 className="font-black text-lg mb-6 text-gold uppercase tracking-tighter">Sedes Los Petetes (Eje Cafetero)</h3>
                             <div className="space-y-4">
                                 {[
-                                    { city: 'Manizales (Principal)', address: 'Calle 22 # 23-45', stock: '95%', manager: 'Andrés G.', isDefault: true },
-                                    { city: 'Pereira', address: 'Av. 30 de Agosto', stock: '80%', manager: 'Sandra M.', isDefault: false },
-                                    { city: 'Armenia', address: 'Carrera 14 # 10-20', stock: '88%', manager: 'Carlos P.', isDefault: false },
+                                    { city: 'Manizales (Principal)', address: 'Calle 22 # 23-45', stock: 28500, max: 30000, manager: 'Andrés Restrepo', isDefault: true },
+                                    { city: 'Pereira', address: 'Av. 30 de Agosto', stock: 24000, max: 30000, manager: 'Sandra M.', isDefault: false },
+                                    { city: 'Armenia', address: 'Carrera 14 # 10-20', stock: 26400, max: 30000, manager: 'Carlos P.', isDefault: false },
                                 ].map(sede => (
                                     <div key={sede.city} className="p-4 bg-white/5 rounded-2xl border border-white/10 flex justify-between items-center group hover:border-gold/40 transition-all relative overflow-hidden">
                                         {sede.isDefault && <div className="absolute top-0 left-0 w-1 h-full bg-green-500"></div>}
@@ -784,9 +781,9 @@ export default function AdminPage() {
                                             <div className="text-[10px] text-gold mt-1 uppercase font-bold">Encargado: {sede.manager}</div>
                                         </div>
                                         <div className="text-right">
-                                            <div className="text-xs font-black text-green-500">{sede.stock} Stock</div>
+                                            <div className="text-xs font-black text-green-500">{sede.stock.toLocaleString()} uds</div>
                                             <div className="w-16 h-1 bg-white/10 mt-1 rounded-full overflow-hidden">
-                                                <div className="h-full bg-green-500" style={{ width: sede.stock }} />
+                                                <div className="h-full bg-green-500" style={{ width: `${(sede.stock / sede.max) * 100}%` }} />
                                             </div>
                                         </div>
                                     </div>
