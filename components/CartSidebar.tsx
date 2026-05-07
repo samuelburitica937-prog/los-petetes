@@ -271,7 +271,11 @@ export default function CartSidebar() {
                         </div>
                         
                         {/* Gamification del Total */}
-                        <div className="flex flex-col gap-1 mb-6">
+                        <div className="flex flex-col gap-1 mb-4">
+                            <div className="text-[10px] font-black text-pink-500 bg-pink-500/10 px-3 py-1.5 rounded border border-pink-500/20 flex justify-between items-center mb-1">
+                                <span>🪙 Petete Coins Acumuladas</span>
+                                <span className="text-xs">+{Math.floor(finalTotal / 50000)} Puntos</span>
+                            </div>
                             {[2000000, 5000000, 10000000, 20000000].map(threshold => {
                                 const tierInfo = getLevelInfo(threshold);
                                 const currentLoyalty = user ? getLevelInfo(user.totalCompras || 1700000).descuento : 0;
@@ -285,6 +289,17 @@ export default function CartSidebar() {
                                     </div>
                                 );
                             })}
+                        </div>
+
+                        {/* Delivery Option */}
+                        <div className="mb-6 text-xs">
+                            <div className="font-bold text-white/50 mb-2 uppercase tracking-widest text-[9px]">📍 Método de Entrega</div>
+                            <select className="w-full bg-white/5 border border-white/10 rounded-xl px-3 py-2.5 text-white focus:outline-none focus:border-gold appearance-none font-bold">
+                                <option className="bg-navy">📦 Envío Nacional (Transportadora)</option>
+                                <option className="bg-navy">🏪 Recoger en Sede Manizales (Principal)</option>
+                                <option className="bg-navy">🏪 Recoger en Sede Pereira (En 45 min)</option>
+                                <option className="bg-navy">🏪 Recoger en Sede Armenia</option>
+                            </select>
                         </div>
 
                         {/* Petete Code Input */}

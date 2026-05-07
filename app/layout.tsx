@@ -5,6 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CartSidebar from '@/components/CartSidebar';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import SocialProof from '@/components/SocialProof';
 import AuthProvider from '@/components/AuthProvider';
 import { Toaster } from 'react-hot-toast';
 
@@ -74,6 +75,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <main>{children}</main>
           <Footer />
           <FloatingWhatsApp />
+          <SocialProof />
         </AuthProvider>
       </body>
     </html>

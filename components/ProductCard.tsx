@@ -273,6 +273,15 @@ export default function ProductCard({ product, featured }: ProductCardProps) {
                         <span className="hidden md:inline">+ Carrito</span>
                     </button>
                 </div>
+                {/* eBay style liquidation / Negociar Lote */}
+                {product.stock > 30 && (
+                    <button 
+                        onClick={(e) => { e.stopPropagation(); toast.success('Oferta de liquidación enviada al administrador.'); }}
+                        className="w-full mt-2 py-1.5 rounded-lg text-[9px] md:text-[10px] font-black uppercase tracking-widest transition-all cursor-pointer border border-blue-500/50 bg-blue-500/10 text-blue-400 hover:bg-blue-500 hover:text-white"
+                    >
+                        🤝 Negociar Lote Completo ({product.stock} uds)
+                    </button>
+                )}
             </div>
 
         </article>
