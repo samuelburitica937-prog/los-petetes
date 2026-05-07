@@ -189,7 +189,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         stock: 10,
         categoria: "sexshop",
         imagenes: [
-            "/images/catalogos/sexshop/HL-4471 (C23009).png"
+            "/images/catalogos/sexshop/HL-4471.png"
         ],
         descripcion: "Producto VIBRADOR ANTENA HUEVO - Excelente calidad.",
         minMayorista: 3,
@@ -389,7 +389,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         stock: 40,
         categoria: "sexshop",
         imagenes: [
-            "/images/catalogos/sexshop/66739/124.png"
+            "/images/catalogos/sexshop/66739_124.png"
         ],
         descripcion: "Producto ENGROSADOR DE PENE (MR BIGGER) 8ML - Excelente calidad.",
         minMayorista: 3,
@@ -509,7 +509,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         stock: 58,
         categoria: "sexshop",
         imagenes: [
-            "/images/catalogos/sexshop/*014042.png"
+            "/images/catalogos/sexshop/014042.png"
         ],
         descripcion: "Producto ACEITE SENSUAL PIÑA COLADA X100ML - Excelente calidad.",
         minMayorista: 3,
@@ -529,7 +529,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         stock: 25,
         categoria: "sexshop",
         imagenes: [
-            "/images/catalogos/sexshop/*014032.png"
+            "/images/catalogos/sexshop/014032.png"
         ],
         descripcion: "Producto ACEITE SENSUAL COCO X100ML - Excelente calidad.",
         minMayorista: 3,
@@ -549,7 +549,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         stock: 37,
         categoria: "sexshop",
         imagenes: [
-            "/images/catalogos/sexshop/*014052.png"
+            "/images/catalogos/sexshop/014052.png"
         ],
         descripcion: "Producto ACEITE SENSUAL RON CON PASAS X100ML - Excelente calidad.",
         minMayorista: 3,
@@ -569,7 +569,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         stock: 20,
         categoria: "sexshop",
         imagenes: [
-            "/images/catalogos/sexshop/*014031.png"
+            "/images/catalogos/sexshop/014031.png"
         ],
         descripcion: "Producto ACEITE SENSUAL COCO X25ML - Excelente calidad.",
         minMayorista: 3,
@@ -589,7 +589,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         stock: 10,
         categoria: "sexshop",
         imagenes: [
-            "/images/catalogos/sexshop/*014061.png"
+            "/images/catalogos/sexshop/014061.png"
         ],
         descripcion: "Producto ACEITE SENSUAL VAINILLA X25ML - Excelente calidad.",
         minMayorista: 3,
@@ -609,7 +609,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         stock: 22,
         categoria: "sexshop",
         imagenes: [
-            "/images/catalogos/sexshop/6747/132.png"
+            "/images/catalogos/sexshop/6747_132.png"
         ],
         descripcion: "Producto PUNTO G EXITANTE GOTAS 5ML - Excelente calidad.",
         minMayorista: 3,
@@ -649,7 +649,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         stock: 11,
         categoria: "sexshop",
         imagenes: [
-            "/images/catalogos/sexshop/6628/14.png"
+            "/images/catalogos/sexshop/6628_14.png"
         ],
         descripcion: "Producto MULTIORGASMO SPRAY EUFORIA 3,5 - Excelente calidad.",
         minMayorista: 3,
@@ -669,7 +669,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         stock: 42,
         categoria: "sexshop",
         imagenes: [
-            "/images/catalogos/sexshop/MUL144/C56.png"
+            "/images/catalogos/sexshop/MUL144_C56.png"
         ],
         descripcion: "Producto MULTIORGASMO ECTASY + FEROMONA 5GM - Excelente calidad.",
         minMayorista: 3,
@@ -729,7 +729,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         stock: 44,
         categoria: "sexshop",
         imagenes: [
-            "/images/catalogos/sexshop/855/169.png"
+            "/images/catalogos/sexshop/855_169.png"
         ],
         descripcion: "Producto ORGASMO DOBLE IMPACTO EUFORIA 3,5ML - Excelente calidad.",
         minMayorista: 3,
@@ -769,7 +769,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         stock: 50,
         categoria: "sexshop",
         imagenes: [
-            "/images/catalogos/sexshop/66635/25.png"
+            "/images/catalogos/sexshop/66635_25.png"
         ],
         descripcion: "Producto LUBRICANTE VAGINAL EUFORIA SPRAY 3,5ML - Excelente calidad.",
         minMayorista: 3,
@@ -789,7 +789,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         stock: 15,
         categoria: "sexshop",
         imagenes: [
-            "/images/catalogos/sexshop/48146/74.png"
+            "/images/catalogos/sexshop/48146_74.png"
         ],
         descripcion: "Producto LUBRICANTE TOKO SILICONA AROMA 20ML - Excelente calidad.",
         minMayorista: 3,
@@ -849,7 +849,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         stock: 33,
         categoria: "sexshop",
         imagenes: [
-            "/images/catalogos/sexshop/1236D/15.png"
+            "/images/catalogos/sexshop/1236D_15.png"
         ],
         descripcion: "Producto ESTRECHANTE EUFORIA SPRAY 3,5ML - Excelente calidad.",
         minMayorista: 3,
@@ -1069,7 +1069,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         stock: 42,
         categoria: "sexshop",
         imagenes: [
-            "/images/catalogos/sexshop/STUD100/28.png"
+            "/images/catalogos/sexshop/STUD100_28.png"
         ],
         descripcion: "Producto RETARDANTE SPRAY STUD 100 3,5ML - Excelente calidad.",
         minMayorista: 3,
@@ -1109,7 +1109,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         stock: 21,
         categoria: "sexshop",
         imagenes: [
-            "/images/catalogos/sexshop/35ML-/27.png"
+            "/images/catalogos/sexshop/35ML-_27.png"
         ],
         descripcion: "Producto RETARDANTE SPRAY CABALLO BLANCO 3,5ML - Excelente calidad.",
         minMayorista: 3,
@@ -1149,7 +1149,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         stock: 28,
         categoria: "sexshop",
         imagenes: [
-            "/images/catalogos/sexshop/CS38/38.png"
+            "/images/catalogos/sexshop/CS38_38.png"
         ],
         descripcion: "Producto RETARDANTE RINO DORADO CREMA BLISTER 8GM - Excelente calidad.",
         minMayorista: 3,
@@ -1169,7 +1169,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         stock: 36,
         categoria: "sexshop",
         imagenes: [
-            "/images/catalogos/sexshop/66850/166.png"
+            "/images/catalogos/sexshop/66850_166.png"
         ],
         descripcion: "Producto BRILLO LABIAL EXITANTE - Excelente calidad.",
         minMayorista: 3,
@@ -1209,7 +1209,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         stock: 58,
         categoria: "sexshop",
         imagenes: [
-            "/images/catalogos/sexshop/6707/96.png"
+            "/images/catalogos/sexshop/6707_96.png"
         ],
         descripcion: "Producto LOCION FEROMONA SPRAY DAMA X20ML - Excelente calidad.",
         minMayorista: 3,
@@ -1309,7 +1309,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         stock: 42,
         categoria: "sexshop",
         imagenes: [
-            "/images/catalogos/sexshop/6632/22.png"
+            "/images/catalogos/sexshop/6632_22.png"
         ],
         descripcion: "Producto TRIO EUFORIA 5GR (MULTIO-ANAL-RETARDANTE) - Excelente calidad.",
         minMayorista: 3,
@@ -1349,7 +1349,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         stock: 27,
         categoria: "sexshop",
         imagenes: [
-            "/images/catalogos/sexshop/66713/104.png"
+            "/images/catalogos/sexshop/66713_104.png"
         ],
         descripcion: "Producto GEL CALIENTE COMESTIBLE LUXURY 10ML - Excelente calidad.",
         minMayorista: 3,
@@ -1369,7 +1369,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         stock: 24,
         categoria: "sexshop",
         imagenes: [
-            "/images/catalogos/sexshop/6723/112.png"
+            "/images/catalogos/sexshop/6723_112.png"
         ],
         descripcion: "Producto GEL CALIENTE COMESTIBLE SHUNGA 20ML - Excelente calidad.",
         minMayorista: 3,
@@ -1429,7 +1429,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         stock: 36,
         categoria: "sexshop",
         imagenes: [
-            "/images/catalogos/sexshop/66834/134.png"
+            "/images/catalogos/sexshop/66834_134.png"
         ],
         descripcion: "Producto POTENCIADOR MERO MACHO X30ML - Excelente calidad.",
         minMayorista: 3,
@@ -1449,7 +1449,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         stock: 37,
         categoria: "sexshop",
         imagenes: [
-            "/images/catalogos/sexshop/6697/895.png"
+            "/images/catalogos/sexshop/6697_895.png"
         ],
         descripcion: "Producto VELA AROMA CON FEROMONAS PARA MASAJES X100ML - Excelente calidad.",
         minMayorista: 3,
