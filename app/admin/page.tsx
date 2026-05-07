@@ -4,10 +4,12 @@ import { ALL_PRODUCTS, CATEGORIES, Category, formatPrice, Product } from '@/lib/
 import { useRouter } from 'next/navigation';
 import { supabase } from '@/lib/supabase';
 import { toast } from 'react-hot-toast';
+import { useAuthStore } from '@/lib/auth';
 
 const ADMIN_PASSWORD = 'petetes2026';
 
 export default function AdminPage() {
+    const { user } = useAuthStore();
     const [authenticated, setAuthenticated] = useState(false);
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
@@ -114,6 +116,13 @@ export default function AdminPage() {
         setIsProductModalOpen(false);
         setNewProduct({ nombre: '', descripcion: '', precio: '', categoria: 'ferreteria', stock: '', imagen: '' });
         toast.success('Producto agregado con éxito');
+    };
+
+    const handleDeleteProduct = (id: string) => {
+        if (window.confirm('¿Realmente deseas eliminar este producto? Esta acción no se puede deshacer.')) {
+            setProducts(products.filter(p => p.id !== id));
+            toast.success('Producto eliminado con éxito');
+        }
     };
 
     const handleScan = (e: React.FormEvent) => {
@@ -242,19 +251,60 @@ export default function AdminPage() {
                 {/* Dashboard */}
                 {activeTab === 'dashboard' && (
                     <div className="animate-fade-in space-y-8">
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
+                        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-4">
                             {[
                                 { label: 'Total Productos', value: stats.totalProducts.toLocaleString(), icon: '📦', color: '#FFD700' },
                                 { label: 'Stock Bajo (<10)', value: stats.lowStock, icon: '⚠️', color: '#FFA000' },
                                 { label: 'Valor Inventario', value: formatPrice(stats.totalValue), icon: '💰', color: '#00C864' },
-                                { label: 'Categorías', value: stats.categories, icon: '🗂️', color: '#FF69B4' },
+                                { label: 'Ingresos Petete', value: formatPrice(1250000), icon: '🔑', color: '#FF1493' },
+                                { label: 'Categorías', value: stats.categories, icon: '🗂️', color: '#00C864' },
                             ].map(stat => (
                                 <div key={stat.label} className="card p-5 group hover:border-gold/50 transition-all">
                                     <div className="text-3xl mb-2 group-hover:scale-110 transition-transform">{stat.icon}</div>
-                                    <div className="font-black text-2xl" style={{ color: stat.color }}>{stat.value}</div>
-                                    <div className="text-sm font-black uppercase tracking-tighter opacity-40 group-hover:opacity-100 transition-opacity">{stat.label}</div>
+                                    <div className="font-black text-xl" style={{ color: stat.color }}>{stat.value}</div>
+                                    <div className="text-[9px] font-black uppercase tracking-tighter opacity-40 group-hover:opacity-100 transition-opacity">{stat.label}</div>
                                 </div>
                             ))}
+                        </div>
+
+                        {/* DESCARGA DE PAGOS */}
+                        <div className="card p-6 border-2 border-[#00C864]/20 bg-[#00C864]/5">
+                            <div className="flex items-center justify-between mb-6">
+                                <div>
+                                    <h3 className="font-black text-xl text-[#00C864] uppercase tracking-widest flex items-center gap-2">
+                                        💸 Bóveda de Ingresos (Disponible)
+                                    </h3>
+                                    <p className="text-xs text-white/50">Fondos libres de comisiones listos para ser transferidos a tus cuentas.</p>
+                                </div>
+                                <div className="text-right">
+                                    <p className="text-[10px] text-white/40 font-black uppercase">Saldo Actual</p>
+                                    <p className="text-3xl font-black text-[#00C864]">{formatPrice(1250000)}</p>
+                                </div>
+                            </div>
+
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <button 
+                                    onClick={() => window.open('https://www.bancolombia.com/personas', '_blank')}
+                                    className="flex items-center justify-center gap-2 py-4 rounded-xl font-black text-xs transition-all hover:scale-[1.02] cursor-pointer"
+                                    style={{ background: '#FFD700', color: '#000' }}
+                                >
+                                    🏦 DESCARGAR A BANCOLOMBIA
+                                </button>
+                                <button 
+                                    onClick={() => window.open('https://www.nequi.com.co/', '_blank')}
+                                    className="flex items-center justify-center gap-2 py-4 rounded-xl font-black text-xs transition-all hover:scale-[1.02] cursor-pointer"
+                                    style={{ background: '#FF1493', color: 'white' }}
+                                >
+                                    📱 DESCARGAR A NEQUI
+                                </button>
+                                <button 
+                                    onClick={() => window.open('https://www.payoneer.com/', '_blank')}
+                                    className="flex items-center justify-center gap-2 py-4 rounded-xl font-black text-xs transition-all hover:scale-[1.02] cursor-pointer"
+                                    style={{ background: '#FF4500', color: 'white' }}
+                                >
+                                    🟠 DESCARGAR A PAYONEER
+                                </button>
+                            </div>
                         </div>
 
                         {/* CORPORATE SCHEMA VISUALIZATION */}
@@ -424,6 +474,83 @@ export default function AdminPage() {
                                 </div>
                             </div>
                         </div>
+                        
+                        {/* Lógica de Potenciación y Destacados */}
+                        <div className="card p-8 border-2 border-pink-500/20 bg-pink-500/5 mt-8">
+                            <h3 className="font-black text-xl mb-6 text-pink-500 uppercase tracking-widest flex items-center gap-4">
+                                ❤️ Motor de Destacados Orgánicos
+                                <span className="h-px flex-1 bg-pink-500/20" />
+                            </h3>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                                <div>
+                                    <p className="text-white/60 text-sm mb-4">
+                                        El sistema ahora detecta qué productos reciben más interacciones (Likes en favoritos) y volumen de ventas para <strong>potenciarlos automáticamente</strong> como Destacados en la tienda principal.
+                                    </p>
+                                    <div className="space-y-3">
+                                        {[
+                                            { name: 'Reloj Inteligente Ultra', likes: 145, ventas: 89, boost: '+45%' },
+                                            { name: 'Set de Brochas Pro', likes: 120, ventas: 104, boost: '+30%' },
+                                            { name: 'Audífonos Inalámbricos', likes: 98, ventas: 210, boost: '+25%' },
+                                        ].map(item => (
+                                            <div key={item.name} className="flex justify-between items-center bg-white/5 p-3 rounded-lg border border-white/10">
+                                                <span className="font-bold text-xs text-white">{item.name}</span>
+                                                <div className="flex gap-4 text-[10px] font-black uppercase text-white/50">
+                                                    <span>❤️ {item.likes}</span>
+                                                    <span>📦 {item.ventas}</span>
+                                                    <span className="text-pink-500 bg-pink-500/10 px-2 py-0.5 rounded">{item.boost} Alcance</span>
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                                <div className="p-6 bg-navy/50 rounded-2xl border border-white/5 flex flex-col items-center justify-center text-center">
+                                    <div className="text-5xl mb-4">📈</div>
+                                    <h4 className="font-black text-white uppercase text-sm mb-2">Smart Sorting Activado</h4>
+                                    <p className="text-[10px] text-white/40 uppercase tracking-widest mb-4">El algoritmo se ajusta en tiempo real</p>
+                                    <button className="text-[10px] font-black px-4 py-2 border border-pink-500/50 text-pink-500 rounded-lg hover:bg-pink-500 hover:text-white transition-all uppercase">
+                                        Ajustar Pesos del Algoritmo
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Base de Datos de Clientes (CRM) */}
+                        <div className="card p-8 border-t-4 border-blue-500 mt-8">
+                            <h3 className="font-black text-xl mb-6 text-blue-500 uppercase tracking-widest flex items-center gap-4">
+                                👥 Base de Datos de Clientes (Nuevos Registros)
+                                <span className="h-px flex-1 bg-blue-500/20" />
+                            </h3>
+                            <div className="overflow-x-auto">
+                                <table className="w-full text-sm text-left">
+                                    <thead className="bg-white/5 border-b border-white/10">
+                                        <tr>
+                                            {['Empresa / Nombre', 'Email', 'Rol', 'Fecha de Registro'].map(h => (
+                                                <th key={h} className="px-6 py-4 font-black text-blue-400 uppercase text-[10px] tracking-widest">{h}</th>
+                                            ))}
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {[
+                                            ...(user ? [{ nombre: user.nombre, email: user.email, rol: user.esMayorista ? 'MAYORISTA' : 'MINORISTA', fecha: 'Hoy (Reciente)' }] : []),
+                                            { nombre: 'Ferretería La 14', email: 'compras@la14.com', rol: 'MAYORISTA', fecha: 'Hace 2 días' },
+                                            { nombre: 'Cacharrería El Hueco', email: 'contacto@elhueco.co', rol: 'MAYORISTA', fecha: 'Hace 5 días' },
+                                            { nombre: 'Andrés López', email: 'andresl@gmail.com', rol: 'MINORISTA', fecha: 'Hace 1 semana' }
+                                        ].map((client, idx) => (
+                                            <tr key={idx} className="border-b border-white/5 hover:bg-white/5 transition-colors">
+                                                <td className="px-6 py-4 font-bold text-white">{client.nombre}</td>
+                                                <td className="px-6 py-4 text-white/60">{client.email}</td>
+                                                <td className="px-6 py-4">
+                                                    <span className={`text-[10px] font-black px-2 py-1 rounded inline-block ${client.rol === 'MAYORISTA' ? 'bg-gold/20 text-gold' : 'bg-white/10 text-white/40'}`}>
+                                                        {client.rol}
+                                                    </span>
+                                                </td>
+                                                <td className="px-6 py-4 text-white/40">{client.fecha}</td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 )}
 
@@ -550,10 +677,15 @@ export default function AdminPage() {
                                                 </td>
                                                 <td className="px-4 py-3">
                                                     <div className="flex gap-2">
-                                                        <button className="px-2 py-1 text-xs rounded font-bold cursor-pointer" style={{ background: 'rgba(255,215,0,0.15)', color: '#FFD700' }}>
+                                                        <button className="px-2 py-1 text-xs rounded font-bold cursor-pointer hover:scale-110 hover:bg-gold hover:text-navy transition-all" style={{ background: 'rgba(255,215,0,0.15)', color: '#FFD700' }} title="Editar">
                                                             ✏️
                                                         </button>
-                                                        <button className="px-2 py-1 text-xs rounded font-bold cursor-pointer" style={{ background: 'rgba(255,0,0,0.15)', color: '#FF0000' }}>
+                                                        <button 
+                                                            onClick={() => handleDeleteProduct(p.id)}
+                                                            className="px-2 py-1 text-xs rounded font-bold cursor-pointer hover:scale-110 hover:bg-red-600 hover:text-white transition-all" 
+                                                            style={{ background: 'rgba(255,0,0,0.15)', color: '#FF0000' }} 
+                                                            title="Eliminar"
+                                                        >
                                                             🗑️
                                                         </button>
                                                     </div>
@@ -595,6 +727,13 @@ export default function AdminPage() {
                                 </thead>
                                 <tbody>
                                     {[
+                                        ...(user?.pedidosList || []).map(o => ({
+                                            id: o.id,
+                                            user: user.nombre || 'Cliente',
+                                            total: o.total,
+                                            status: o.estado.toUpperCase(),
+                                            date: o.fecha
+                                        })),
                                         { id: '#8922', user: 'Distribuidora Eje', total: 1250000, status: 'PROCESANDO', date: 'Hace 5 min' },
                                         { id: '#8920', user: 'Papelería Central', total: 450000, status: 'ENVIADO', date: 'Hace 2 horas' },
                                         { id: '#8918', user: 'Ferretería Maizales', total: 3200000, status: 'ENTREGADO', date: 'Ayer' },
@@ -630,13 +769,17 @@ export default function AdminPage() {
                             <h3 className="font-black text-lg mb-6 text-gold uppercase tracking-tighter">Sedes Los Petetes (Eje Cafetero)</h3>
                             <div className="space-y-4">
                                 {[
-                                    { city: 'Manizales (Principal)', address: 'Calle 22 # 23-45', stock: '95%', manager: 'Andrés G.' },
-                                    { city: 'Pereira', address: 'Av. 30 de Agosto', stock: '80%', manager: 'Sandra M.' },
-                                    { city: 'Armenia', address: 'Carrera 14 # 10-20', stock: '88%', manager: 'Carlos P.' },
+                                    { city: 'Manizales (Principal)', address: 'Calle 22 # 23-45', stock: '95%', manager: 'Andrés G.', isDefault: true },
+                                    { city: 'Pereira', address: 'Av. 30 de Agosto', stock: '80%', manager: 'Sandra M.', isDefault: false },
+                                    { city: 'Armenia', address: 'Carrera 14 # 10-20', stock: '88%', manager: 'Carlos P.', isDefault: false },
                                 ].map(sede => (
-                                    <div key={sede.city} className="p-4 bg-white/5 rounded-2xl border border-white/10 flex justify-between items-center group hover:border-gold/40 transition-all">
+                                    <div key={sede.city} className="p-4 bg-white/5 rounded-2xl border border-white/10 flex justify-between items-center group hover:border-gold/40 transition-all relative overflow-hidden">
+                                        {sede.isDefault && <div className="absolute top-0 left-0 w-1 h-full bg-green-500"></div>}
                                         <div>
-                                            <div className="font-black text-white">{sede.city}</div>
+                                            <div className="font-black text-white flex items-center gap-2">
+                                                {sede.city}
+                                                {sede.isDefault && <span className="text-[8px] bg-green-500/20 text-green-500 px-1.5 py-0.5 rounded uppercase font-bold">Predeterminada</span>}
+                                            </div>
                                             <div className="text-xs text-white/40">{sede.address}</div>
                                             <div className="text-[10px] text-gold mt-1 uppercase font-bold">Encargado: {sede.manager}</div>
                                         </div>
@@ -702,9 +845,11 @@ export default function AdminPage() {
                             <h3 className="font-black text-lg mb-4" style={{ color: '#FFD700' }}>Descuentos Mayoristas</h3>
                             <div className="space-y-3 text-sm">
                                 {[
-                                    { qty: '+20 uds', discount: '5%' },
-                                    { qty: '+50 uds', discount: '10%' },
-                                    { qty: '+100 uds', discount: '15%' },
+                                    { qty: 'Nivel Bronce (0 - 2M)', discount: '5%' },
+                                    { qty: 'Nivel Plata (2M - 5M)', discount: '7%' },
+                                    { qty: 'Nivel Oro (5M - 10M)', discount: '8%' },
+                                    { qty: 'Nivel Platino (10M - 20M)', discount: '10%' },
+                                    { qty: 'Nivel Diamante (+20M)', discount: '15%' },
                                 ].map(d => (
                                     <div key={d.qty} className="flex justify-between items-center px-3 py-2 rounded-lg" style={{ background: 'rgba(255,215,0,0.06)' }}>
                                         <span style={{ color: 'rgba(255,255,255,0.8)' }}>{d.qty}</span>
@@ -796,16 +941,9 @@ export default function AdminPage() {
                             <div>
                                 <label className="block text-xs font-black uppercase text-white/60 mb-2">Foto del Producto</label>
                                 <div className="flex flex-col md:flex-row gap-4">
-                                    <button type="button" className="flex-1 border border-dashed border-[#00C864] bg-[#00C864]/5 text-[#00C864] rounded-xl py-3 flex items-center justify-center gap-2 font-bold hover:bg-[#00C864]/10 transition-colors">
-                                        <span className="text-lg">↑</span> Subir Foto de Archivo
+                                    <button type="button" className="w-full border-2 border-dashed border-[#00C864] bg-[#00C864]/5 text-[#00C864] rounded-xl py-4 flex items-center justify-center gap-3 font-bold hover:bg-[#00C864]/10 transition-colors">
+                                        <span className="text-2xl">↑</span> Subir Foto de Archivo
                                     </button>
-                                    <input 
-                                        type="text" 
-                                        value={newProduct.imagen}
-                                        onChange={e => setNewProduct({...newProduct, imagen: e.target.value})}
-                                        placeholder="O url de internet..." 
-                                        className="flex-1 bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#FFD700] transition-colors"
-                                    />
                                 </div>
                             </div>
 

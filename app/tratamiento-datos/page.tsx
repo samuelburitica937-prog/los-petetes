@@ -1,10 +1,10 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+
+
 
 export default function TratamientoDatosPage() {
     return (
         <main className="bg-navy min-h-screen text-white pt-32">
-            <Header />
+            
             <div className="max-w-4xl mx-auto px-6 py-12">
                 <h1 className="text-4xl font-black mb-2 text-gold uppercase tracking-tighter">Tratamiento de Datos Personales</h1>
                 <p className="text-white/60 mb-8 italic">Autorización conforme a la Ley 1581 de 2012</p>
@@ -46,7 +46,7 @@ export default function TratamientoDatosPage() {
                     </div>
                 </div>
             </div>
-            <Footer />
+            
         </main>
     );
 }

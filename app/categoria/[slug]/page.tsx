@@ -1,8 +1,8 @@
 'use client';
 import { useParams, useRouter } from 'next/navigation';
 import { Category, CATEGORIES, formatPrice, ALL_PRODUCTS } from '@/lib/data';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import { useAuthStore } from '@/lib/auth';
+
 import ProductCard from '@/components/ProductCard';
 import RecentlyViewed from '@/components/RecentlyViewed';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
@@ -16,6 +16,7 @@ export default function CategoryPage() {
     const router = useRouter();
     const slug = params.slug as Category;
     const catInfo = CATEGORIES[slug];
+    const { user, isAuthenticated } = useAuthStore();
     
     // Filtros de Segmentación
     const [minPrice, setMinPrice] = useState(0);
@@ -42,7 +43,7 @@ export default function CategoryPage() {
 
     return (
         <main className="bg-navy min-h-screen">
-            <Header />
+            
             <CartSidebar />
 
             <div style={{ paddingTop: '160px' }} className="pb-20">
@@ -68,6 +69,15 @@ export default function CategoryPage() {
                                     Segmento Especializado
                                 </span>
                                 
+                                {isAuthenticated && user && (
+                                    <div className="mb-6 p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm inline-block">
+                                        <h2 className="text-xl font-black text-white mb-1">¡Hola, {user.nombre}! 👋</h2>
+                                        <p className="text-sm text-white/70">
+                                            De parte de Los Petetes te saludamos y te damos las gracias por estar interesado en nuestros productos.
+                                        </p>
+                                    </div>
+                                )}
+
                                 <h1 className="text-6xl md:text-8xl font-black text-white uppercase tracking-tighter mb-6 leading-none drop-shadow-[0_10px_30px_rgba(0,0,0,0.5)]">
                                     {catInfo.label}
                                 </h1>
@@ -98,7 +108,7 @@ export default function CategoryPage() {
                                                     unidadMinima: p.minMayorista,
                                                     disponible: p.stock > 0,
                                                     imagenes: p.imagenes,
-                                                }))),
+                                                })), user),
                                                 {
                                                     loading: 'Generando catálogo PDF visual...',
                                                     success: '¡Catálogo descargado!',
@@ -111,6 +121,26 @@ export default function CategoryPage() {
                                         📄 Descargar PDF
                                     </button>
                                 </div>
+
+                                {/* Botones de Reactivación */}
+                                {isAuthenticated && user && (
+                                    <div className="flex flex-wrap gap-4 mt-6">
+                                        <button 
+                                            onClick={() => router.push('/pedidos')}
+                                            className="px-6 py-3 rounded-2xl bg-[#89b4f8]/20 text-[#89b4f8] border border-[#89b4f8]/50 font-black uppercase tracking-widest hover:bg-[#89b4f8]/30 transition-colors flex items-center gap-2"
+                                        >
+                                            🔄 Reactivar Compra
+                                        </button>
+                                        <a 
+                                            href={`https://wa.me/576068840248?text=${encodeURIComponent(`Hola, quiero reactivar mi compra del catálogo de ${catInfo.label}. Mi empresa es ${user.nombre}.`)}`}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="px-6 py-3 rounded-2xl bg-[#25D366]/20 text-[#25D366] border border-[#25D366]/50 font-black uppercase tracking-widest hover:bg-[#25D366]/30 transition-colors flex items-center gap-2"
+                                        >
+                                            💬 Reactivar vía Asesor
+                                        </a>
+                                    </div>
+                                )}
                             </div>
                             
                             <div 
@@ -210,7 +240,7 @@ export default function CategoryPage() {
             </div>
 
             <RecentlyViewed />
-            <Footer />
+            
             <FloatingWhatsApp />
         </main>
     );

@@ -1,10 +1,10 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+
+
 
 export default function TerminosPage() {
     return (
         <main className="bg-navy min-h-screen text-white pt-32">
-            <Header />
+            
             <div className="max-w-4xl mx-auto px-6 py-12">
                 <h1 className="text-4xl font-black mb-2 text-gold uppercase tracking-tighter">Términos y Condiciones</h1>
                 <p className="text-white/60 mb-8 italic">Última actualización: 4 de marzo de 2026</p>
@@ -55,7 +55,7 @@ export default function TerminosPage() {
                     </section>
                 </div>
             </div>
-            <Footer />
+            
         </main>
     );
 }

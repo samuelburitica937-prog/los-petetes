@@ -1,7 +1,8 @@
 'use client';
 import { useState } from 'react';
-import { Product, formatPrice, CATEGORIES, Category, getProductQtyConfig } from '@/lib/data';
+import { Product, formatPrice, CATEGORIES, Category, getProductQtyConfig, getLevelInfo } from '@/lib/data';
 import { useCartStore, useWishlistStore, useRecentStore } from '@/lib/store';
+import { useAuthStore } from '@/lib/auth';
 import toast from 'react-hot-toast';
 import { Star } from 'lucide-react';
 
@@ -20,6 +21,7 @@ export default function ProductCard({ product, featured }: ProductCardProps) {
     const { toggle, has } = useWishlistStore();
     const addRecent = useRecentStore(s => s.add);
     const inWishlist = has(product.id);
+    const { user, isAuthenticated } = useAuthStore();
 
     const handleAddCart = (e: React.MouseEvent) => {
         e.stopPropagation();
@@ -145,11 +147,96 @@ export default function ProductCard({ product, featured }: ProductCardProps) {
 
                 {/* Price */}
                 <div className="mb-2">
-                    <div className="text-xs md:text-md price-tag font-dupla-black">{formatPrice(product.precioMayorista)}</div>
-                    <div className="hidden md:block price-unit font-dupla-semibold">Min. {min} uds · Precio mayorista</div>
-                    <div className="text-[8px] md:text-xs line-through font-dupla-semibold" style={{ color: 'rgba(255,255,255,0.35)' }}>
-                        {formatPrice(product.precio)}
-                    </div>
+                    {isAuthenticated && user ? (() => {
+                        const loyalty = getLevelInfo(user.totalCompras || 1700000); // 1.7M mock para asegurar tier ALÍADO o BRONCE
+                        if (loyalty.descuento > 0) {
+                            const discountedPrice = product.precioMayorista * (1 - loyalty.descuento);
+                            const savings = product.precioMayorista - discountedPrice;
+                            
+                            return (
+                                <div className="space-y-1">
+                                    <div className="flex items-center gap-2">
+                                        <div className="text-xs md:text-md price-tag font-dupla-black text-gold">{formatPrice(discountedPrice)}</div>
+                                        <span className="text-[10px] px-1.5 py-0.5 rounded bg-gold/20 text-gold font-black">
+                                            -{loyalty.descuento * 100}% {loyalty.nivel}
+                                        </span>
+                                    </div>
+                                    <div className="hidden md:block price-unit font-dupla-semibold">
+                                        Te ahorras {formatPrice(savings)} extra
+                                    </div>
+                                    <div className="flex flex-col gap-0.5 mt-1">
+                                        {[2000000, 5000000, 10000000, 20000000].map(threshold => {
+                                            const tierInfo = getLevelInfo(threshold);
+                                            if (tierInfo.descuento <= loyalty.descuento) return null;
+                                            const tierPrice = product.precioMayorista * (1 - tierInfo.descuento);
+                                            return (
+                                                <div key={tierInfo.nivel} className="text-[8px] md:text-[9px] font-bold text-white/50 bg-white/5 px-2 py-0.5 rounded border border-white/10 leading-tight">
+                                                    Si fueras <span style={{ color: tierInfo.color }}>{tierInfo.nivel}</span> te quedaría en <span className="text-white">{formatPrice(tierPrice)}</span>
+                                                </div>
+                                            );
+                                        })}
+                                    </div>
+                                    <div className="text-[8px] md:text-xs line-through font-dupla-semibold text-white/30 flex gap-2 pt-1">
+                                        <span>P. Mayorista: {formatPrice(product.precioMayorista)}</span>
+                                        <span className="opacity-50">Sugerido: {formatPrice(product.precio)}</span>
+                                    </div>
+                                </div>
+                            );
+                        }
+                        return (
+                            <>
+                                <div className="text-xs md:text-md price-tag font-dupla-black">{formatPrice(product.precioMayorista)}</div>
+                                <div className="hidden md:block price-unit font-dupla-semibold">Min. {min} uds · Precio mayorista</div>
+                                
+                                {(() => {
+                                    // Gamification for non-logged-in / level 0
+                                    return (
+                                        <div className="flex flex-col gap-0.5 mt-1 mb-1">
+                                            {[2000000, 5000000, 10000000, 20000000].map(threshold => {
+                                                const tierInfo = getLevelInfo(threshold);
+                                                const tierPrice = product.precioMayorista * (1 - tierInfo.descuento);
+                                                return (
+                                                    <div key={tierInfo.nivel} className="text-[8px] md:text-[9px] font-bold text-white/50 bg-white/5 px-2 py-0.5 rounded border border-white/10 leading-tight">
+                                                        Si fueras <span style={{ color: tierInfo.color }}>{tierInfo.nivel}</span> te quedaría en <span className="text-white">{formatPrice(tierPrice)}</span>
+                                                    </div>
+                                                );
+                                            })}
+                                        </div>
+                                    );
+                                })()}
+                                
+                                <div className="text-[8px] md:text-xs line-through font-dupla-semibold text-white/30 pt-1">
+                                    {formatPrice(product.precio)}
+                                </div>
+                            </>
+                        );
+                    })() : (
+                        <>
+                            <div className="text-xs md:text-md price-tag font-dupla-black">{formatPrice(product.precioMayorista)}</div>
+                            <div className="hidden md:block price-unit font-dupla-semibold">Min. {min} uds · Precio mayorista</div>
+                            
+                            {(() => {
+                                // Gamification for non-logged-in / level 0
+                                return (
+                                    <div className="flex flex-col gap-0.5 mt-1 mb-1">
+                                        {[2000000, 5000000, 10000000, 20000000].map(threshold => {
+                                            const tierInfo = getLevelInfo(threshold);
+                                            const tierSavings = product.precioMayorista - (product.precioMayorista * (1 - tierInfo.descuento));
+                                            return (
+                                                <div key={tierInfo.nivel} className="text-[8px] md:text-[9px] font-bold text-white/50 bg-white/5 px-2 py-0.5 rounded border border-white/10 leading-tight">
+                                                    Si fueras <span style={{ color: tierInfo.color }}>{tierInfo.nivel}</span> te ahorrarías <span className="text-white">{formatPrice(tierSavings)}</span>
+                                                </div>
+                                            );
+                                        })}
+                                    </div>
+                                );
+                            })()}
+                            
+                            <div className="text-[8px] md:text-xs line-through font-dupla-semibold text-white/30">
+                                {formatPrice(product.precio)}
+                            </div>
+                        </>
+                    )}
                 </div>
 
                 {/* Qty + add to cart */}

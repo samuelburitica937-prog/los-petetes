@@ -1,18 +1,29 @@
 'use client';
 import { useState } from 'react';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+
+
 import { useAuthStore } from '@/lib/auth';
+import { CATEGORIES } from '@/lib/data';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
 export default function RegisterPage() {
-    const [formData, setFormData] = useState({
+    const [formData, setFormData] = useState<{
+        nombre: string;
+        email: string;
+        password: string;
+        confirmPassword: string;
+        esMayorista: boolean;
+        selectedCategories: string[];
+        selectedPaymentMethods: string[];
+    }>({
         nombre: '',
         email: '',
         password: '',
         confirmPassword: '',
-        esMayorista: true
+        esMayorista: true,
+        selectedCategories: [],
+        selectedPaymentMethods: ['Bancolombia', 'Nequi'] // Default favorites
     });
     const [loading, setLoading] = useState(false);
     const { register } = useAuthStore();
@@ -25,7 +36,7 @@ export default function RegisterPage() {
             return;
         }
         setLoading(true);
-        const success = await register(formData.email, formData.password, formData.nombre, formData.esMayorista);
+        const success = await register(formData.email, formData.password, formData.nombre, formData.esMayorista, formData.selectedCategories, formData.selectedPaymentMethods);
         if (success) {
             router.push('/');
         }
@@ -34,7 +45,7 @@ export default function RegisterPage() {
 
     return (
         <main className="min-h-screen bg-navy flex flex-col pt-32">
-            <Header />
+            
             <div className="flex-1 flex items-center justify-center p-6 my-12">
                 <div className="glass-card p-8 w-full max-w-lg">
                     <div className="text-center mb-10">
@@ -66,6 +77,70 @@ export default function RegisterPage() {
                                 onChange={e => setFormData({...formData, email: e.target.value})}
                             />
                         </div>
+
+                        <div className="md:col-span-2">
+                            <label className="block text-sm font-bold text-gold uppercase mb-2">¿Qué tipo de productos te interesan?</label>
+                            <p className="text-white/60 text-xs mb-3">Selecciona los catálogos de tu interés para recibir novedades personalizadas.</p>
+                            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 max-h-48 overflow-y-auto pr-2 custom-scrollbar">
+                                {Object.entries(CATEGORIES).map(([key, cat]) => {
+                                    const isSelected = formData.selectedCategories.includes(key);
+                                    return (
+                                        <label 
+                                            key={key} 
+                                            className={`flex items-center gap-2 p-2 rounded-lg border cursor-pointer transition-colors ${
+                                                isSelected 
+                                                ? 'bg-gold/20 border-gold/50' 
+                                                : 'bg-white/5 border-white/10 hover:bg-white/10'
+                                            }`}
+                                        >
+                                            <input 
+                                                type="checkbox" 
+                                                className="w-4 h-4 accent-gold rounded"
+                                                checked={isSelected}
+                                                onChange={(e) => {
+                                                    const newSelection = e.target.checked 
+                                                        ? [...formData.selectedCategories, key]
+                                                        : formData.selectedCategories.filter(k => k !== key);
+                                                    setFormData({...formData, selectedCategories: newSelection});
+                                                }}
+                                            />
+                                            <span className="text-xs font-medium text-white/90 truncate" title={cat.label}>
+                                                {cat.icon} {cat.label}
+                                            </span>
+                                        </label>
+                                    );
+                                })}
+                            </div>
+                        </div>
+
+                        <div className="md:col-span-2">
+                            <label className="block text-sm font-bold text-gold uppercase mb-2">Tus Métodos de Pago Preferidos</label>
+                            <p className="text-white/60 text-xs mb-3">Selecciona los métodos de pago que usas. Estos aparecerán en tus cotizaciones y catálogos en PDF.</p>
+                            <div className="flex flex-wrap gap-2">
+                                {['Bancolombia', 'Nequi', 'Wompi', 'PSE', 'PayPal', 'Payoneer'].map(method => {
+                                    const isSelected = formData.selectedPaymentMethods.includes(method);
+                                    return (
+                                        <button
+                                            key={method}
+                                            type="button"
+                                            onClick={() => {
+                                                const current = formData.selectedPaymentMethods;
+                                                const next = isSelected ? current.filter(m => m !== method) : [...current, method];
+                                                setFormData({...formData, selectedPaymentMethods: next});
+                                            }}
+                                            className={`px-4 py-2 rounded-xl text-xs font-black transition-all border ${
+                                                isSelected
+                                                ? 'bg-blue-500/20 text-blue-400 border-blue-500/50'
+                                                : 'bg-white/5 text-white/50 border-white/10 hover:bg-white/10 hover:border-white/20'
+                                            }`}
+                                        >
+                                            {isSelected ? '✓ ' : ''}{method}
+                                        </button>
+                                    );
+                                })}
+                            </div>
+                        </div>
+
                         <div>
                             <label className="block text-sm font-bold text-gold uppercase mb-2">Contraseña</label>
                             <input 
@@ -113,7 +188,7 @@ export default function RegisterPage() {
                     </div>
                 </div>
             </div>
-            <Footer />
+            
         </main>
     );
 }

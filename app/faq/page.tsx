@@ -1,5 +1,5 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+
+
 
 export default function FAQPage() {
     const faqs = [
@@ -27,7 +27,7 @@ export default function FAQPage() {
 
     return (
         <main className="min-h-screen bg-navy pt-32">
-            <Header />
+            
             <div className="max-w-4xl mx-auto px-6 py-12">
                 <div className="text-center mb-16">
                     <h1 className="text-5xl font-black text-gold uppercase tracking-tighter mb-4">Preguntas Frecuentes</h1>
@@ -55,7 +55,7 @@ export default function FAQPage() {
                     </a>
                 </div>
             </div>
-            <Footer />
+            
         </main>
     );
 }

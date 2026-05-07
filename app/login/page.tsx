@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+
+
 import { useAuthStore } from '@/lib/auth';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
@@ -25,7 +25,7 @@ export default function LoginPage() {
 
     return (
         <main className="min-h-screen bg-navy flex flex-col pt-32">
-            <Header />
+            
             <div className="flex-1 flex items-center justify-center p-6">
                 <div className="glass-card p-8 w-full max-w-md">
                     <div className="text-center mb-10">
@@ -75,7 +75,7 @@ export default function LoginPage() {
                     </div>
                 </div>
             </div>
-            <Footer />
+            
         </main>
     );
 }

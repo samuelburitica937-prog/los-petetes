@@ -1,10 +1,10 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+
+
 
 export default function BuyingGuidePage() {
     return (
         <main className="min-h-screen bg-navy pt-32">
-            <Header />
+            
             <div className="max-w-4xl mx-auto px-6 py-12">
                 <h1 className="text-5xl font-black text-gold uppercase tracking-tighter mb-8">Guía de Compra Mayorista</h1>
                 
@@ -44,7 +44,7 @@ export default function BuyingGuidePage() {
                     </section>
                 </div>
             </div>
-            <Footer />
+            
         </main>
     );
 }

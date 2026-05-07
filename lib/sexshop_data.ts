@@ -13,7 +13,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto SUCCIONADOR PENE MANUAL - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 90,
         tags: [
             "sexshop"
@@ -33,7 +33,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto SUCCIONADOR DE PENE PUMP - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 74,
         tags: [
             "sexshop"
@@ -53,7 +53,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto SUCCIONADOR PARA MUJER - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 47,
         tags: [
             "sexshop"
@@ -73,7 +73,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto LENGUA VIBRADORA RECARGABLE - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 30,
         tags: [
             "sexshop"
@@ -93,7 +93,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto BOLAS ESTIMULADORAS X3 - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 52,
         tags: [
             "sexshop"
@@ -113,7 +113,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto VIBRADOR CORTO CURVO - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 40,
         tags: [
             "sexshop"
@@ -133,7 +133,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto VIBRADOR SILICONA RECARGABLE CONTROL - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 26,
         tags: [
             "sexshop"
@@ -153,7 +153,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto VIBRADOR TRASLUCIDO - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 47,
         tags: [
             "sexshop"
@@ -173,7 +173,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto VIBRADOR ANAL ESCORPION BALA - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 0,
         tags: [
             "sexshop"
@@ -193,7 +193,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto VIBRADOR ANTENA HUEVO - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 10,
         tags: [
             "sexshop"
@@ -213,7 +213,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto VIBRADOR 2 EN 1 SUCCIONA PUNTO G - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 6,
         tags: [
             "sexshop"
@@ -233,7 +233,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto VIBRADOR HUEVO LENGUA RECARGABLE - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 11,
         tags: [
             "sexshop"
@@ -253,7 +253,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto VIBRADOR BATERIA - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 77,
         tags: [
             "sexshop"
@@ -273,7 +273,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto VIBRADOR PUNTO G - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 14,
         tags: [
             "sexshop"
@@ -293,7 +293,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto VIBRADOR DELUXE SILICONA G-SPOT - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 45,
         tags: [
             "sexshop"
@@ -313,7 +313,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto VIBRADOR CURVO TRANSPARENTE - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 13,
         tags: [
             "sexshop"
@@ -333,7 +333,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto VIBRADOR BALA METAL - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 45,
         tags: [
             "sexshop"
@@ -353,7 +353,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto FUNDA PENE VIBRADORA - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 5,
         tags: [
             "sexshop"
@@ -373,7 +373,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto CONSOLADOR SCORPION CHUPA - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 64,
         tags: [
             "sexshop"
@@ -393,7 +393,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto ENGROSADOR DE PENE (MR BIGGER) 8ML - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 85,
         tags: [
             "sexshop"
@@ -413,7 +413,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto ENGROSADOR PENE TRATAMIENTO 50ML - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 28,
         tags: [
             "sexshop"
@@ -433,7 +433,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto CREMA RETARDANTE 60ML - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 3,
         tags: [
             "sexshop"
@@ -453,7 +453,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto CREMA RETARDANTE VIGA (SEX) - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 95,
         tags: [
             "sexshop"
@@ -473,7 +473,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto CREMA RETARDANTE DRAGON VIGA XXXL 15ML - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 68,
         tags: [
             "sexshop"
@@ -493,7 +493,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto CREMA RETARDANTE 15ML VIGA XXXXL - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 31,
         tags: [
             "sexshop"
@@ -513,7 +513,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto ACEITE SENSUAL PIÑA COLADA X100ML - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 95,
         tags: [
             "sexshop"
@@ -533,7 +533,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto ACEITE SENSUAL COCO X100ML - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 38,
         tags: [
             "sexshop"
@@ -553,7 +553,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto ACEITE SENSUAL RON CON PASAS X100ML - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 3,
         tags: [
             "sexshop"
@@ -573,7 +573,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto ACEITE SENSUAL COCO X25ML - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 26,
         tags: [
             "sexshop"
@@ -593,7 +593,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto ACEITE SENSUAL VAINILLA X25ML - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 41,
         tags: [
             "sexshop"
@@ -613,7 +613,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto PUNTO G EXITANTE GOTAS 5ML - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 88,
         tags: [
             "sexshop"
@@ -633,7 +633,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto MULTIORGASMO SALVAJE GOTERO 10ML - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 72,
         tags: [
             "sexshop"
@@ -653,7 +653,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto MULTIORGASMO SPRAY EUFORIA 3,5 - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 22,
         tags: [
             "sexshop"
@@ -673,7 +673,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto MULTIORGASMO ECTASY + FEROMONA 5GM - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 29,
         tags: [
             "sexshop"
@@ -693,7 +693,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto MULTIORGASMO GOTERO 10ML - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 66,
         tags: [
             "sexshop"
@@ -713,7 +713,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto ORGASMO FRIO CREMA 5G + FEROMONA EUFORIA HENTAI - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 28,
         tags: [
             "sexshop"
@@ -733,7 +733,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto ORGASMO DOBLE IMPACTO EUFORIA 3,5ML - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 38,
         tags: [
             "sexshop"
@@ -753,7 +753,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto CAPSULAS EL TORO ULTRA C/U - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 3,
         tags: [
             "sexshop"
@@ -773,7 +773,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto LUBRICANTE VAGINAL EUFORIA SPRAY 3,5ML - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 1,
         tags: [
             "sexshop"
@@ -793,7 +793,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto LUBRICANTE TOKO SILICONA AROMA 20ML - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 35,
         tags: [
             "sexshop"
@@ -813,7 +813,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto LUBRICANTE VAGINAL TOKO CUM X20ML - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 59,
         tags: [
             "sexshop"
@@ -833,7 +833,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto LUBRICANTE VAGINAL TOKO SILICONA 20ML - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 4,
         tags: [
             "sexshop"
@@ -853,7 +853,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto ESTRECHANTE EUFORIA SPRAY 3,5ML - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 81,
         tags: [
             "sexshop"
@@ -873,7 +873,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto ESTRECHANTE CREMA NEON POWER 5G - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 90,
         tags: [
             "sexshop"
@@ -893,7 +893,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto CREMA RETARDANTE (SEX) - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 95,
         tags: [
             "sexshop"
@@ -913,7 +913,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto CREMA DOBLE IMPACTO EUFORIA 5G - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 97,
         tags: [
             "sexshop"
@@ -933,7 +933,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto CREMA ANAL STAR WHITE 15ML - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 27,
         tags: [
             "sexshop"
@@ -953,7 +953,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto CREMA ANAL EUFORIA 5GM - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 36,
         tags: [
             "sexshop"
@@ -973,7 +973,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto ANAL CREMA NEON POWER 5G - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 23,
         tags: [
             "sexshop"
@@ -993,7 +993,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto RETARDANTE + FEROMONA 5GR (GOAT) - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 70,
         tags: [
             "sexshop"
@@ -1013,7 +1013,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto RETARDANTE CREMA NEON POWER 5G - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 31,
         tags: [
             "sexshop"
@@ -1033,7 +1033,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto RETARDANTE RETARDEX ULTRA 5G - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 69,
         tags: [
             "sexshop"
@@ -1053,7 +1053,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto RETARDANTE RINO AZUL 3.5ML SPRAY - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 71,
         tags: [
             "sexshop"
@@ -1073,7 +1073,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto RETARDANTE SPRAY STUD 100 3,5ML - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 74,
         tags: [
             "sexshop"
@@ -1093,7 +1093,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto RETARDANTE SPRAY EUFORIA 10ML - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 48,
         tags: [
             "sexshop"
@@ -1113,7 +1113,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto RETARDANTE SPRAY CABALLO BLANCO 3,5ML - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 24,
         tags: [
             "sexshop"
@@ -1133,7 +1133,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto RETARDANTE SPRAY EUFORIA 3,5ML - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 11,
         tags: [
             "sexshop"
@@ -1153,7 +1153,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto RETARDANTE RINO DORADO CREMA BLISTER 8GM - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 54,
         tags: [
             "sexshop"
@@ -1173,7 +1173,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto BRILLO LABIAL EXITANTE - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 67,
         tags: [
             "sexshop"
@@ -1193,7 +1193,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto LOCION FEROMONAS LUJO HOMBRE SPRAY 15ML - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 89,
         tags: [
             "sexshop"
@@ -1213,7 +1213,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto LOCION FEROMONA SPRAY DAMA X20ML - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 29,
         tags: [
             "sexshop"
@@ -1233,7 +1233,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto LOCION LUJO SPRAY ESTUCHE MUJER 15ML - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 24,
         tags: [
             "sexshop"
@@ -1253,7 +1253,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto FEROMONA PURA ROLLON MUJER 15ML - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 45,
         tags: [
             "sexshop"
@@ -1273,7 +1273,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto JUEGO DE CARTAS ADULTO - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 31,
         tags: [
             "sexshop"
@@ -1293,7 +1293,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto KIT PAREJA SECRETOS 5GM X3 - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 6,
         tags: [
             "sexshop"
@@ -1313,7 +1313,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto TRIO EUFORIA 5GR (MULTIO-ANAL-RETARDANTE) - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 98,
         tags: [
             "sexshop"
@@ -1333,7 +1333,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto GEL CORAZON COMESTIBLE 25ML + DADOS (LUXURY) - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 86,
         tags: [
             "sexshop"
@@ -1353,7 +1353,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto GEL CALIENTE COMESTIBLE LUXURY 10ML - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 31,
         tags: [
             "sexshop"
@@ -1373,7 +1373,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto GEL CALIENTE COMESTIBLE SHUNGA 20ML - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 79,
         tags: [
             "sexshop"
@@ -1393,7 +1393,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto GEL FRIO COMESTIBLE SHUNGA 30ML - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 33,
         tags: [
             "sexshop"
@@ -1413,7 +1413,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto DRAGON RED RETARDANTE CREMA BLISTER 5GM - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 95,
         tags: [
             "sexshop"
@@ -1433,7 +1433,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto POTENCIADOR MERO MACHO X30ML - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 81,
         tags: [
             "sexshop"
@@ -1453,7 +1453,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto VELA AROMA CON FEROMONAS PARA MASAJES X100ML - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 51,
         tags: [
             "sexshop"
@@ -1473,7 +1473,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto ANILLO CONEJO /MY-885) IMPERFECTO - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 11,
         tags: [
             "sexshop"
@@ -1493,7 +1493,7 @@ export const SEXSHOP_CSV_PRODUCTS: Product[] = [
         ],
         descripcion: "Producto DADOS NEON X2 - Excelente calidad.",
         minMayorista: 3,
-        rating: 5,
+        rating: 0,
         vendidos: 28,
         tags: [
             "sexshop"

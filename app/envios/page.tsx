@@ -1,10 +1,10 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+
+
 
 export default function ShippingPage() {
     return (
         <main className="min-h-screen bg-navy pt-32">
-            <Header />
+            
             <div className="max-w-5xl mx-auto px-6 py-12">
                 <div className="mb-16">
                     <h1 className="text-5xl font-black text-gold uppercase tracking-tighter mb-4">Información de Envíos</h1>
@@ -70,7 +70,7 @@ export default function ShippingPage() {
                     </div>
                 </div>
             </div>
-            <Footer />
+            
         </main>
     );
 }

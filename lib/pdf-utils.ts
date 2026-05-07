@@ -2,7 +2,7 @@ import jsPDF from 'jspdf';
 import autoTable from 'jspdf-autotable';
 import { formatPrice } from './data';
 
-export const generateQuotePDF = (items: any[], total: number) => {
+export const generateQuotePDF = (items: any[], total: number, user?: any) => {
     const doc = new jsPDF();
     const date = new Date().toLocaleDateString('es-CO');
 
@@ -23,14 +23,20 @@ export const generateQuotePDF = (items: any[], total: number) => {
 
     // Quote Info
     doc.setTextColor(0, 0, 0);
-    doc.setFontSize(12);
+    doc.setFontSize(14);
     doc.setFont('helvetica', 'bold');
-    doc.text('COTIZACIÓN DE PRODUCTOS', 15, 55);
+    doc.text('COTIZACIÓN DE PRODUCTOS', 15, 50);
+    
+    if (user && user.nombre) {
+        doc.setFontSize(10);
+        doc.setTextColor(100, 100, 100);
+        doc.text(`Preparada para: ${user.nombre}`, 15, 56);
+    }
     
     doc.setFont('helvetica', 'normal');
     doc.setFontSize(10);
-    doc.text(`Fecha: ${date}`, 160, 55);
-    doc.text(`Válida por: 15 días calendario`, 160, 60);
+    doc.text(`Fecha: ${date}`, 160, 50);
+    doc.text(`Válida por: 15 días calendario`, 160, 56);
 
     // Table
     const tableData = items.map(item => [
@@ -41,7 +47,7 @@ export const generateQuotePDF = (items: any[], total: number) => {
     ]);
 
     autoTable(doc, {
-        startY: 70,
+        startY: 65,
         head: [['Cant.', 'Producto', 'Precio Unitario', 'Subtotal']],
         body: tableData,
         headStyles: { fillColor: [0, 31, 63], textColor: [255, 215, 0], fontStyle: 'bold' },
@@ -56,13 +62,89 @@ export const generateQuotePDF = (items: any[], total: number) => {
     // Final Total
     const finalY = (doc as any).lastAutoTable.finalY + 10;
     doc.setFillColor(255, 215, 0);
-    doc.rect(130, finalY, 65, 12, 'F');
+    doc.rect(120, finalY, 75, 12, 'F'); // Made box wider (was 130, 65)
     
     doc.setFont('helvetica', 'bold');
     doc.setFontSize(12);
     doc.setTextColor(0, 31, 63);
-    doc.text('TOTAL COTIZADO:', 134, finalY + 8);
+    doc.text('TOTAL COTIZADO:', 124, finalY + 8);
     doc.text(formatPrice(total), 190, finalY + 8, { align: 'right' });
+
+    // Payment Methods
+    let paymentsY = finalY + 30;
+    doc.setFontSize(10);
+    doc.setTextColor(0, 31, 63);
+    doc.text('MÉTODOS DE PAGO DISPONIBLES', 15, paymentsY);
+    
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(8);
+    doc.setTextColor(100, 100, 100);
+    doc.text('Paga con tus sistemas favoritos:', 15, paymentsY + 5);
+
+    const favorites = user?.metodosPago || ['Nequi', 'Bancolombia'];
+    const allowedMethods = ['Nequi', 'Wompi', 'Bancolombia', 'PSE', 'PayPal', 'Payoneer'];
+    const methodsToShow = allowedMethods.filter(m => favorites.includes(m));
+    if (methodsToShow.length === 0) methodsToShow.push('Nequi', 'Bancolombia');
+
+    // Usamos el origen actual del navegador para la simulación
+    const baseUrl = typeof window !== 'undefined' ? window.location.origin : 'http://localhost:3000';
+
+    let xOffset = 15;
+    methodsToShow.forEach(method => {
+        const url = `${baseUrl}/checkout?method=${encodeURIComponent(method)}&amount=${total}`;
+        if (method === 'Nequi') {
+            doc.setFillColor(216, 27, 96);
+            doc.roundedRect(xOffset, paymentsY + 10, 24, 8, 1, 1, 'F');
+            doc.setFont('helvetica', 'bold');
+            doc.setFontSize(6);
+            doc.setTextColor(255, 255, 255);
+            doc.text('NEQUI', xOffset + 12, paymentsY + 15, { align: 'center' });
+            doc.link(xOffset, paymentsY + 10, 24, 8, { url });
+            xOffset += 28;
+        } else if (method === 'Wompi') {
+            doc.setFillColor(25, 118, 210);
+            doc.roundedRect(xOffset, paymentsY + 10, 24, 8, 1, 1, 'F');
+            doc.setFont('helvetica', 'bold');
+            doc.setFontSize(6);
+            doc.setTextColor(255, 255, 255);
+            doc.text('WOMPI', xOffset + 12, paymentsY + 15, { align: 'center' });
+            doc.link(xOffset, paymentsY + 10, 24, 8, { url });
+            xOffset += 28;
+        } else if (method === 'Bancolombia') {
+            doc.setFillColor(245, 205, 0);
+            doc.roundedRect(xOffset, paymentsY + 10, 28, 8, 1, 1, 'F');
+            doc.setFont('helvetica', 'bold');
+            doc.setFontSize(6);
+            doc.setTextColor(0, 0, 0);
+            doc.text('BANCOLOMBIA', xOffset + 14, paymentsY + 15, { align: 'center' });
+            doc.link(xOffset, paymentsY + 10, 28, 8, { url });
+            xOffset += 32;
+        } else {
+            doc.setFillColor(0, 31, 63);
+            doc.roundedRect(xOffset, paymentsY + 10, 24, 8, 1, 1, 'F');
+            doc.setFont('helvetica', 'bold');
+            doc.setFontSize(6);
+            doc.setTextColor(255, 255, 255);
+            doc.text(method.toUpperCase(), xOffset + 12, paymentsY + 15, { align: 'center' });
+            doc.link(xOffset, paymentsY + 10, 24, 8, { url });
+            xOffset += 28;
+        }
+    });
+
+    // PAGO VIA ASESOR (WhatsApp)
+    const itemsDetailed = items.map(i => `${i.quantity}x ${i.product.nombre} a ${formatPrice(i.product.precioMayorista)} c/u`).join(', ');
+    const userName = user?.nombre || 'Usuario';
+    const totalFormatted = formatPrice(total);
+    const waText = `Hola SOMOS ${userName}, ESTAMOS interesados en pagar los productos: ${itemsDetailed}. Total cotizado: ${totalFormatted}. Queremos pagarlos vía asesor.`;
+    const waUrl = `https://wa.me/573145090821?text=${encodeURIComponent(waText)}`;
+
+    doc.setFillColor(37, 211, 102); // WhatsApp Green
+    doc.roundedRect(xOffset, paymentsY + 10, 40, 8, 1, 1, 'F');
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(6);
+    doc.setTextColor(255, 255, 255);
+    doc.text('PAGO VÍA ASESOR (WA)', xOffset + 20, paymentsY + 15, { align: 'center' });
+    doc.link(xOffset, paymentsY + 10, 40, 8, { url: waUrl });
 
     // Footer
     doc.setTextColor(150, 150, 150);
@@ -91,10 +173,11 @@ function getLoyaltyLevel(totalCompras: number): {
     descuento: string;
     emoji: string;
 } {
-    if (totalCompras >= 10_000_000) return { nivel: 'PLATINO', color: [192, 192, 192], descuento: '20%', emoji: '💎' };
-    if (totalCompras >= 5_000_000)  return { nivel: 'GOLD',    color: [255, 215, 0],   descuento: '15%', emoji: '🥇' };
-    if (totalCompras >= 2_000_000)  return { nivel: 'SILVER',  color: [200, 200, 220], descuento: '10%', emoji: '🥈' };
-    return                                 { nivel: 'ALIADO',  color: [205, 127, 50],  descuento: '5%',  emoji: '🤝' };
+    if (totalCompras >= 20_000_000) return { nivel: 'PLATINO', color: [229, 228, 226], descuento: '15%', emoji: '💎' };
+    if (totalCompras >= 10_000_000) return { nivel: 'GOLD',    color: [255, 215, 0],   descuento: '10%', emoji: '🥇' };
+    if (totalCompras >= 5_000_000)  return { nivel: 'SILVER',  color: [200, 200, 220], descuento: '8%',  emoji: '🥈' };
+    if (totalCompras >= 2_000_000)  return { nivel: 'BRONCE',  color: [205, 127, 50],  descuento: '7%',  emoji: '🥉' };
+    return                                 { nivel: 'ALIADO',  color: [79, 195, 247],  descuento: '5%',  emoji: '🤝' };
 }
 
 export function generateLoyaltyCard(data: LoyaltyData): void {
@@ -109,109 +192,90 @@ export function generateLoyaltyCard(data: LoyaltyData): void {
     const H = 53.98;
     const { nivel, color, descuento } = getLoyaltyLevel(data.totalCompras);
 
-    // ── FONDO PRINCIPAL (Navy)
-    doc.setFillColor(0, 21, 50);
+    // ── FONDO PRINCIPAL (Azul oscuro / Navy)
+    doc.setFillColor(11, 27, 61); // #0b1b3d
     doc.roundedRect(0, 0, W, H, 3, 3, 'F');
 
-    // ── FRANJA DORADA SUPERIOR
-    doc.setFillColor(...color);
-    doc.rect(0, 0, W, 10, 'F');
+    // ── BORDE EXTERIOR
+    doc.setDrawColor(...color);
+    doc.setLineWidth(0.5);
+    doc.roundedRect(2, 2, W - 4, H - 4, 2, 2, 'S');
 
-    // ── BRILLO CORNER (efecto premium)
-    doc.setFillColor(255, 255, 255);
-    doc.setGState(doc.GState({ opacity: 0.04 }));
-    doc.ellipse(W * 0.85, H * 0.15, 18, 18, 'F');
-    doc.setGState(doc.GState({ opacity: 1 }));
+    // ── DECORACIÓN GEOMÉTRICA (Tech lines)
+    doc.setDrawColor(79, 195, 247); // Light blue
+    doc.setLineWidth(0.1);
+    doc.line(10, 10, 25, 25);
+    doc.line(25, 25, 25, H - 10);
+    doc.line(W - 10, 10, W - 25, 25);
+    doc.line(W - 25, 25, W - 25, H - 10);
 
-    // ── NOMBRE MARCA (en franja dorada)
-    doc.setFont('helvetica', 'bold');
-    doc.setFontSize(7.5);
-    doc.setTextColor(0, 21, 50);
-    doc.text('LOS PETETES MAYORISTA', 4, 6.8);
-    
-    // Nivel en la derecha de la franja
-    doc.setFontSize(6);
-    doc.text(nivel, W - 4, 6.8, { align: 'right' });
-
-    // ── CHIP (decorativo estilo tarjeta)
-    doc.setFillColor(200, 170, 80);
-    doc.roundedRect(4, 13.5, 9, 7, 1, 1, 'F');
-    doc.setDrawColor(160, 130, 50);
-    doc.setLineWidth(0.3);
-    // Líneas del chip
-    doc.line(4, 16, 13, 16);
-    doc.line(4, 18, 13, 18);
-    doc.line(7, 13.5, 7, 20.5);
-    doc.line(10, 13.5, 10, 20.5);
-
-    // ── NOMBRE DEL CLIENTE
+    // ── TÍTULO (Dorado)
     doc.setFont('helvetica', 'bold');
     doc.setFontSize(10);
-    doc.setTextColor(255, 255, 255);
-    const nombreDisplay = data.nombre.length > 22 ? data.nombre.slice(0, 22) + '…' : data.nombre;
-    doc.text(nombreDisplay.toUpperCase(), 4, 30);
-
-    // ── EMAIL
-    doc.setFont('helvetica', 'normal');
-    doc.setFontSize(5.5);
-    doc.setTextColor(200, 200, 200);
-    doc.text(data.email, 4, 34.5);
-
-    // ── NÚMERO DE TARJETA (estilo 4 grupos de 4)
-    const cardNum = data.userId
-        .replace(/-/g, '')
-        .slice(0, 16)
-        .padEnd(16, '0')
-        .replace(/(.{4})/g, '$1 ')
-        .trim()
-        .toUpperCase();
-    doc.setFont('helvetica', 'bold');
+    doc.setTextColor(255, 215, 0); // Gold
+    doc.text('TARJETA CLIENTE LOS PETETES', W / 2, 8, { align: 'center' });
+    
     doc.setFontSize(7);
-    doc.setTextColor(180, 180, 160);
-    doc.text(cardNum, 4, 41);
+    doc.setTextColor(...color);
+    doc.text(`MIEMBRO ${nivel}`, W / 2, 12, { align: 'center' });
 
-    // ── DESCUENTO MAYORISTA
-    doc.setFontSize(5);
-    doc.setTextColor(150, 150, 150);
-    doc.text('DESCUENTO MAYORISTA', 4, 46);
+    // ── TEXTOS DEL CUERPO (Miembro desde / Vencimiento)
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(6);
+    doc.setTextColor(137, 180, 248); // Light blue / Silver
+    doc.text('MIEMBRO DESDE:', 15, 25);
+    doc.text('VENCIMIENTO:', 15, 32);
+
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(8);
+    doc.setTextColor(232, 240, 254);
+    
+    const currentDate = new Date();
+    const currentMonth = String(currentDate.getMonth() + 1).padStart(2, '0');
+    const currentYear = currentDate.getFullYear();
+    const expiryYear = currentYear + 3;
+
+    doc.text(`${currentMonth}/${currentYear}`, 45, 25);
+    doc.text(`${currentMonth}/${expiryYear}`, 45, 32);
+
+    // ── CHIP
+    doc.setFillColor(212, 175, 55); // Metallic Gold
+    doc.roundedRect(65, 20, 10, 8, 1, 1, 'F');
+    doc.setDrawColor(160, 130, 50);
+    doc.setLineWidth(0.2);
+    doc.line(65, 22, 75, 22);
+    doc.line(65, 26, 75, 26);
+    doc.line(68, 20, 68, 28);
+    doc.line(72, 20, 72, 28);
+
+    // ── LOGO "LP"
+    doc.setDrawColor(137, 180, 248);
+    doc.setLineWidth(0.5);
+    doc.circle(70, 40, 5, 'S');
     doc.setFont('helvetica', 'bold');
     doc.setFontSize(8);
-    doc.setTextColor(...color);
-    doc.text(descuento, 4, 50.5);
+    doc.setTextColor(137, 180, 248);
+    doc.text('LP', 70, 41.5, { align: 'center' });
+    doc.setFontSize(4);
+    doc.text('LOS PETETES', 70, 47, { align: 'center' });
 
-    // ── PEDIDOS
-    doc.setFont('helvetica', 'normal');
-    doc.setFontSize(5);
-    doc.setTextColor(150, 150, 150);
-    doc.text('PEDIDOS', 30, 46);
-    doc.setFont('helvetica', 'bold');
+    // ── NOMBRE DEL CLIENTE Y DESCUENTO
+    const nombreDisplay = data.nombre.length > 20 ? data.nombre.slice(0, 20) + '…' : data.nombre;
     doc.setFontSize(8);
-    doc.setTextColor(255, 255, 255);
-    doc.text(String(data.totalPedidos), 30, 50.5);
+    doc.setTextColor(255, 215, 0); // Nombre en dorado
+    doc.text(nombreDisplay.toUpperCase(), 15, 43);
 
-    // ── VIGENCIA (1 año desde hoy)
-    const vigencia = new Date();
-    vigencia.setFullYear(vigencia.getFullYear() + 1);
-    const vigStr = `${String(vigencia.getMonth() + 1).padStart(2,'0')}/${vigencia.getFullYear()}`;
+    const cardNum = data.userId.replace(/-/g, '').slice(0, 16).padEnd(16, '0').replace(/(.{4})/g, '$1 ').trim().toUpperCase();
     doc.setFont('helvetica', 'normal');
-    doc.setFontSize(5);
+    doc.setFontSize(6);
     doc.setTextColor(150, 150, 150);
-    doc.text('VÁLIDA HASTA', 56, 46);
-    doc.setFont('helvetica', 'bold');
-    doc.setFontSize(7);
-    doc.setTextColor(255, 255, 255);
-    doc.text(vigStr, 56, 50.5);
+    doc.text(cardNum, 15, 47);
 
-    // ── LOGO / BRAND (esquina derecha)
+    // ── DESCUENTO EN LA ESQUINA
     doc.setFont('helvetica', 'bold');
-    doc.setFontSize(14);
+    doc.setFontSize(6);
     doc.setTextColor(...color);
-    doc.text('★', W - 7, H - 5, { align: 'center' });
-
-    // ── BORDE BRILLANTE
-    doc.setDrawColor(...color);
-    doc.setLineWidth(0.4);
-    doc.roundedRect(0.5, 0.5, W - 1, H - 1, 2.5, 2.5, 'S');
+    doc.text(`DESCUENTO: ${descuento}`, W - 25, 48, { align: 'right' });
 
     const filename = `Tarjeta_Petetes_${data.nombre.replace(/\s+/g, '_')}_${nivel}.pdf`;
     doc.save(filename);
@@ -275,6 +339,7 @@ const CATEGORY_META: Record<string, { label: string; color: [number, number, num
 export async function generateCatalogPDF(
     categoryId: string,
     products: CatalogProduct[],
+    user?: any,
     returnBlob: boolean = false
 ): Promise<Blob | void> {
     const doc = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
@@ -305,6 +370,17 @@ export async function generateCatalogPDF(
     doc.setTextColor(200, 200, 200);
     doc.text('LUJO Y CALIDAD PARA TU NEGOCIO', 105, 90, { align: 'center' });
 
+    if (user && user.nombre) {
+        doc.setFont('helvetica', 'italic');
+        doc.setFontSize(16);
+        doc.setTextColor(255, 255, 255);
+        doc.text(`¡Hola, ${user.nombre}! 👋`, 105, 110, { align: 'center' });
+        doc.setFontSize(11);
+        doc.setTextColor(180, 180, 180);
+        doc.text(`Gracias por confiar en nosotros.`, 105, 118, { align: 'center' });
+        doc.text(`Aquí tienes el catálogo que preparaste.`, 105, 125, { align: 'center' });
+    }
+
     doc.setFont('helvetica', 'bold');
     doc.setFontSize(36);
     doc.setTextColor(...goldColor);
@@ -331,8 +407,10 @@ export async function generateCatalogPDF(
     
     doc.setFontSize(12);
     doc.setTextColor(255, 255, 255);
-    doc.text('WhatsApp Johana', 65, 211, { align: 'center' });
-    doc.text('WhatsApp Laura', 145, 211, { align: 'center' });
+    // @ts-ignore
+    doc.textWithLink('WhatsApp Johana', 65, 211, { url: 'https://wa.me/576068840248', align: 'center' });
+    // @ts-ignore
+    doc.textWithLink('WhatsApp Laura', 145, 211, { url: 'https://wa.me/576068840248', align: 'center' });
 
     // --- PRODUCTS PAGES ---
     const itemsPerPage = 6;
@@ -416,35 +494,63 @@ export async function generateCatalogPDF(
         doc.setTextColor(150, 150, 150);
         doc.text('Color: Varios tonos - Alta calidad garantizada', startX + 4, startY + 52);
 
-        // Payment Buttons row
-        // Nequi
-        doc.setFillColor(216, 27, 96);
-        doc.roundedRect(startX + 4, startY + 56, 24, 6, 1, 1, 'F');
-        doc.setFont('helvetica', 'bold');
-        doc.setFontSize(5);
-        doc.setTextColor(255, 255, 255);
-        doc.text('NEQUI', startX + 16, startY + 60, { align: 'center' });
+        // Payment Buttons row based on user favorites
+        let xOffset = startX + 4;
+        const favorites = user?.metodosPago || ['Nequi', 'Wompi', 'Bancolombia'];
+        const allowedMethods = ['Nequi', 'Wompi', 'Bancolombia', 'PSE', 'PayPal', 'Payoneer'];
+        
+        // Show up to 3 preferred payment methods
+        const methodsToShow = allowedMethods.filter(m => favorites.includes(m)).slice(0, 3);
+        if (methodsToShow.length === 0) methodsToShow.push('Nequi', 'Bancolombia'); // fallback
 
-        // Wompi
-        doc.setFillColor(25, 118, 210);
-        doc.roundedRect(startX + 30, startY + 56, 24, 6, 1, 1, 'F');
-        doc.text('WOMPI', startX + 42, startY + 60, { align: 'center' });
+        methodsToShow.forEach(method => {
+            if (method === 'Nequi') {
+                doc.setFillColor(216, 27, 96);
+                doc.roundedRect(xOffset, startY + 56, 24, 6, 1, 1, 'F');
+                doc.setFont('helvetica', 'bold');
+                doc.setFontSize(5);
+                doc.setTextColor(255, 255, 255);
+                doc.text('NEQUI', xOffset + 12, startY + 60, { align: 'center' });
+                xOffset += 26;
+            } else if (method === 'Wompi') {
+                doc.setFillColor(25, 118, 210);
+                doc.roundedRect(xOffset, startY + 56, 24, 6, 1, 1, 'F');
+                doc.setFont('helvetica', 'bold');
+                doc.setFontSize(5);
+                doc.setTextColor(255, 255, 255);
+                doc.text('WOMPI', xOffset + 12, startY + 60, { align: 'center' });
+                xOffset += 26;
+            } else if (method === 'Bancolombia') {
+                doc.setFillColor(245, 205, 0);
+                doc.roundedRect(xOffset, startY + 56, 25, 6, 1, 1, 'F');
+                doc.setFont('helvetica', 'bold');
+                doc.setFontSize(5);
+                doc.setTextColor(0, 0, 0);
+                doc.text('BANCOLOMBIA', xOffset + 12.5, startY + 60, { align: 'center' });
+                xOffset += 27;
+            } else {
+                // generic for PSE/PayPal/Payoneer
+                doc.setFillColor(0, 31, 63);
+                doc.roundedRect(xOffset, startY + 56, 24, 6, 1, 1, 'F');
+                doc.setFont('helvetica', 'bold');
+                doc.setFontSize(5);
+                doc.setTextColor(255, 255, 255);
+                doc.text(method.toUpperCase(), xOffset + 12, startY + 60, { align: 'center' });
+                xOffset += 26;
+            }
+        });
 
-        // Bancolombia
-        doc.setFillColor(245, 205, 0);
-        doc.roundedRect(startX + 56, startY + 56, 25, 6, 1, 1, 'F');
-        doc.setTextColor(0, 0, 0);
-        doc.text('BANCOLOMBIA', startX + 68.5, startY + 60, { align: 'center' });
-
-        // WhatsApp Buttons
+        // WhatsApp Buttons interactive
         doc.setFillColor(...greenColor);
         doc.roundedRect(startX + 4, startY + 64, 37, 12, 1, 1, 'F');
         doc.roundedRect(startX + 43, startY + 64, 38, 12, 1, 1, 'F');
         
         doc.setTextColor(255, 255, 255);
         doc.setFontSize(7);
-        doc.text('Johana', startX + 22.5, startY + 71, { align: 'center' });
-        doc.text('Laura', startX + 62, startY + 71, { align: 'center' });
+        // @ts-ignore
+        doc.textWithLink('Comprar vía Johana', startX + 22.5, startY + 71, { url: `https://wa.me/576068840248?text=Hola,%20me%20interesa%20el%20producto%20${p.referencia || p.nombre}`, align: 'center' });
+        // @ts-ignore
+        doc.textWithLink('Comprar vía Laura', startX + 62, startY + 71, { url: `https://wa.me/576068840248?text=Hola,%20me%20interesa%20el%20producto%20${p.referencia || p.nombre}`, align: 'center' });
     }
 
     if (returnBlob) {

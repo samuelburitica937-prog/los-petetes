@@ -1,6 +1,6 @@
 'use client';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+
+
 import { useWishlistStore } from '@/lib/store';
 import { ALL_PRODUCTS, formatPrice } from '@/lib/data';
 import ProductCard from '@/components/ProductCard';
@@ -12,7 +12,7 @@ export default function WishlistPage() {
 
     return (
         <main className="min-h-screen bg-navy flex flex-col pt-32">
-            <Header />
+            
             <div className="flex-1 max-w-7xl mx-auto w-full px-6 py-12">
                 <div className="flex items-end justify-between mb-12 border-b border-white/10 pb-6">
                     <div>
@@ -44,7 +44,7 @@ export default function WishlistPage() {
                     </div>
                 )}
             </div>
-            <Footer />
+            
         </main>
     );
 }

@@ -24,6 +24,14 @@ export interface Ally {
   category: string;
 }
 
+export function getLevelInfo(totalCOP: number) {
+    if (totalCOP >= 20_000_000) return { nivel: 'PLATINO', color: '#E5E4E2', bg: 'from-slate-200/20 to-slate-400/10', border: 'border-slate-200/40', next: null, emoji: '💎', descuento: 0.15 };
+    if (totalCOP >= 10_000_000) return { nivel: 'GOLD',    color: '#FFD700', bg: 'from-gold/20 to-amber-600/10',    border: 'border-gold/40',    next: 20_000_000, emoji: '🥇', descuento: 0.10 };
+    if (totalCOP >= 5_000_000)  return { nivel: 'SILVER',  color: '#C8C8DC', bg: 'from-slate-300/20 to-slate-400/10',border: 'border-slate-300/40',next: 10_000_000,  emoji: '🥈', descuento: 0.08 };
+    if (totalCOP >= 2_000_000)  return { nivel: 'BRONCE',  color: '#CD7F32', bg: 'from-orange-400/20 to-orange-700/10',border:'border-orange-400/40',next: 5_000_000,  emoji: '🥉', descuento: 0.07 };
+    return                             { nivel: 'ALIADO',  color: '#4FC3F7', bg: 'from-blue-400/20 to-blue-700/10',border:'border-blue-400/40',next: 2_000_000,  emoji: '🤝', descuento: 0.05 };
+}
+
 export interface Campaign {
   id: string;
   title: string;
@@ -552,7 +560,6 @@ import { IMPORTED_PRODUCTS } from './imported_data';
 
 export const ALL_PRODUCTS: Product[] = [
     ...IMPORTED_PRODUCTS,
-  ...generateProducts().filter(p => p.categoria !== 'sexshop'),
   ...SEXSHOP_CSV_PRODUCTS
 ];
 

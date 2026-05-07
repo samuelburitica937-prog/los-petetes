@@ -1,7 +1,8 @@
 'use client';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useCartStore } from '@/lib/store';
-import { formatPrice, getProductQtyConfig } from '@/lib/data';
+import { useAuthStore } from '@/lib/auth';
+import { formatPrice, getProductQtyConfig, getLevelInfo } from '@/lib/data';
 import { generateQuotePDF } from '@/lib/pdf-utils';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
@@ -11,6 +12,36 @@ export default function CartSidebar() {
     const { items, isOpen, closeCart, removeItem, updateQty, total, totalItems, clearCart } = useCartStore();
     const router = useRouter();
     const overlayRef = useRef<HTMLDivElement>(null);
+    const [peteteCode, setPeteteCode] = useState('');
+    const [peteteApplied, setPeteteApplied] = useState(false);
+    
+    const { user, usePetete } = useAuthStore();
+    
+    // Derived from auth store
+    const availablePetetes = user?.myPetetes?.filter(p => !p.used).map(p => p.code) || [];
+    const usedPetetes = user?.myPetetes?.filter(p => p.used).map(p => p.code) || [];
+    
+    const [showPSEModal, setShowPSEModal] = useState(false);
+    
+    const pseBanks = [
+        { name: 'Bancolombia', url: 'https://www.bancolombia.com/personas' },
+        { name: 'Nequi', url: 'https://www.nequi.com.co/' },
+        { name: 'Daviplata', url: 'https://daviplata.com/' },
+        { name: 'Banco Davivienda', url: 'https://www.davivienda.com/' },
+        { name: 'Banco de Bogotá', url: 'https://www.bancodebogota.com/' },
+        { name: 'Banco Agrario', url: 'https://www.bancoagrario.gov.co/' },
+        { name: 'BBVA Colombia', url: 'https://www.bbva.com.co/' },
+        { name: 'Scotiabank Colpatria', url: 'https://www.scotiabankcolpatria.com/' },
+        { name: 'Banco Falabella', url: 'https://www.bancofalabella.com.co/' },
+        { name: 'Banco de Occidente', url: 'https://www.bancodeoccidente.com.co/' },
+        { name: 'Banco Popular', url: 'https://www.bancopopular.com.co/' },
+        { name: 'Banco Caja Social', url: 'https://www.bancocajasocial.com/' },
+        { name: 'Lulo Bank', url: 'https://www.lulobank.com/' },
+        { name: 'RappiPay', url: 'https://www.rappipay.co/' },
+        { name: 'Banco AV Villas', url: 'https://www.bancoavvillas.com.co/' },
+        { name: 'Itaú', url: 'https://www.itau.co/' },
+        { name: 'Banco Pichincha', url: 'https://www.bancopichincha.com.co/' }
+    ];
 
     useEffect(() => {
         document.body.style.overflow = isOpen ? 'hidden' : '';
@@ -27,6 +58,11 @@ export default function CartSidebar() {
     };
 
     const handlePayment = (method: string) => {
+        if (method === 'PSE') {
+            setShowPSEModal(true);
+            return;
+        }
+        
         toast.loading(`Redirigiendo a ${method}...`);
         setTimeout(() => {
             closeCart();
@@ -34,8 +70,34 @@ export default function CartSidebar() {
         }, 1500);
     };
 
-    const discount = totalItems() >= 100 ? 0.15 : totalItems() >= 50 ? 0.10 : totalItems() >= 20 ? 0.05 : 0;
+    const handleBankRedirect = (bankName: string, bankUrl?: string) => {
+        toast.loading(`Conectando con ${bankName}...`);
+        setTimeout(() => {
+            closeCart();
+            toast.success(`Abriendo portal de ${bankName}`);
+            if (bankUrl) {
+                window.open(bankUrl, '_blank');
+            } else {
+                // Fallback si no hay URL (Paypal/Payoneer mock)
+                router.push('/checkout');
+            }
+        }, 1500);
+    };
+
+    const baseDiscount = totalItems() >= 100 ? 0.15 : totalItems() >= 50 ? 0.10 : totalItems() >= 20 ? 0.05 : 0;
+    const discount = peteteApplied ? baseDiscount + 0.01 : baseDiscount;
     const finalTotal = total() * (1 - discount);
+
+    const handleApplyPetete = () => {
+        if (peteteCode && availablePetetes.includes(peteteCode)) {
+            setPeteteApplied(true);
+            usePetete(peteteCode);
+            setPeteteCode('');
+            toast.success('¡Código Petete aplicado! Tienes 1% extra.');
+        } else {
+            toast.error('Selecciona un código Petete válido');
+        }
+    };
 
     return (
         <>
@@ -87,7 +149,10 @@ export default function CartSidebar() {
                                 Agrega productos mayoristas para comenzar tu pedido
                             </p>
                             <button
-                                onClick={closeCart}
+                                onClick={() => {
+                                    closeCart();
+                                    router.push('/catalogos');
+                                }}
                                 className="btn-primary px-6 py-2 text-sm"
                             >
                                 Explorar Catálogo
@@ -200,9 +265,71 @@ export default function CartSidebar() {
                                 <span className="font-semibold" style={{ color: '#00C864' }}>-{formatPrice(total() * discount)}</span>
                             </div>
                         )}
-                        <div className="flex justify-between mb-6 border-b border-white/5 pb-4">
+                        <div className="flex justify-between mb-2 border-b border-white/5 pb-4">
                             <span className="font-bold text-lg" style={{ color: '#FFD700' }}>Total a pagar:</span>
                             <span className="font-black text-xl" style={{ color: '#FFD700' }}>{formatPrice(finalTotal)}</span>
+                        </div>
+                        
+                        {/* Gamification del Total */}
+                        <div className="flex flex-col gap-1 mb-6">
+                            {[2000000, 5000000, 10000000, 20000000].map(threshold => {
+                                const tierInfo = getLevelInfo(threshold);
+                                const currentLoyalty = user ? getLevelInfo(user.totalCompras || 1700000).descuento : 0;
+                                if (tierInfo.descuento <= currentLoyalty) return null;
+                                
+                                const totalWithTierDiscount = finalTotal * (1 - tierInfo.descuento);
+                                return (
+                                    <div key={tierInfo.nivel} className="text-xs font-bold text-white/50 bg-white/5 px-3 py-1.5 rounded border border-white/10 flex justify-between items-center">
+                                        <span>Si fueras <span style={{ color: tierInfo.color }}>{tierInfo.nivel}</span></span>
+                                        <span>Pagarías <span className="text-white">{formatPrice(totalWithTierDiscount)}</span></span>
+                                    </div>
+                                );
+                            })}
+                        </div>
+
+                        {/* Petete Code Input */}
+                        <div className="mb-4">
+                            {!peteteApplied && availablePetetes.length > 0 && (
+                                <div className="flex gap-2 mb-2">
+                                    <select 
+                                        value={peteteCode}
+                                        onChange={(e) => setPeteteCode(e.target.value)}
+                                        className="flex-1 bg-white/5 border border-white/10 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-gold appearance-none"
+                                    >
+                                        <option value="" disabled className="bg-navy">Tus Llaves Petete Disponibles...</option>
+                                        {availablePetetes.map(code => (
+                                            <option key={code} value={code} className="bg-navy">🔑 {code} (1% extra)</option>
+                                        ))}
+                                    </select>
+                                    <button 
+                                        onClick={handleApplyPetete}
+                                        disabled={!peteteCode}
+                                        className="bg-gold text-navy font-bold px-3 py-2 rounded-xl text-xs hover:bg-gold/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                                    >
+                                        Aplicar
+                                    </button>
+                                </div>
+                            )}
+                            
+                            {!peteteApplied && availablePetetes.length === 0 && (
+                                <div className="text-center mb-2">
+                                    <p className="text-[10px] text-white/40 italic">No tienes llaves Petete disponibles.</p>
+                                </div>
+                            )}
+
+                            {/* Mostrar códigos usados explícitamente */}
+                            {usedPetetes.length > 0 && (
+                                <div className="mt-2 space-y-1">
+                                    <p className="text-[10px] text-white/40 font-bold uppercase tracking-widest">Códigos Petete Usados</p>
+                                    <div className="flex gap-2 flex-wrap">
+                                        {usedPetetes.map(code => (
+                                            <div key={code} className="px-2 py-1 bg-green-500/10 border border-green-500/20 rounded text-[10px] text-green-500 flex items-center gap-1">
+                                                <span>✓</span> {code}
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            )}
                         </div>
 
                         {/* Professional Checkout Action */}
@@ -214,25 +341,75 @@ export default function CartSidebar() {
                             >
                                 💳 FINALIZAR COMPRA
                             </button>
-                            
-                            <p className="text-[10px] text-center text-white/30 uppercase font-black tracking-widest">O paga directo vía:</p>
 
-                            <div className="grid grid-cols-2 gap-3">
-                                <button
-                                    onClick={() => handlePayment('Nequi')}
-                                    className="flex items-center justify-center gap-2 py-3 rounded-xl font-black text-[10px] transition-all hover:scale-[1.02] cursor-pointer"
-                                    style={{ background: '#FF1493', color: 'white' }}
-                                >
-                                    📱 NEQUI
-                                </button>
-                                <button
-                                    onClick={() => handlePayment('Bancolombia')}
-                                    className="flex items-center justify-center gap-2 py-3 rounded-xl font-black text-[10px] transition-all hover:scale-[1.02] cursor-pointer"
-                                    style={{ background: '#FFD700', color: '#000' }}
-                                >
-                                    🏦 BANCOLOMBIA
-                                </button>
-                            </div>
+                            {showPSEModal ? (
+                                <div className="mt-4 p-4 rounded-xl border border-blue-400/30 animate-fade-in relative" style={{ background: 'rgba(79, 195, 247, 0.05)' }}>
+                                    <button 
+                                        onClick={() => setShowPSEModal(false)}
+                                        className="absolute -top-3 right-2 bg-navy border border-white/10 rounded-full px-3 py-1 text-[10px] font-black text-white/50 hover:text-white transition-colors"
+                                    >
+                                        Volver
+                                    </button>
+                                    <h4 className="text-xs font-black text-[#4FC3F7] uppercase mb-4 flex items-center gap-2">
+                                        🏛️ Selecciona tu banco PSE
+                                    </h4>
+                                    <div className="flex flex-col gap-2 max-h-48 overflow-y-auto pr-2 custom-scrollbar">
+                                        {pseBanks.map(bank => (
+                                            <button
+                                                key={bank.name}
+                                                onClick={() => handleBankRedirect(bank.name, bank.url)}
+                                                className="w-full text-left px-3 py-2 rounded-lg bg-white/5 border border-white/5 hover:bg-white/10 hover:border-[#4FC3F7]/50 text-xs font-bold text-white transition-all flex justify-between items-center group"
+                                            >
+                                                {bank.name}
+                                                <span className="opacity-0 group-hover:opacity-100 text-[#4FC3F7] transition-opacity">→</span>
+                                            </button>
+                                        ))}
+                                    </div>
+                                </div>
+                            ) : (
+                                <>
+                                    <p className="text-[10px] text-center text-white/30 uppercase font-black tracking-widest mt-4">O paga directo vía:</p>
+
+                                    <div className="grid grid-cols-2 gap-2">
+                                        <button
+                                            onClick={() => handleBankRedirect('Bancolombia', 'https://www.bancolombia.com/personas')}
+                                            className="flex items-center justify-center gap-2 py-3 rounded-xl font-black text-[10px] transition-all hover:scale-[1.02] cursor-pointer hover:shadow-[0_0_15px_rgba(255,215,0,0.4)] border border-yellow-400/20"
+                                            style={{ background: '#FFD700', color: '#001F3F' }}
+                                        >
+                                            🏦 BANCOLOMBIA
+                                        </button>
+                                        <button
+                                            onClick={() => handleBankRedirect('Nequi', 'https://www.nequi.com.co/')}
+                                            className="flex items-center justify-center gap-2 py-3 rounded-xl font-black text-[10px] transition-all hover:scale-[1.02] cursor-pointer hover:shadow-[0_0_15px_rgba(255,20,147,0.5)] border border-pink-500/30"
+                                            style={{ background: '#FF1493', color: 'white' }}
+                                        >
+                                            📱 NEQUI
+                                        </button>
+                                        <button
+                                            onClick={() => handlePayment('PSE')}
+                                            className="flex items-center justify-center gap-2 py-3 rounded-xl font-black text-[10px] transition-all hover:scale-[1.02] cursor-pointer border border-blue-400/30 hover:shadow-[0_0_15px_rgba(79,195,247,0.3)]"
+                                            style={{ background: 'rgba(79, 195, 247, 0.1)', color: '#4FC3F7' }}
+                                            title="Otros bancos con PSE"
+                                        >
+                                            🏛️ PAGO PSE
+                                        </button>
+                                        <button
+                                            onClick={() => handleBankRedirect('PayPal', 'https://www.paypal.com/')}
+                                            className="flex items-center justify-center gap-2 py-3 rounded-xl font-black text-[10px] transition-all hover:scale-[1.02] cursor-pointer border border-blue-600/30 hover:shadow-[0_0_15px_rgba(0,121,193,0.3)]"
+                                            style={{ background: 'rgba(0, 48, 135, 0.2)', color: '#0079C1' }}
+                                        >
+                                            P PAYPAL
+                                        </button>
+                                        <button
+                                            onClick={() => handleBankRedirect('Payoneer', 'https://www.payoneer.com/')}
+                                            className="flex items-center justify-center gap-2 py-3 rounded-xl font-black text-[10px] transition-all hover:scale-[1.02] cursor-pointer border border-orange-400/30 hover:shadow-[0_0_15px_rgba(255,69,0,0.3)] col-span-2"
+                                            style={{ background: 'rgba(255, 69, 0, 0.1)', color: '#FF4500' }}
+                                        >
+                                            🟠 PAYONEER
+                                        </button>
+                                    </div>
+                                </>
+                            )}
                         </div>
 
                         {/* Trust Badges */}
@@ -246,7 +423,7 @@ export default function CartSidebar() {
                                 toast.promise(
                                     new Promise((resolve) => {
                                         setTimeout(() => {
-                                            generateQuotePDF(items, finalTotal);
+                                            generateQuotePDF(items, finalTotal, user);
                                             resolve(true);
                                         }, 1000);
                                     }),

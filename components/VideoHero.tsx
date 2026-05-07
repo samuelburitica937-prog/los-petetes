@@ -15,8 +15,8 @@ export default function VideoHero() {
         loop
         muted
         playsInline
-        className="absolute inset-0 w-full h-full object-cover"
-        style={{ display: 'block' }}
+        className="absolute inset-0 w-full h-full object-cover origin-center"
+        style={{ display: 'block', transform: 'scale(1.1) translateX(4%)' }}
       >
         <source src="/hero-bg.mp4" type="video/mp4" />
       </video>

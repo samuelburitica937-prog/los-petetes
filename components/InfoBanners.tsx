@@ -2,8 +2,10 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import { useAuthStore } from '@/lib/auth';
 
 export default function InfoBanners() {
+    const { isAuthenticated } = useAuthStore();
     const [isTopVisible, setIsTopVisible] = useState(false);
     const [isBottomVisible, setIsBottomVisible] = useState(false);
 
@@ -97,10 +99,10 @@ export default function InfoBanners() {
                             Únete al círculo mayorista más grande del Eje Cafetero. Accede a precios de fábrica inmediatos.
                         </p>
                         <Link
-                            href="/registro"
+                            href={isAuthenticated ? "/pedidos" : "/registro"}
                             className="inline-block px-12 py-5 rounded-2xl bg-gold text-navy font-dupla-black text-lg uppercase tracking-[0.2em] transition-all duration-300 hover:scale-110 active:scale-95 shadow-2xl border-none hover:bg-gold-light"
                         >
-                            Solicitar Beneficios
+                            {isAuthenticated ? "Ver Mi Tarjeta VIP" : "Solicitar Beneficios"}
                         </Link>
                     </div>
                 </div>

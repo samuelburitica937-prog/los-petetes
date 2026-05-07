@@ -13,8 +13,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -32,8 +32,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -51,8 +51,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -70,8 +70,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -89,8 +89,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -108,8 +108,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -127,8 +127,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -146,8 +146,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -165,8 +165,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -184,8 +184,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -203,8 +203,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -222,8 +222,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -241,8 +241,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -260,8 +260,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -279,8 +279,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -298,8 +298,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -317,8 +317,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -336,8 +336,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -355,8 +355,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -374,8 +374,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -393,8 +393,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -412,8 +412,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -431,8 +431,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -450,8 +450,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -469,8 +469,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -488,8 +488,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -507,8 +507,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -526,8 +526,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -545,8 +545,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -564,8 +564,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -583,8 +583,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -602,8 +602,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -621,8 +621,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -640,8 +640,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -659,8 +659,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -678,8 +678,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -697,8 +697,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -716,8 +716,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -735,8 +735,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -754,8 +754,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -773,8 +773,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -792,8 +792,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -811,8 +811,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -830,8 +830,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -849,8 +849,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -868,8 +868,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -887,8 +887,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -906,8 +906,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -925,8 +925,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -944,8 +944,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -963,8 +963,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -982,8 +982,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1001,8 +1001,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1020,8 +1020,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1039,8 +1039,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1058,8 +1058,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1077,8 +1077,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1096,8 +1096,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1115,8 +1115,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1134,8 +1134,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1153,8 +1153,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1172,8 +1172,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1191,8 +1191,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1210,8 +1210,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1229,8 +1229,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1248,8 +1248,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1267,8 +1267,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1286,8 +1286,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1305,8 +1305,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1324,8 +1324,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1343,8 +1343,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1362,8 +1362,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1381,8 +1381,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1400,8 +1400,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1419,8 +1419,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1438,8 +1438,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1457,8 +1457,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1476,8 +1476,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1495,8 +1495,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1514,8 +1514,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1533,8 +1533,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1552,8 +1552,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1571,8 +1571,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1590,8 +1590,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1609,8 +1609,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1628,8 +1628,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1647,8 +1647,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1666,8 +1666,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1685,8 +1685,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1704,8 +1704,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1723,8 +1723,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1742,8 +1742,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1761,8 +1761,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1780,8 +1780,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1799,8 +1799,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1818,8 +1818,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1837,8 +1837,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1856,8 +1856,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1875,8 +1875,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1894,8 +1894,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1913,8 +1913,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1932,8 +1932,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1951,8 +1951,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1970,8 +1970,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -1989,8 +1989,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2008,8 +2008,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2027,8 +2027,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2046,8 +2046,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2065,8 +2065,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2084,8 +2084,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2103,8 +2103,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2122,8 +2122,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2141,8 +2141,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2160,8 +2160,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2179,8 +2179,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2198,8 +2198,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2217,8 +2217,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2236,8 +2236,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2255,8 +2255,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2274,8 +2274,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2293,8 +2293,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2312,8 +2312,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2331,8 +2331,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2350,8 +2350,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2369,8 +2369,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2388,8 +2388,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2407,8 +2407,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2426,8 +2426,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2445,8 +2445,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2464,8 +2464,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2483,8 +2483,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2502,8 +2502,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2521,8 +2521,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2540,8 +2540,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2559,8 +2559,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2578,8 +2578,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2597,8 +2597,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2616,8 +2616,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2635,8 +2635,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2654,8 +2654,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2673,8 +2673,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2692,8 +2692,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2711,8 +2711,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2730,8 +2730,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2749,8 +2749,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2768,8 +2768,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2787,8 +2787,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2806,8 +2806,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2825,8 +2825,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2844,8 +2844,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2863,8 +2863,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2882,8 +2882,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2901,8 +2901,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2920,8 +2920,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2939,8 +2939,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2958,8 +2958,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2977,8 +2977,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -2996,8 +2996,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3015,8 +3015,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3034,8 +3034,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3053,8 +3053,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3072,8 +3072,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3091,8 +3091,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3110,8 +3110,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3129,8 +3129,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3148,8 +3148,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3167,8 +3167,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3186,8 +3186,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3205,8 +3205,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3224,8 +3224,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3243,8 +3243,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3262,8 +3262,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3281,8 +3281,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3300,8 +3300,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3319,8 +3319,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3338,8 +3338,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3357,8 +3357,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3376,8 +3376,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3395,8 +3395,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3414,8 +3414,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3433,8 +3433,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3452,8 +3452,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3471,8 +3471,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3490,8 +3490,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3509,8 +3509,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3528,8 +3528,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3547,8 +3547,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3566,8 +3566,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3585,8 +3585,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3604,8 +3604,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3623,8 +3623,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3642,8 +3642,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3661,8 +3661,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3680,8 +3680,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3699,8 +3699,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3718,8 +3718,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3737,8 +3737,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3756,8 +3756,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3775,8 +3775,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3794,8 +3794,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3813,8 +3813,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3832,8 +3832,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3851,8 +3851,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3870,8 +3870,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3889,8 +3889,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3908,8 +3908,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3927,8 +3927,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3946,8 +3946,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3965,8 +3965,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -3984,8 +3984,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4003,8 +4003,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4022,8 +4022,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4041,8 +4041,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4060,8 +4060,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4079,8 +4079,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4098,8 +4098,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4117,8 +4117,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4136,8 +4136,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4155,8 +4155,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4174,8 +4174,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4193,8 +4193,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4212,8 +4212,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4231,8 +4231,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4250,8 +4250,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4269,8 +4269,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4288,8 +4288,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4307,8 +4307,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4326,8 +4326,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4345,8 +4345,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4364,8 +4364,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4383,8 +4383,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4402,8 +4402,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4421,8 +4421,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4440,8 +4440,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4459,8 +4459,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4478,8 +4478,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4497,8 +4497,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4516,8 +4516,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4535,8 +4535,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4554,8 +4554,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4573,8 +4573,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4592,8 +4592,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4611,8 +4611,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4630,8 +4630,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4649,8 +4649,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4668,8 +4668,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4687,8 +4687,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4706,8 +4706,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4725,8 +4725,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4744,8 +4744,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4763,8 +4763,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4782,8 +4782,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4801,8 +4801,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4820,8 +4820,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4839,8 +4839,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4858,8 +4858,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4877,8 +4877,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4896,8 +4896,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4915,8 +4915,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4934,8 +4934,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4953,8 +4953,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4972,8 +4972,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -4991,8 +4991,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5010,8 +5010,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5029,8 +5029,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5048,8 +5048,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5067,8 +5067,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5086,8 +5086,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5105,8 +5105,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5124,8 +5124,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5143,8 +5143,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5162,8 +5162,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5181,8 +5181,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5200,8 +5200,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5219,8 +5219,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5238,8 +5238,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5257,8 +5257,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5276,8 +5276,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5295,8 +5295,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5314,8 +5314,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5333,8 +5333,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5352,8 +5352,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5371,8 +5371,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5390,8 +5390,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5409,8 +5409,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5428,8 +5428,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5447,8 +5447,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5466,8 +5466,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5485,8 +5485,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5504,8 +5504,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5523,8 +5523,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5542,8 +5542,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5561,8 +5561,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5580,8 +5580,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5599,8 +5599,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5618,8 +5618,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5637,8 +5637,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5656,8 +5656,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5675,8 +5675,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5694,8 +5694,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5713,8 +5713,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5732,8 +5732,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5751,8 +5751,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5770,8 +5770,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5789,8 +5789,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5808,8 +5808,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5827,8 +5827,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5846,8 +5846,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5865,8 +5865,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5884,8 +5884,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5903,8 +5903,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5922,8 +5922,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5941,8 +5941,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5960,8 +5960,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5979,8 +5979,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -5998,8 +5998,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6017,8 +6017,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6036,8 +6036,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6055,8 +6055,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6074,8 +6074,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6093,8 +6093,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6112,8 +6112,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6131,8 +6131,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6150,8 +6150,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6169,8 +6169,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6188,8 +6188,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6207,8 +6207,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6226,8 +6226,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6245,8 +6245,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6264,8 +6264,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6283,8 +6283,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6302,8 +6302,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6321,8 +6321,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6340,8 +6340,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6359,8 +6359,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6378,8 +6378,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6397,8 +6397,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6416,8 +6416,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6435,8 +6435,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6454,8 +6454,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6473,8 +6473,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6492,8 +6492,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6511,8 +6511,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6530,8 +6530,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6549,8 +6549,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6568,8 +6568,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6587,8 +6587,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6606,8 +6606,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6625,8 +6625,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6644,8 +6644,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6663,8 +6663,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6682,8 +6682,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6701,8 +6701,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6720,8 +6720,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6739,8 +6739,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6758,8 +6758,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6777,8 +6777,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6796,8 +6796,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6815,8 +6815,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6834,8 +6834,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6853,8 +6853,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6872,8 +6872,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6891,8 +6891,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6910,8 +6910,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6929,8 +6929,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6948,8 +6948,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6967,8 +6967,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -6986,8 +6986,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7005,8 +7005,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7024,8 +7024,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7043,8 +7043,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7062,8 +7062,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7081,8 +7081,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7100,8 +7100,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7119,8 +7119,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7138,8 +7138,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7157,8 +7157,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7176,8 +7176,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7195,8 +7195,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7214,8 +7214,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7233,8 +7233,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7252,8 +7252,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7271,8 +7271,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7290,8 +7290,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7309,8 +7309,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7328,8 +7328,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7347,8 +7347,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7366,8 +7366,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7385,8 +7385,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7404,8 +7404,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7423,8 +7423,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7442,8 +7442,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7461,8 +7461,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7480,8 +7480,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7499,8 +7499,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7518,8 +7518,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7537,8 +7537,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7556,8 +7556,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7575,8 +7575,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7594,8 +7594,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7613,8 +7613,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7632,8 +7632,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7651,8 +7651,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7670,8 +7670,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7689,8 +7689,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7708,8 +7708,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7727,8 +7727,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7746,8 +7746,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7765,8 +7765,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7784,8 +7784,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7803,8 +7803,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7822,8 +7822,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7841,8 +7841,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7860,8 +7860,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7879,8 +7879,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7898,8 +7898,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7917,8 +7917,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7936,8 +7936,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7955,8 +7955,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7974,8 +7974,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -7993,8 +7993,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8012,8 +8012,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8031,8 +8031,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8050,8 +8050,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8069,8 +8069,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8088,8 +8088,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8107,8 +8107,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8126,8 +8126,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8145,8 +8145,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8164,8 +8164,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8183,8 +8183,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8202,8 +8202,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8221,8 +8221,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8240,8 +8240,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8259,8 +8259,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8278,8 +8278,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8297,8 +8297,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8316,8 +8316,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8335,8 +8335,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8354,8 +8354,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8373,8 +8373,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8392,8 +8392,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8411,8 +8411,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8430,8 +8430,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8449,8 +8449,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8468,8 +8468,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8487,8 +8487,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8506,8 +8506,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8525,8 +8525,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8544,8 +8544,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8563,8 +8563,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8582,8 +8582,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8601,8 +8601,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8620,8 +8620,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8639,8 +8639,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8658,8 +8658,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8677,8 +8677,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8696,8 +8696,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8715,8 +8715,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8734,8 +8734,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8753,8 +8753,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8772,8 +8772,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8791,8 +8791,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8810,8 +8810,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8829,8 +8829,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8848,8 +8848,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8867,8 +8867,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8886,8 +8886,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8905,8 +8905,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8924,8 +8924,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8943,8 +8943,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8962,8 +8962,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -8981,8 +8981,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9000,8 +9000,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9019,8 +9019,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9038,8 +9038,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9057,8 +9057,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9076,8 +9076,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9095,8 +9095,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9114,8 +9114,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9133,8 +9133,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9152,8 +9152,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9171,8 +9171,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9190,8 +9190,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9209,8 +9209,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9228,8 +9228,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9247,8 +9247,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9266,8 +9266,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9285,8 +9285,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9304,8 +9304,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9323,8 +9323,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9342,8 +9342,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9361,8 +9361,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9380,8 +9380,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9399,8 +9399,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9418,8 +9418,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9437,8 +9437,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9456,8 +9456,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9475,8 +9475,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9494,8 +9494,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9513,8 +9513,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9532,8 +9532,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9551,8 +9551,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9570,8 +9570,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9589,8 +9589,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9608,8 +9608,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9627,8 +9627,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9646,8 +9646,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9665,8 +9665,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9684,8 +9684,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9703,8 +9703,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9722,8 +9722,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9741,8 +9741,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9760,8 +9760,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9779,8 +9779,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9798,8 +9798,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9817,8 +9817,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9836,8 +9836,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9855,8 +9855,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9874,8 +9874,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9893,8 +9893,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9912,8 +9912,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9931,8 +9931,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9950,8 +9950,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9969,8 +9969,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -9988,8 +9988,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10007,8 +10007,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10026,8 +10026,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10045,8 +10045,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10064,8 +10064,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10083,8 +10083,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10102,8 +10102,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10121,8 +10121,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10140,8 +10140,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10159,8 +10159,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10178,8 +10178,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10197,8 +10197,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10216,8 +10216,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10235,8 +10235,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10254,8 +10254,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10273,8 +10273,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10292,8 +10292,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10311,8 +10311,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10330,8 +10330,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10349,8 +10349,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10368,8 +10368,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10387,8 +10387,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10406,8 +10406,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10425,8 +10425,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10444,8 +10444,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10463,8 +10463,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10482,8 +10482,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10501,8 +10501,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10520,8 +10520,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10539,8 +10539,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10558,8 +10558,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10577,8 +10577,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10596,8 +10596,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10615,8 +10615,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10634,8 +10634,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10653,8 +10653,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10672,8 +10672,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10691,8 +10691,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10710,8 +10710,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10729,8 +10729,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10748,8 +10748,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10767,8 +10767,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10786,8 +10786,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10805,8 +10805,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10824,8 +10824,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10843,8 +10843,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10862,8 +10862,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10881,8 +10881,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10900,8 +10900,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10919,8 +10919,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10938,8 +10938,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10957,8 +10957,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10976,8 +10976,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -10995,8 +10995,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11014,8 +11014,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11033,8 +11033,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11052,8 +11052,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11071,8 +11071,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11090,8 +11090,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11109,8 +11109,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11128,8 +11128,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11147,8 +11147,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11166,8 +11166,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11185,8 +11185,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11204,8 +11204,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11223,8 +11223,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11242,8 +11242,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11261,8 +11261,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11280,8 +11280,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11299,8 +11299,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11318,8 +11318,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11337,8 +11337,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11356,8 +11356,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11375,8 +11375,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11394,8 +11394,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11413,8 +11413,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11432,8 +11432,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11451,8 +11451,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11470,8 +11470,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11489,8 +11489,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11508,8 +11508,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11527,8 +11527,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11546,8 +11546,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11565,8 +11565,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11584,8 +11584,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11603,8 +11603,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11622,8 +11622,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11641,8 +11641,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11660,8 +11660,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11679,8 +11679,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11698,8 +11698,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11717,8 +11717,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11736,8 +11736,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11755,8 +11755,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11774,8 +11774,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11793,8 +11793,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11812,8 +11812,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11831,8 +11831,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11850,8 +11850,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11869,8 +11869,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11888,8 +11888,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11907,8 +11907,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11926,8 +11926,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11945,8 +11945,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11964,8 +11964,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -11983,8 +11983,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -12002,8 +12002,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -12021,8 +12021,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -12040,8 +12040,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -12059,8 +12059,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": true,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -12078,8 +12078,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -12097,8 +12097,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -12116,8 +12116,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
@@ -12135,8 +12135,8 @@ export const IMPORTED_PRODUCTS: Product[] = [
     ],
     "stock": 100,
     "destacado": false,
-    "rating": 5,
-    "vendidos": 100,
+    "rating": 0,
+    "vendidos": 0,
     "tags": [
       "nuevo"
     ]
