@@ -83,7 +83,7 @@ export default function CategoryPage() {
                                 </h1>
                                 
                                 <p className="text-white/40 text-xl max-w-xl font-medium mb-10 leading-relaxed">
-                                    {catInfo.desc}. Soluciones mayoristas premium para tu negocio con garantía **Los Petetes**.
+                                    {catInfo.desc}. Soluciones mayoristas premium para tu negocio con garantía <span className="font-dupla-black uppercase">LOS PETETES</span>.
                                 </p>
                                 
                                 <div className="flex flex-wrap justify-center md:justify-start gap-4">
@@ -213,7 +213,14 @@ export default function CategoryPage() {
                             <span className="text-4xl block mb-4">💎</span>
                             <p className="font-black text-white text-sm uppercase mb-2">Soporte Aliados</p>
                             <p className="text-[10px] text-white/40 mb-6 font-medium">Asesoría personalizada para pedidos a gran escala en {catInfo.label}.</p>
-                            <button className="w-full py-3 bg-gold text-navy text-[10px] font-black rounded-xl uppercase hover:scale-105 active:scale-95 transition-transform">Contactar Experto</button>
+                            <a 
+                                href={`https://wa.me/576068840248?text=${encodeURIComponent(`Hola, quiero asesoría personalizada para estos pedidos que tengo en ${catInfo.label}`)}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-full py-3 bg-gold text-navy text-[10px] font-black rounded-xl uppercase hover:scale-105 active:scale-95 transition-transform block text-center"
+                            >
+                                Contactar Experto
+                            </a>
                         </div>
                     </aside>
 
