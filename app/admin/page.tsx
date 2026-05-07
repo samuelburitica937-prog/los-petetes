@@ -16,6 +16,22 @@ export default function AdminPage() {
     const [catFilter, setCatFilter] = useState<Category | 'all'>('all');
     const [products, setProducts] = useState<Product[]>(ALL_PRODUCTS);
     const [isMigrating, setIsMigrating] = useState(false);
+    
+    // Estados para Nuevo Producto
+    const [isProductModalOpen, setIsProductModalOpen] = useState(false);
+    const [newProduct, setNewProduct] = useState({
+        nombre: '',
+        descripcion: '',
+        precio: '',
+        categoria: 'ferreteria' as Category,
+        stock: '',
+        imagen: ''
+    });
+
+    // Estados para Scanner
+    const [showScanner, setShowScanner] = useState(false);
+    const [scannerInput, setScannerInput] = useState('');
+
     const router = useRouter();
 
     const migrateToSupabase = async () => {
@@ -69,8 +85,57 @@ export default function AdminPage() {
 
     const filteredProducts = products
         .filter(p => catFilter === 'all' || p.categoria === catFilter)
-        .filter(p => p.nombre.toLowerCase().includes(search.toLowerCase()))
+        .filter(p => p.nombre.toLowerCase().includes(search.toLowerCase()) || p.id.toLowerCase().includes(search.toLowerCase()))
         .slice(0, 50);
+
+    const handleSaveProduct = (e: React.FormEvent) => {
+        e.preventDefault();
+        if (!newProduct.nombre || !newProduct.precio || !newProduct.stock) {
+            toast.error('Por favor completa los campos obligatorios');
+            return;
+        }
+
+        const newProd: Product = {
+            id: `PROD-${Date.now()}`,
+            nombre: newProduct.nombre,
+            descripcion: newProduct.descripcion,
+            precio: Number(newProduct.precio),
+            precioMayorista: Math.round(Number(newProduct.precio) * 0.7), // Ejemplo de precio mayorista
+            categoria: newProduct.categoria,
+            stock: Number(newProduct.stock),
+            imagenes: newProduct.imagen ? [newProduct.imagen] : ['/images/placeholders/default.jpg'],
+            minMayorista: 1,
+            rating: 5,
+            vendidos: 0,
+            tags: [newProduct.categoria]
+        };
+
+        setProducts([newProd, ...products]);
+        setIsProductModalOpen(false);
+        setNewProduct({ nombre: '', descripcion: '', precio: '', categoria: 'ferreteria', stock: '', imagen: '' });
+        toast.success('Producto agregado con éxito');
+    };
+
+    const handleScan = (e: React.FormEvent) => {
+        e.preventDefault();
+        if (!scannerInput.trim()) return;
+
+        // Buscar producto por ID exacto
+        const foundIndex = products.findIndex(p => p.id.toLowerCase() === scannerInput.trim().toLowerCase());
+        
+        if (foundIndex !== -1) {
+            const updatedProducts = [...products];
+            updatedProducts[foundIndex] = {
+                ...updatedProducts[foundIndex],
+                stock: updatedProducts[foundIndex].stock + 1
+            };
+            setProducts(updatedProducts);
+            toast.success(`+1 Stock añadido a: ${updatedProducts[foundIndex].nombre}`);
+            setScannerInput(''); // Limpiar para el siguiente escaneo
+        } else {
+            toast.error('Producto no encontrado con ese ID');
+        }
+    };
 
     const stats = {
         totalProducts: products.length,
@@ -371,7 +436,7 @@ export default function AdminPage() {
                                 value={search}
                                 onChange={e => setSearch(e.target.value)}
                                 className="input-styled flex-1"
-                                placeholder="Buscar producto..."
+                                placeholder="Buscar por nombre o ID..."
                             />
                             <select
                                 value={catFilter}
@@ -386,10 +451,63 @@ export default function AdminPage() {
                                     </option>
                                 ))}
                             </select>
-                            <button className="btn-primary px-6 text-sm">
+                            <button 
+                                onClick={() => setShowScanner(!showScanner)}
+                                className="px-6 py-3 rounded-lg font-bold transition-all text-sm flex items-center justify-center gap-2"
+                                style={{ background: showScanner ? 'rgba(0, 200, 100, 0.2)' : 'rgba(255, 255, 255, 0.1)', color: showScanner ? '#00C864' : 'white', border: showScanner ? '1px solid #00C864' : '1px solid rgba(255,255,255,0.2)' }}
+                            >
+                                📷 {showScanner ? 'Cerrar Escáner' : 'Escáner POS'}
+                            </button>
+                            <button 
+                                onClick={() => setIsProductModalOpen(true)}
+                                className="btn-primary px-6 text-sm"
+                            >
                                 + Nuevo Producto
                             </button>
                         </div>
+
+                        {/* Scanner Section */}
+                        {showScanner && (
+                            <div className="card p-6 mb-6 border-2 border-[#00C864]/30 bg-[#00C864]/[0.02] animate-fade-in relative overflow-hidden">
+                                <div className="absolute top-0 left-0 w-1 h-full bg-[#00C864]"></div>
+                                
+                                <div className="flex items-center gap-2 mb-4">
+                                    <span className="text-xl">📷</span>
+                                    <div>
+                                        <h3 className="font-black text-[#00C864] uppercase tracking-widest text-sm">Punto de Escaneo (POS)</h3>
+                                        <p className="text-[10px] text-white/50">WMS App - Añade stock al instante</p>
+                                    </div>
+                                </div>
+
+                                <div className="bg-[#001F3F] p-6 rounded-2xl border border-white/10 text-center space-y-6">
+                                    <p className="text-xs text-white/70">Apunta la cámara al Código de Barras o usa una Pistola Inalámbrica Bluetooth.</p>
+                                    
+                                    <button className="w-full py-4 rounded-xl font-black text-white flex items-center justify-center gap-3 transition-all hover:bg-[#00C864]/20 border border-[#00C864]" style={{ background: 'rgba(0, 200, 100, 0.1)' }}>
+                                        <span className="text-[#00C864] text-xl">📷</span> Activar Lente (Celular)
+                                    </button>
+
+                                    <div className="flex items-center justify-center gap-4 text-white/30 text-[10px] uppercase font-bold">
+                                        <span className="h-px w-12 bg-white/10"></span>
+                                        o escanea láser / usa teclado
+                                        <span className="h-px w-12 bg-white/10"></span>
+                                    </div>
+
+                                    <form onSubmit={handleScan} className="relative max-w-md mx-auto">
+                                        <input
+                                            type="text"
+                                            value={scannerInput}
+                                            onChange={e => setScannerInput(e.target.value)}
+                                            placeholder="ID. Ej: ferreteria-1"
+                                            className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#00C864] transition-colors"
+                                            autoFocus={showScanner}
+                                        />
+                                        <button type="submit" className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center bg-white/10 rounded-lg hover:bg-[#00C864] hover:text-navy transition-colors text-white">
+                                            🔍
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        )}
 
                         <div className="card overflow-hidden">
                             <div className="overflow-x-auto">
@@ -414,6 +532,7 @@ export default function AdminPage() {
                                                 </td>
                                                 <td className="px-4 py-3">
                                                     <div className="font-semibold" style={{ color: 'white', maxWidth: '200px' }}>{p.nombre}</div>
+                                                    <div className="text-[10px] text-gold/60">{p.id}</div>
                                                 </td>
                                                 <td className="px-4 py-3 text-xs" style={{ color: 'rgba(255,255,255,0.5)' }}>
                                                     {CATEGORIES[p.categoria]?.label}
@@ -597,6 +716,108 @@ export default function AdminPage() {
                     </div>
                 )}
             </div>
+
+            {/* Modal Nuevo Producto */}
+            {isProductModalOpen && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fade-in">
+                    <div className="bg-[#001428] rounded-3xl w-full max-w-2xl border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.5)] overflow-hidden relative">
+                        {/* Header Modal */}
+                        <div className="p-6 border-b border-white/5 flex justify-between items-center bg-white/[0.02]">
+                            <h2 className="text-2xl font-black italic text-[#FFD700]">Nuevo Producto</h2>
+                            <button 
+                                onClick={() => setIsProductModalOpen(false)}
+                                className="w-8 h-8 flex items-center justify-center rounded-full bg-white/5 text-white/50 hover:bg-white/10 hover:text-white transition-colors"
+                            >
+                                ✕
+                            </button>
+                        </div>
+
+                        {/* Formulario */}
+                        <form onSubmit={handleSaveProduct} className="p-6 space-y-6">
+                            <div>
+                                <label className="block text-xs font-black uppercase text-white/60 mb-2">Nombre del Producto</label>
+                                <input 
+                                    type="text" 
+                                    value={newProduct.nombre}
+                                    onChange={e => setNewProduct({...newProduct, nombre: e.target.value})}
+                                    placeholder="Ej: Reloj Rolex Daytona..." 
+                                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#FFD700] transition-colors"
+                                    required
+                                />
+                            </div>
+
+                            <div>
+                                <label className="block text-xs font-black uppercase text-white/60 mb-2">Descripción del Producto</label>
+                                <textarea 
+                                    value={newProduct.descripcion}
+                                    onChange={e => setNewProduct({...newProduct, descripcion: e.target.value})}
+                                    placeholder="Opcional. Describe la calidad, uso o empaque..." 
+                                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#FFD700] transition-colors min-h-[100px] resize-none"
+                                />
+                            </div>
+
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                <div>
+                                    <label className="block text-xs font-black uppercase text-white/60 mb-2">Precio (COP)</label>
+                                    <input 
+                                        type="number" 
+                                        value={newProduct.precio}
+                                        onChange={e => setNewProduct({...newProduct, precio: e.target.value})}
+                                        placeholder="0" 
+                                        className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#FFD700] transition-colors"
+                                        required
+                                    />
+                                </div>
+                                <div>
+                                    <label className="block text-xs font-black uppercase text-white/60 mb-2">Catálogo</label>
+                                    <select 
+                                        value={newProduct.categoria}
+                                        onChange={e => setNewProduct({...newProduct, categoria: e.target.value as Category})}
+                                        className="w-full bg-[#001F3F] border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#FFD700] transition-colors appearance-none"
+                                    >
+                                        {Object.entries(CATEGORIES).map(([cat, info]) => (
+                                            <option key={cat} value={cat}>{info.label.toUpperCase()}</option>
+                                        ))}
+                                    </select>
+                                </div>
+                                <div>
+                                    <label className="block text-xs font-black uppercase text-white/60 mb-2">Stock (Cuántos hay?)</label>
+                                    <input 
+                                        type="number" 
+                                        value={newProduct.stock}
+                                        onChange={e => setNewProduct({...newProduct, stock: e.target.value})}
+                                        placeholder="0" 
+                                        className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#FFD700] transition-colors"
+                                        required
+                                    />
+                                </div>
+                            </div>
+
+                            <div>
+                                <label className="block text-xs font-black uppercase text-white/60 mb-2">Foto del Producto</label>
+                                <div className="flex flex-col md:flex-row gap-4">
+                                    <button type="button" className="flex-1 border border-dashed border-[#00C864] bg-[#00C864]/5 text-[#00C864] rounded-xl py-3 flex items-center justify-center gap-2 font-bold hover:bg-[#00C864]/10 transition-colors">
+                                        <span className="text-lg">↑</span> Subir Foto de Archivo
+                                    </button>
+                                    <input 
+                                        type="text" 
+                                        value={newProduct.imagen}
+                                        onChange={e => setNewProduct({...newProduct, imagen: e.target.value})}
+                                        placeholder="O url de internet..." 
+                                        className="flex-1 bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#FFD700] transition-colors"
+                                    />
+                                </div>
+                            </div>
+
+                            <div className="pt-4 mt-2 border-t border-white/5">
+                                <button type="submit" className="w-full bg-[#000000] text-[#00C864] py-4 rounded-xl font-black text-sm uppercase tracking-widest hover:bg-[#111111] transition-all flex items-center justify-center gap-2 border border-[#00C864]/30 shadow-[0_0_20px_rgba(0,200,100,0.15)]">
+                                    Guardar y Publicar en Tienda
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }

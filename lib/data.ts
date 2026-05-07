@@ -1,3 +1,4 @@
+import { SEXSHOP_CSV_PRODUCTS } from './sexshop_data';
 export type Category =
   | 'ferreteria'
   | 'belleza'
@@ -540,7 +541,10 @@ function generateProducts(): Product[] {
   return products;
 }
 
-export const ALL_PRODUCTS: Product[] = generateProducts();
+export const ALL_PRODUCTS: Product[] = [
+  ...generateProducts().filter(p => p.categoria !== 'sexshop'),
+  ...SEXSHOP_CSV_PRODUCTS
+];
 
 export const FEATURED_PRODUCTS = ALL_PRODUCTS.filter(p => p.destacado).slice(0, 12);
 
