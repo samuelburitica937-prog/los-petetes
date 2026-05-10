@@ -32,43 +32,31 @@ export default function CityGuideBanner() {
                 </div>
 
                 <h2
-                    className="text-4xl md:text-6xl font-dupla-black text-white mb-4 tracking-tighter leading-[0.9] max-w-2xl"
+                    className="text-4xl md:text-6xl font-dupla-black text-white mb-8 tracking-tighter leading-[0.9] max-w-3xl"
                     style={{ filter: 'drop-shadow(0 12px 24px rgba(0,0,0,0.5))' }}
                 >
-                    ¿Vivís en <span className="font-dupla-black-italic text-gold italic">Manizales?</span>
+                    ¿Qué hay para hacer en <span className="font-dupla-black-italic text-gold italic">Manizales?</span>
                 </h2>
 
-                <p className="text-white/60 font-dupla-semibold text-base mb-8 max-w-md">
-                    Compra al por mayor directamente desde nuestra bodega. Sin intermediarios, sin sobrecostos.
-                </p>
-
                 <div className="flex flex-wrap gap-4 justify-center">
-                    <Link
-                        href="/guia-compra"
-                        className="group relative px-10 py-4 overflow-hidden rounded-2xl transition-all duration-500 hover:scale-105 shadow-2xl"
-                    >
-                        {/* Button Background & Border */}
-                        <div className="absolute inset-0 bg-white/10 backdrop-blur-md border border-white/20 group-hover:bg-white/20 transition-all duration-300" />
-                        {/* Animated Edge */}
-                        <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-gold to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
-                        <span className="relative z-10 flex items-center gap-3 font-dupla-black text-sm text-white uppercase tracking-widest">
-                            Guía de Compra
-                            <span className="text-gold transition-transform duration-300 group-hover:translate-x-2">→</span>
-                        </span>
-                    </Link>
-
-                    <a
-                        href="https://wa.me/576068840248"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group relative px-10 py-4 overflow-hidden rounded-2xl transition-all duration-500 hover:scale-105 shadow-2xl"
-                    >
-                        <div className="absolute inset-0 rounded-2xl transition-all duration-300"
-                            style={{ background: 'rgba(37,211,102,0.15)', border: '1px solid rgba(37,211,102,0.4)' }} />
-                        <span className="relative z-10 flex items-center gap-3 font-dupla-black text-sm text-white uppercase tracking-widest">
-                            📲 Contactar por WhatsApp
-                        </span>
-                    </a>
+                    {[
+                        { title: 'Hoteles', icon: '🏨', href: '/turismo?q=hoteles' },
+                        { title: 'Restaurantes', icon: '🍽️', href: '/turismo?q=restaurantes' },
+                        { title: 'Bares', icon: '🍸', href: '/turismo?q=bares' },
+                        { title: 'Museos', icon: '🏛️', href: '/turismo?q=museos' }
+                    ].map((item, idx) => (
+                        <Link
+                            key={idx}
+                            href={item.href}
+                            className="group relative px-6 py-3 overflow-hidden rounded-xl transition-all duration-500 hover:scale-105 shadow-2xl"
+                        >
+                            <div className="absolute inset-0 bg-white/10 backdrop-blur-md border border-white/20 group-hover:bg-white/20 transition-all duration-300" />
+                            <span className="relative z-10 flex items-center gap-2 font-dupla-black text-xs text-white uppercase tracking-widest">
+                                <span>{item.icon}</span>
+                                {item.title}
+                            </span>
+                        </Link>
+                    ))}
                 </div>
             </div>
         </section>

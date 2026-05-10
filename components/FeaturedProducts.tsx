@@ -65,7 +65,7 @@ export default function FeaturedProducts() {
 
             <div className="mt-20 text-center">
                 <Link
-                    href="/?cat=all"
+                    href="/catalogos"
                     className="inline-flex items-center gap-4 px-12 py-5 rounded-2xl bg-white/5 border border-white/20 text-white font-dupla-black text-xs uppercase tracking-[0.3em] hover:bg-gold hover:text-navy hover:border-gold transition-all group shadow-2xl"
                 >
                     Explorar Todo el Catálogo

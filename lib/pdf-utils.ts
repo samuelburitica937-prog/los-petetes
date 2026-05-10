@@ -408,9 +408,9 @@ export async function generateCatalogPDF(
     doc.setFontSize(12);
     doc.setTextColor(255, 255, 255);
     // @ts-ignore
-    doc.textWithLink('WhatsApp Johana', 65, 211, { url: 'https://wa.me/576068840248', align: 'center' });
+    doc.textWithLink('WhatsApp Johana', 65, 211, { url: 'https://wa.me/573146301755', align: 'center' });
     // @ts-ignore
-    doc.textWithLink('WhatsApp Laura', 145, 211, { url: 'https://wa.me/576068840248', align: 'center' });
+    doc.textWithLink('WhatsApp Laura', 145, 211, { url: 'https://wa.me/573148463900', align: 'center' });
 
     // --- PRODUCTS PAGES ---
     const itemsPerPage = 6;
@@ -548,9 +548,9 @@ export async function generateCatalogPDF(
         doc.setTextColor(255, 255, 255);
         doc.setFontSize(7);
         // @ts-ignore
-        doc.textWithLink('Comprar vía Johana', startX + 22.5, startY + 71, { url: `https://wa.me/576068840248?text=Hola,%20me%20interesa%20el%20producto%20${p.referencia || p.nombre}`, align: 'center' });
+        doc.textWithLink('Comprar vía Johana', startX + 22.5, startY + 71, { url: `https://wa.me/573146301755?text=Hola,%20me%20interesa%20el%20producto%20${p.referencia || p.nombre}`, align: 'center' });
         // @ts-ignore
-        doc.textWithLink('Comprar vía Laura', startX + 62, startY + 71, { url: `https://wa.me/576068840248?text=Hola,%20me%20interesa%20el%20producto%20${p.referencia || p.nombre}`, align: 'center' });
+        doc.textWithLink('Comprar vía Laura', startX + 62, startY + 71, { url: `https://wa.me/573148463900?text=Hola,%20me%20interesa%20el%20producto%20${p.referencia || p.nombre}`, align: 'center' });
     }
 
     if (returnBlob) {

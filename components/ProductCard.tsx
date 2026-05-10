@@ -21,7 +21,7 @@ export default function ProductCard({ product, featured }: ProductCardProps) {
     const { toggle, has } = useWishlistStore();
     const addRecent = useRecentStore(s => s.add);
     const inWishlist = has(product.id);
-    const { user, isAuthenticated } = useAuthStore();
+    const { user, isAuthenticated, addOrder } = useAuthStore();
 
     const handleAddCart = (e: React.MouseEvent) => {
         e.stopPropagation();
@@ -276,7 +276,7 @@ export default function ProductCard({ product, featured }: ProductCardProps) {
                     </button>
                 </div>
                 {/* eBay style liquidation / Negociar Lote */}
-                {product.stock > 30 && (
+                {product.stock <= 30 && (
                     <button 
                         onClick={(e) => { 
                             e.stopPropagation(); 
@@ -285,7 +285,7 @@ export default function ProductCard({ product, featured }: ProductCardProps) {
                                 fecha: new Date().toISOString().split('T')[0],
                                 total: product.precioMayorista * product.stock,
                                 estado: 'NEGOCIANDO LOTE',
-                                items: [{ productoId: product.id, cantidad: product.stock }]
+                                items: product.stock
                             });
                             toast.success(`Oferta de liquidación enviada. El administrador te contactará para negociar ${product.stock} uds.`); 
                         }}

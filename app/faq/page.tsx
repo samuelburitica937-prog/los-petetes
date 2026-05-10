@@ -50,7 +50,7 @@ export default function FAQPage() {
                 <div className="mt-16 glass-card p-8 bg-gold/5 border-gold/20 text-center">
                     <h3 className="font-black text-white uppercase mb-2">¿No encontraste lo que buscabas?</h3>
                     <p className="text-white/60 mb-6">Estamos listos para ayudarte personalmente.</p>
-                    <a href="https://wa.me/576068840248" className="btn-primary px-10 py-4 font-black uppercase tracking-widest inline-block">
+                    <a href="https://wa.me/573145090821" className="btn-primary px-10 py-4 font-black uppercase tracking-widest inline-block">
                         Hablar con un asesor
                     </a>
                 </div>

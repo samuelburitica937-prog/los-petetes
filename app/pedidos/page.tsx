@@ -359,7 +359,7 @@ export default function OrdersPage() {
 
                         <div className="mt-8 p-6 border-2 border-dashed border-white/10 rounded-2xl text-center space-y-2">
                             <p className="text-white/30 text-sm">¿Problema con un pedido?</p>
-                            <a href="https://wa.me/576068840248" className="text-gold font-black text-sm hover:underline">
+                            <a href="https://wa.me/573145090821" className="text-gold font-black text-sm hover:underline">
                                 📲 Contactar por WhatsApp →
                             </a>
                         </div>

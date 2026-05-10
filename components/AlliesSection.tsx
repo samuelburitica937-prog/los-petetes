@@ -21,14 +21,6 @@ export default function AlliesSection() {
                             ¿No eres mayorista? No te preocupes. Encuentra nuestros productos en las tiendas más exclusivas del país. Nosotros les proveemos, ellos te atienden con la mejor calidad.
                         </p>
                     </div>
-                    
-                    <Link
-                        href="/aliados"
-                        className="group relative px-10 py-4 overflow-hidden rounded-2xl bg-gold text-navy transition-all duration-500 hover:scale-105 shadow-2xl self-start md:self-auto flex items-center gap-3 font-dupla-black text-xs uppercase tracking-widest hover:bg-gold-light"
-                    >
-                        Comprar al Detal Ahora
-                        <span className="transition-transform duration-300 group-hover:translate-x-2">→</span>
-                    </Link>
                 </div>
 
                 {/* Allies Grid/Carousel */}

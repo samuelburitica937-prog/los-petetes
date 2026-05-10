@@ -58,7 +58,7 @@ export default function GarantiasPage() {
                     </section>
 
                     <div className="text-center p-8 bg-white/5 rounded-2xl border border-white/10">
-                        <p className="text-white/40 text-sm">¿Deseas reportar un fallo técnico? <a href="https://wa.me/576068840248" className="text-gold font-bold hover:underline">Iniciar trámite de garantía</a></p>
+                        <p className="text-white/40 text-sm">¿Deseas reportar un fallo técnico? <a href="https://wa.me/573145090821" className="text-gold font-bold hover:underline">Iniciar trámite de garantía</a></p>
                     </div>
                 </div>
             </div>

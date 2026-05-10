@@ -52,7 +52,7 @@ export default function DevolucionesPage() {
                     </section>
 
                     <div className="text-center p-8 bg-gold/5 rounded-2xl border border-gold/10">
-                        <p className="text-white/40 text-sm">¿Necesitas iniciar una devolución? <a href="https://wa.me/576068840248" className="text-gold font-bold hover:underline">Habla con un asesor por WhatsApp</a></p>
+                        <p className="text-white/40 text-sm">¿Necesitas iniciar una devolución? <a href="https://wa.me/573145090821" className="text-gold font-bold hover:underline">Habla con un asesor por WhatsApp</a></p>
                     </div>
                 </div>
             </div>

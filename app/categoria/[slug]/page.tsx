@@ -225,7 +225,7 @@ export default function CategoryPage() {
                             <p className="font-black text-white text-sm uppercase mb-2">Soporte Aliados</p>
                             <p className="text-[10px] text-white/40 mb-6 font-medium">Asesoría personalizada para pedidos a gran escala en {catInfo.label}.</p>
                             <a 
-                                href={`https://wa.me/576068840248?text=${encodeURIComponent(`Hola, quiero asesoría personalizada para estos pedidos que tengo en ${catInfo.label}`)}`}
+                                href={`https://wa.me/573145090821?text=${encodeURIComponent(`Hola, quiero asesoría personalizada para estos pedidos que tengo en ${catInfo.label}`)}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="w-full py-3 bg-gold text-navy text-[10px] font-black rounded-xl uppercase hover:scale-105 active:scale-95 transition-transform block text-center"
